@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "paradigm",
+	"version": "${version}",
+	"name": "Paradigm Mod",
+	"description": "The official Mod for the Paradigm SMP",
+	"authors": [
+		"Killerkrow"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/paradigm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.killerkrow.paradigm.ParadigmMod"
+		],
+		"client": [
+			"net.killerkrow.paradigm.ParadigmModClient"
+		],
+		"fabric-datagen": [
+			"net.killerkrow.paradigm.ParadigmModDataGenerator"
+		]
+	},
+	"mixins": [
+		"paradigm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
