@@ -1,9 +1,11 @@
 package net.killerkrow.paradigm.item;
 
+import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.item.custom.GodEffigy;
 import net.killerkrow.paradigm.item.custom.SmileyNotesItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -26,7 +28,7 @@ public class ModItems {
     public static final Item DEMIGOD_EFFIGY = registerItem("demigod_effigy",
             new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
     public static final Item GOD_EFFIGY = registerItem("god_effigy",
-            new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
+            new GodEffigy(new FabricItemSettings().maxCount(1)));
 
     //special items with functions
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
