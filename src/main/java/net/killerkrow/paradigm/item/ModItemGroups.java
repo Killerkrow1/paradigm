@@ -16,9 +16,14 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.afterlife_tab"))
                     .icon(() -> new ItemStack(ModItems.SMILE_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SMILE_ITEM);
+
+
                         entries.add(ModItems.SMILEY_NOTES);
+
+
                         entries.add(ModItems.REVERENCE_BERRY);
                         entries.add(ModItems.GOLDEN_REVERENCE_BERRY);
+
 
                         entries.add(ModBlocks.REVERENCE_BERRY_SACK);
                         entries.add(ModBlocks.VOYD_DARK);
