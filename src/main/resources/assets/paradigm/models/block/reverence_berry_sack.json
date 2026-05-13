@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paradigm:block/bag_bottom",
+    "up": "paradigm:block/bag_top_reverence",
+    "north": "paradigm:block/bag_side_knot",
+    "east": "paradigm:block/bag_side",
+    "south": "paradigm:block/bag_side",
+    "west": "paradigm:block/bag_side",
+    "particle": "paradigm:block/bag_bottom"
+  }
+}

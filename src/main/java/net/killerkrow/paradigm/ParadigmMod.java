@@ -2,6 +2,9 @@ package net.killerkrow.paradigm;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.killerkrow.paradigm.block.ModBlocks;
+import net.killerkrow.paradigm.item.ModItemGroups;
+import net.killerkrow.paradigm.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +14,8 @@ public class ParadigmMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("I'm the biggest bird - Killerkrow");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

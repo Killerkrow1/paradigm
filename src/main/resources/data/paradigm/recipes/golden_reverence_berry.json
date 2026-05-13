@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "Y": {
+      "item": "minecraft:gold_nugget"
+    },
+    "X": {
+      "item": "paradigm:reverence_berry"
+    }
+  },
+  "pattern": [
+    "Y#Y",
+    "#X#",
+    "Y#Y"
+  ],
+  "result": {
+    "item": "paradigm:golden_reverence_berry"
+  },
+  "show_notification": true
+}
