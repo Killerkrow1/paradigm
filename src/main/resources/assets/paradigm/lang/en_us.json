@@ -6,5 +6,6 @@
   "block.paradigm.voyd_dark": "Voyd Darkness",
   "block.paradigm.reverence_berry_sack": "Sack of Reverence Berries",
 
-  "itemgroup.afterlife_tab": "Afterlife"
+  "itemgroup.paradigm_tab": "paradigm",
+  "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It appears to have no effects on it's own. Maybe it needs a amplifier?"
 }

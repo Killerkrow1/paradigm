@@ -1,7 +1,6 @@
 package net.killerkrow.paradigm.item.custom;
 
 import com.google.common.collect.Multimap;
-import dev.emi.trinkets.api.SlotAttributes;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.entity.LivingEntity;
@@ -10,6 +9,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+
 import java.util.UUID;
 
 
@@ -34,8 +34,12 @@ public class GodEffigy extends TrinketItem {
         modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "paradigm:armor_buff", 0.15,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
-        // If the player has access to ring slots, this will give them an extra one
-        SlotAttributes.addSlotModifier(modifiers, "hand/ring", uuid, 1, EntityAttributeModifier.Operation.ADDITION);
+        // Night Vision or smth IDK
+        // entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 600, 0, false, false));
+
+        // If the player has access to # slots, this will give them an extra one
+        // SlotAttributes.addSlotModifier(modifiers, "legs/belt", uuid, 1, EntityAttributeModifier.Operation.ADDITION);
+
         return modifiers;
     }
 }

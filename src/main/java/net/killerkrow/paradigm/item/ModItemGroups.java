@@ -11,15 +11,20 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup AFTERLIFE_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup PARADIGM_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(ParadigmMod.MOD_ID, "smile_item"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.afterlife_tab"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.paradigm_tab"))
                     .icon(() -> new ItemStack(ModItems.SMILE_ITEM)).entries((displayContext, entries) -> {
                         entries.add(ModItems.SMILE_ITEM);
 
 
                         entries.add(ModItems.SMILEY_NOTES);
 
+                        entries.add(ModItems.EMPTY_EFFIGY);
+                        entries.add(ModItems.AFTERLIFE_EFFIGY);
+                        entries.add(ModItems.SEMIGOD_EFFIGY);
+                        entries.add(ModItems.DEMIGOD_EFFIGY);
+                        entries.add(ModItems.GOD_EFFIGY);
 
                         entries.add(ModItems.REVERENCE_BERRY);
                         entries.add(ModItems.GOLDEN_REVERENCE_BERRY);
