@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "paradigm:empty_effigy",
+    "paradigm:jade_effigy",
+    "paradigm:soul_effigy",
     "paradigm:afterlife_effigy",
     "paradigm:demigod_effigy",
     "paradigm:god_effigy"

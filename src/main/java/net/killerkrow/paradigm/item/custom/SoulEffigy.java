@@ -11,6 +11,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
@@ -19,20 +20,20 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.UUID;
 
-public class AfterlifeEffigy extends TrinketItem {
-    public AfterlifeEffigy(Settings settings) {
+public class SoulEffigy extends TrinketItem {
+    public SoulEffigy(Item.Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.paradigm.afterlifeeffigy.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
     }
 
     @Override
     public boolean hasGlint(ItemStack stack) {
         return true; // Enables the enchanted shimmer
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.paradigm.souleffigy.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 
     public Multimap<EntityAttribute, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, UUID uuid) {
@@ -41,12 +42,11 @@ public class AfterlifeEffigy extends TrinketItem {
         // +15% movement speed
         modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "paradigm:movement_speed", 0.15,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
-        // +10% max health
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.1,
+        // +20% max health
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.2,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1200, 1));
-        entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 1200, 1));
+        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1200, 1));
 
         return modifiers;
     }

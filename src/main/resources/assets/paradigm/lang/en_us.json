@@ -1,11 +1,51 @@
 {
-  "item.paradigm.smile_item": "Smile Item",
   "item.paradigm.reverence_berry": "Reverence Berry",
   "item.paradigm.golden_reverence_berry": "Golden Reverence Berry",
+  "item.paradigm.smiley_notes": "Smiley Notes",
+
+  "item.paradigm.empty_effigy": "Empty Effigy",
+  "item.paradigm.empty_semi_effigy": "Empty Semigod Effigy",
+  "item.paradigm.empty_demi_effigy": "Empty Demigod Effigy",
+  "item.paradigm.empty_soul_effigy": "Empty Soul Effigy",
+  "item.paradigm.empty_afterlife_effigy": "Empty Afterlife Effigy",
+  "item.paradigm.empty_jade_effigy": "Empty Jade Effigy",
+
+  "item.paradigm.charged_empty_semi_effigy": "Charged Empty Semigod Effigy",
+  "item.paradigm.charged_empty_demi_effigy": "Charged Empty Demigod Effigy",
+  "item.paradigm.charged_empty_soul_effigy": "Charged Empty Soul Effigy",
+  "item.paradigm.charged_empty_afterlife_effigy": "Charged Empty Afterlife Effigy",
+  "item.paradigm.charged_empty_jade_effigy": "Charged Empty Jade Effigy",
+
+  "item.paradigm.jade_effigy": "Jade Effigy",
+  "item.paradigm.soul_effigy": "Soul Effigy",
+  "item.paradigm.afterlife_effigy": "Afterlife Effigy",
+  "item.paradigm.semigod_effigy": "Semigod's Effigy",
+  "item.paradigm.demigod_effigy": "Demigod's Effigy",
+  "item.paradigm.god_effigy": "God's Effigy",
 
   "block.paradigm.voyd_dark": "Voyd Darkness",
   "block.paradigm.reverence_berry_sack": "Sack of Reverence Berries",
 
   "itemgroup.paradigm_tab": "paradigm",
-  "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It appears to have no effects on it's own. Maybe it needs a amplifier?"
+  "tooltip.paradigm.smileynotes.tooltip": "Notes from the God of the Afterlife and Dead, unknown if they work still.",
+
+  "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It doesn't work like the other Effigies.",
+  "tooltip.paradigm.demigodeffigy.tooltip": "A weakened version of the relic that is next to come.",
+  "tooltip.paradigm.afterlifeeffigy.tooltip": "Fueled by the power of a entity not of this sector, it opens the Gateway.",
+  "tooltip.paradigm.godeffigy.tooltip": "The accumulation of true power. A truly powerful Relic.",
+  "tooltip.paradigm.jadeeffigy.tooltip": "Created by combining the powers of Gods and Deco, a cumulation of two parts of the world.",
+  "tooltip.paradigm.souleffigy.tooltip": "Created with the intent of the Soul in mind, carrying it increases the soul energy of the holder.",
+  "tooltip.paradigm.emptyeffigy.tooltip": "Blank and ready to get powered into the next stage.",
+
+  "tooltip.paradigm.emptydemieffigy.tooltip": "In order to get charged you must gather a number of Beacon or Spawner Blocks.",
+  "tooltip.paradigm.emptysemieffigy.tooltip": "In order to get charged you must collect a number of Conduits, Netherite Blocks, or Enchanting Tables.",
+  "tooltip.paradigm.emptyafterlifeeffigy.tooltip": "In order to get charged you must collect a number of Bone Blocks.",
+  "tooltip.paradigm.emptyjadeeffigy.tooltip": "In order to get charged you must collect a number of Jade Blocks.",
+  "tooltip.paradigm.emptysouleffigy.tooltip": "In order to get charged you must collect a number of Sculk and Soul Related Blocks.",
+
+  "tooltip.paradigm.charged_empty_soul_effigy.tooltip": "The Charged and near complete form of the Soul Effigy.",
+  "tooltip.paradigm.charged_empty_demi_effigy.tooltip": "The Charged and near complete form of the Demigod Effigy.",
+  "tooltip.paradigm.charged_empty_jade_effigy.tooltip": "The Charged and near complete form of the Jade Effigy.",
+  "tooltip.paradigm.charged_empty_semi_effigy.tooltip": "The Charged and near complete form of the Semigod Effigy.",
+  "tooltip.paradigm.charged_empty_afterlife_effigy.tooltip": "The Charged and near complete form of the Afterlife Effigy."
 }
