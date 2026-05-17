@@ -28,6 +28,7 @@
 
   "itemgroup.paradigm_tab": "paradigm",
   "tooltip.paradigm.smileynotes.tooltip": "Notes from the God of the Afterlife and Dead, unknown if they work still.",
+  "effect.paradigm.watched_effect": "Watched",
 
   "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It doesn't work like the other Effigies.",
   "tooltip.paradigm.demigodeffigy.tooltip": "A weakened version of the relic that is next to come.",
@@ -47,5 +48,20 @@
   "tooltip.paradigm.charged_empty_demi_effigy.tooltip": "The Charged and near complete form of the Demigod Effigy.",
   "tooltip.paradigm.charged_empty_jade_effigy.tooltip": "The Charged and near complete form of the Jade Effigy.",
   "tooltip.paradigm.charged_empty_semi_effigy.tooltip": "The Charged and near complete form of the Semigod Effigy.",
-  "tooltip.paradigm.charged_empty_afterlife_effigy.tooltip": "The Charged and near complete form of the Afterlife Effigy."
+  "tooltip.paradigm.charged_empty_afterlife_effigy.tooltip": "The Charged and near complete form of the Afterlife Effigy.",
+
+  "item.paradigm.wooden_crusher": "Wooden Crusher",
+  "item.paradigm.stone_crusher": "Stone Crusher",
+  "item.paradigm.iron_crusher": "Iron Crusher",
+  "item.paradigm.gold_crusher": "Gold Crusher",
+  "item.paradigm.jade_crusher": "Jade Crusher",
+  "item.paradigm.diamond_crusher": "Diamond Crusher",
+  "item.paradigm.netherite_crusher": "Netherite Crusher",
+  "itemgroup.paradigm_relics_tab": "Paradigm Relics",
+  "item.paradigm.effigerium_shards": "Effigerium Shards",
+  "item.paradigm.effigerium_ingot": "Effigerium Ingot",
+  "item.paradigm.effigerium_dust": "Effigerium Dust",
+  "item.paradigm.grodium_crystals": "Grodium Crystals",
+  "item.paradigm.grodium_ingot": "Grodium Ingot",
+  "item.paradigm.grodium_dust": "Grodium Dust"
 }

@@ -15,6 +15,18 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item ASTRAVEN_LOGO = registerItem("astraven_logo",
             new Item(new FabricItemSettings()));
+    public static final Item EFFIGERIUM_SHARDS = registerItem("effigerium_shards",
+            new Item(new FabricItemSettings()));
+    public static final Item EFFIGERIUM_INGOT = registerItem("effigerium_ingot",
+            new Item(new FabricItemSettings()));
+    public static final Item EFFIGERIUM_DUST = registerItem("effigerium_dust",
+            new Item(new FabricItemSettings()));
+    public static final Item GRODIUM_CRYSTALS = registerItem("grodium_crystals",
+            new Item(new FabricItemSettings()));
+    public static final Item GRODIUM_INGOT = registerItem("grodium_ingot",
+            new Item(new FabricItemSettings()));
+    public static final Item GRODIUM_DUST = registerItem("grodium_dust",
+            new Item(new FabricItemSettings()));
 
     //extended normal items
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
@@ -43,6 +55,24 @@ public class ModItems {
     public static final Item CHARGED_EMPTY_SEMI_EFFIGY = registerItem("charged_empty_semi_effigy",
             new ChargedEmptySemiEffigy(new FabricItemSettings().maxCount(1)));
 
+    public static final Item TEST = registerItem("test",
+            new TestItem(new FabricItemSettings().maxCount(1)));
+
+    // weapons n stuff
+    public  static final Item WOODEN_CRUSHER = registerItem("wooden_crusher",
+            new CrusherWooden(new FabricItemSettings().maxDamage(2)));
+    public  static final Item STONE_CRUSHER = registerItem("stone_crusher",
+            new CrusherStone(new FabricItemSettings().maxDamage(3)));
+    public  static final Item IRON_CRUSHER = registerItem("iron_crusher",
+            new CrusherIron(new FabricItemSettings().maxDamage(4)));
+    public  static final Item GOLD_CRUSHER = registerItem("gold_crusher",
+            new CrusherGold(new FabricItemSettings().maxDamage(5)));
+    public  static final Item JADE_CRUSHER = registerItem("jade_crusher",
+            new CrusherJade(new FabricItemSettings().maxDamage(6)));
+    public  static final Item DIAMOND_CRUSHER = registerItem("diamond_crusher",
+            new CrusherDiamond(new FabricItemSettings().maxDamage(7)));
+    public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
+            new CrusherNetherite(new FabricItemSettings().maxDamage(8)));
 
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
