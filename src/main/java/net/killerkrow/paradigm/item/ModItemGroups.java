@@ -42,6 +42,9 @@ public class ModItemGroups {
                                 entries.add(ModItems.EMPTY_AFTERLIFE_EFFIGY);
                                 entries.add(ModItems.EMPTY_SEMI_EFFIGY);
                                 entries.add(ModItems.EMPTY_DEMI_EFFIGY);
+                                entries.add(ModItems.EMPTY_LUNAR_EFFIGY);
+                                entries.add(ModItems.EMPTY_SOLAR_EFFIGY);
+                                entries.add(ModItems.EMPTY_ESOTERIC_EFFIGY);
                                 entries.add(ModItems.CHARGED_EMPTY_JADE_EFFIGY);
                                 entries.add(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
                                 entries.add(ModItems.CHARGED_EMPTY_AFTERLIFE_EFFIGY);

@@ -43,6 +43,12 @@ public class ModItems {
             new EmptyJadeEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item EMPTY_SEMI_EFFIGY = registerItem("empty_semi_effigy",
             new EmptySemiEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item EMPTY_LUNAR_EFFIGY = registerItem("empty_lunar_effigy",
+            new EmptyLunarEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item EMPTY_SOLAR_EFFIGY = registerItem("empty_solar_effigy",
+            new EmptySolarEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item EMPTY_ESOTERIC_EFFIGY = registerItem("empty_esoteric_effigy",
+            new EmptyEsotericEffigy(new FabricItemSettings().maxCount(1)));
 
     public static final Item CHARGED_EMPTY_DEMI_EFFIGY = registerItem("charged_empty_demi_effigy",
             new ChargedEmptyDemiEffigy(new FabricItemSettings().maxCount(1)));
