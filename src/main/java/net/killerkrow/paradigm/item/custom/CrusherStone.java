@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.item;
+package net.killerkrow.paradigm.item.custom;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -13,8 +13,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CrusherWooden extends Item {
-    public CrusherWooden(Settings settings) {
+public class CrusherStone extends Item {
+    public CrusherStone(Settings settings) {
         super(settings);
     }
 
@@ -44,7 +44,7 @@ public class CrusherWooden extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
         tooltip.add(Text.literal("Crush Attack: Deals bonus damage while falling!").formatted(Formatting.GOLD));
-            tooltip.add(Text.literal("Max Damage: 2").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.literal("Max Damage: 3").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }

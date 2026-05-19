@@ -45,7 +45,9 @@ public class EmptyEffigy extends TrinketItem {
                 || state.isOf(Blocks.BONE_BLOCK) //Afterlife Effigy starter
                 || state.isOf(Blocks.CONDUIT) || state.isOf(Blocks.NETHERITE_BLOCK) || state.isOf(Blocks.ENCHANTING_TABLE) //Semigod Effigy starter
                 || state.isOf(Blocks.BEACON) || state.isOf(Blocks.SPAWNER) //Demigod Effigy starter
-
+                || state.isOf(Blocks.INFESTED_STONE) || state.isOf(Blocks.INFESTED_DEEPSLATE) //Esoteric Effigy Starter
+                || state.isOf(Blocks.CALCITE) || state.isOf(Blocks.SOUL_SAND) //Lunar Effigy Starter
+                || state.isOf(Blocks.SHROOMLIGHT) || state.isOf(Blocks.MAGMA_BLOCK) //Solar Effigy Starter
         ) {
             if (!world.isClient()) {
                 NbtCompound nbt = stack.getOrCreateNbt();
@@ -139,6 +141,36 @@ public class EmptyEffigy extends TrinketItem {
         else if (state.isOf(Blocks.SPAWNER)) {
             // return your custom Lapis-Absorbed item [OLD NOTE I WILL NOT UPDATE]
             return new ItemStack(ModItems.EMPTY_DEMI_EFFIGY);
+        }
+
+        //Start of the Esoteric Effigy Givers
+
+        else if (state.isOf(Blocks.INFESTED_DEEPSLATE)) {
+            return new ItemStack(ModItems.EMPTY_ESOTERIC_EFFIGY);
+        }
+
+        else if (state.isOf(Blocks.INFESTED_STONE)) {
+            return new ItemStack(ModItems.EMPTY_ESOTERIC_EFFIGY);
+        }
+
+        //Start of the Lunar Effigy Givers
+
+        else if (state.isOf(Blocks.CALCITE)) {
+            return new ItemStack(ModItems.EMPTY_LUNAR_EFFIGY);
+        }
+
+        else if (state.isOf(Blocks.SOUL_SAND)) {
+            return new ItemStack(ModItems.EMPTY_LUNAR_EFFIGY);
+        }
+
+        //Start of the Solar Effigy Givers
+
+        else if (state.isOf(Blocks.SHROOMLIGHT)) {
+            return new ItemStack(ModItems.EMPTY_SOLAR_EFFIGY);
+        }
+
+        else if (state.isOf(Blocks.MAGMA_BLOCK)) {
+            return new ItemStack(ModItems.EMPTY_SOLAR_EFFIGY);
         }
 
 

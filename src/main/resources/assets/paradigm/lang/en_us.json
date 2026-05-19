@@ -33,7 +33,7 @@
   "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It doesn't work like the other Effigies.",
   "tooltip.paradigm.demigodeffigy.tooltip": "A weakened version of the relic that is next to come.",
   "tooltip.paradigm.afterlifeeffigy.tooltip": "Fueled by the power of a entity not of this sector, it opens the Gateway.",
-  "tooltip.paradigm.godeffigy.tooltip": "The accumulation of true power. A truly powerful Relic.",
+  "tooltip.paradigm.godeffigy.tooltip": "The accumulation of true power. A truly powerful Relic. It floods the mind of anyone who holds it with confidence.",
   "tooltip.paradigm.jadeeffigy.tooltip": "Created by combining the powers of Gods and Deco, a cumulation of two parts of the world.",
   "tooltip.paradigm.souleffigy.tooltip": "Created with the intent of the Soul in mind, carrying it increases the soul energy of the holder.",
   "tooltip.paradigm.emptyeffigy.tooltip": "Blank and ready to get powered into the next stage.",
@@ -49,6 +49,9 @@
   "tooltip.paradigm.charged_empty_jade_effigy.tooltip": "The Charged and near complete form of the Jade Effigy.",
   "tooltip.paradigm.charged_empty_semi_effigy.tooltip": "The Charged and near complete form of the Semigod Effigy.",
   "tooltip.paradigm.charged_empty_afterlife_effigy.tooltip": "The Charged and near complete form of the Afterlife Effigy.",
+  "tooltip.paradigm.charged_empty_solar_effigy.tooltip": "The Charged and near complete form of the Solar Effigy.",
+  "tooltip.paradigm.charged_empty_lunar_effigy.tooltip": "The Charged and near complete form of the Lunar Effigy.",
+  "tooltip.paradigm.charged_empty_esoteric_effigy.tooltip": "The Charged and near complete form of the Esoteric Effigy.",
 
   "item.paradigm.wooden_crusher": "Wooden Crusher",
   "item.paradigm.stone_crusher": "Stone Crusher",
@@ -63,5 +66,12 @@
   "item.paradigm.effigerium_dust": "Effigerium Dust",
   "item.paradigm.grodium_crystals": "Grodium Crystals",
   "item.paradigm.grodium_ingot": "Grodium Ingot",
-  "item.paradigm.grodium_dust": "Grodium Dust"
+  "item.paradigm.grodium_dust": "Grodium Dust",
+  "tooltip.paradigm.base_inverted_weapon.tooltip": "Forged to conquer the soul, this is a weapon that exceeds Mortal Limits.",
+  "tooltip.paradigm.smiley_inverted.tooltip": "A powerful Inverted Weapon that is nearly as refined as the God Weapons.",
+  "item.paradigm.smileys_impulse": "Smiley's Impulse",
+  "item.paradigm.inverted_dagger": "Inverted Dagger of the Soul",
+  "item.paradigm.inverted_divider": "Inverted Divider of the Soul",
+  "item.paradigm.inverted_spear": "Inverted Spear of the Soul",
+  "item.paradigm.inverted_cutter": "Inverted Cutter of the Soul"
 }

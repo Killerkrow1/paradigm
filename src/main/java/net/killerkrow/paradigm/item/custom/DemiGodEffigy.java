@@ -53,8 +53,15 @@ public class DemiGodEffigy extends TrinketItem {
         modifiers.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(uuid, "paradigm:armor_buff", 0.05,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 1200, 1));
-
         return modifiers;
+    }
+
+    @Override
+    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        // Only apply effects on the server side to prevent duplication and desync
+        if (!entity.getWorld().isClient()) {
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 1
+            ));
+        }
     }
 }

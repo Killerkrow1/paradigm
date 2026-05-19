@@ -27,5 +27,9 @@ public class ParadigmMod implements ModInitializer {
 			// Register the effect with your mod's ID
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("paradigm",
 				"watched_effect"), WATCHED_EFFECT);
+
+
+
+
 	}
 }

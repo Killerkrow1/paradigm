@@ -2,96 +2,114 @@ package net.killerkrow.paradigm.item.custom;
 
 import dev.emi.trinkets.api.TrinketItem;
 import net.killerkrow.paradigm.item.ModItems;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
+import net.minecraft.nbt.NbtString;
+import net.minecraft.registry.Registries;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class EmptySoulEffigy extends TrinketItem {
+public class EmptySoulEffigy extends Item {
+    // Define the blocks required to absorb. Use exact Registry IDs.
+    private static final String[] REQUIRED_BLOCKS = {
+            "minecraft:sculk_sensor",
+            "minecraft:sculk_shrieker",
+            "minecraft:sculk_catalyst"
+    };
+    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 125;
+
     public EmptySoulEffigy(Settings settings) {
         super(settings);
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.paradigm.emptysouleffigy.tooltip"));
-        super.appendTooltip(stack, world, tooltip, context);
-    }
-
-    @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
-        BlockPos pos = context.getBlockPos();
-        BlockState state = world.getBlockState(pos);
+        if (world.isClient()) return ActionResult.SUCCESS;
+
         PlayerEntity player = context.getPlayer();
+        if (player == null) return ActionResult.PASS;
+
         ItemStack stack = context.getStack();
+        Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
+        String blockId = Registries.BLOCK.getId(clickedBlock).toString();
 
-        // 1. Define what blocks can be absorbed (e.g., Stone and Gold Block)
-        if (state.isOf(Blocks.SCULK_SHRIEKER) || state.isOf(Blocks.SCULK_CATALYST) || state.isOf(Blocks.SCULK_SENSOR) //Soul Effigy starter
-        ) {
-            if (!world.isClient()) {
-                NbtCompound nbt = stack.getOrCreateNbt();
-
-                // 2. Track count and last block absorbed
-                int absorbedCount = nbt.getInt("AbsorbedCount");
-                absorbedCount++;
-
-                nbt.putInt("AbsorbedCount", absorbedCount);
-                nbt.putString("LastAbsorbedBlock", state.getBlock().getName().getString());
-
-                // 3. Transform item conditionally
-                if (absorbedCount >= 128) {
-                    ItemStack transformedItem = getTransformedItem(state);
-
-                    if (player != null) {
-                        if (!player.getInventory().insertStack(transformedItem)) {
-                            player.dropItem(transformedItem, false);
-                        }
-                        stack.decrement(1); // Remove the original item
-                    }
-                } else {
-                    // Visual/Audio feedback for partial absorption
-                    world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_RESONATE, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                    world.breakBlock(pos, false); // Consume block
-                }
+        // Ensure the clicked block is in our required list
+        boolean isRequiredBlock = false;
+        for (String req : REQUIRED_BLOCKS) {
+            if (req.equals(blockId)) {
+                isRequiredBlock = true;
+                break;
             }
+        }
+
+        if (!isRequiredBlock) return ActionResult.PASS;
+
+        // Initialize or get the absorbed block NBT list
+        NbtCompound nbt = stack.getOrCreateNbt();
+        NbtList absorbedList = nbt.contains("AbsorbedBlocks") ? nbt.getList("AbsorbedBlocks", 8) : new NbtList();
+
+        // Check if this specific block type is already absorbed to prevent duplicates
+        boolean alreadyAbsorbed = false;
+        for (int i = 127; i < absorbedList.size(); i++) {
+            if (absorbedList.getString(i).equals(blockId)) {
+                alreadyAbsorbed = true;
+                break;
+            }
+        }
+
+        if (!alreadyAbsorbed) {
+            absorbedList.add(NbtString.of(blockId));
+            nbt.put("AbsorbedBlocks", absorbedList);
+
+            // Consume block in the world (optional)
+            world.breakBlock(context.getBlockPos(), false, player);
+            context.getWorld().setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
+            context.getWorld().playSound(null, context.getBlockPos(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.5F, 1.0F);
+
+
+            // Check if all blocks have been absorbed
+            if (absorbedList.size() >= REQUIRED_COUNT) {
+                // Change to a different item (e.g., Items.DIAMOND)
+                ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
+                transformedStack.setNbt(nbt); // Carry over NBT if needed
+                player.setStackInHand(context.getHand(), transformedStack);
+            }
+
             return ActionResult.SUCCESS;
         }
 
         return ActionResult.PASS;
     }
 
-    private ItemStack getTransformedItem(BlockState state) {
-        // Return different items depending on what block was absorbed on stage 2
-
-        //Start of the jade Effigy Givers
-        if (state.isOf(Blocks.SCULK_SHRIEKER)) {
-            // return your custom Gold-Absorbed item [OLD NOTE I WILL NOT UPDATE]
-            return new ItemStack(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        NbtCompound nbt = stack.getNbt();
+        int absorbedCount = 0;
+        if (nbt != null && nbt.contains("AbsorbedBlocks")) {
+            absorbedCount = nbt.getList("AbsorbedBlocks", 8).size();
         }
 
-        else if (state.isOf(Blocks.SCULK_CATALYST)) {
-            // return your custom Lapis-Absorbed item [OLD NOTE I WILL NOT UPDATE]
-            return new ItemStack(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
-        }
+        // Display current tracker in tooltip
+        tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+                .formatted(Formatting.GOLD));
 
-        else if (state.isOf(Blocks.SCULK_SENSOR)) {
-            // return your custom Lapis-Absorbed item [OLD NOTE I WILL NOT UPDATE]
-            return new ItemStack(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
-        }
-
-        return new ItemStack(ModItems.EMPTY_EFFIGY);
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

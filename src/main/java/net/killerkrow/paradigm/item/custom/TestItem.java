@@ -103,7 +103,7 @@ public class TestItem extends Item {
 
         // Display current tracker in tooltip
         tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
-                .formatted(Formatting.AQUA));
+                .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);
     }

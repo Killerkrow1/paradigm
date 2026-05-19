@@ -4,6 +4,7 @@ import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -13,6 +14,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,7 +28,11 @@ public class AfterlifeEffigy extends TrinketItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.paradigm.afterlifeeffigy.tooltip"));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.paradigm.afterlifeeffigy.tooltip").formatted(Formatting.DARK_PURPLE));
+        } else {
+            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 
@@ -45,9 +51,19 @@ public class AfterlifeEffigy extends TrinketItem {
         modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.1,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
-        entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 1200, 1));
-        entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 1200, 1));
-
         return modifiers;
+    }
+
+    @Override
+    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        // Only apply effects on the server side to prevent duplication and desync
+        if (!entity.getWorld().isClient()) {
+            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 1
+            ));
+            {
+                entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 200, 1
+                ));
+            }
+        }
     }
 }

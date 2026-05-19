@@ -66,6 +66,17 @@ public class ModItemGroups {
                                 entries.add(ModItems.DIAMOND_CRUSHER);
                                 entries.add(ModItems.NETHERITE_CRUSHER);
 
+                                entries.add(ModItems.INVERTED_SPEAR);
+                                entries.add(ModItems.INVERTED_DIVIDER);
+                                entries.add(ModItems.INVERTED_DAGGER);
+                                entries.add(ModItems.INVERTED_BLADE);
+                                entries.add(ModItems.INVERTED_CUTTER);
+                                entries.add(ModItems.INVERTED_HAMMER);
+                                entries.add(ModItems.INVERTED_BRAND);
+                                entries.add(ModItems.INVERTED_BITE);
+                                entries.add(ModItems.SOUL_INVERSION);
+                                entries.add(ModItems.SMILEYS_IMPULSE);
+
                             }).build());
 
     public static void registerItemGroups() {

@@ -60,6 +60,12 @@ public class ModItems {
             new ChargedEmptyJadeEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item CHARGED_EMPTY_SEMI_EFFIGY = registerItem("charged_empty_semi_effigy",
             new ChargedEmptySemiEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item CHARGED_EMPTY_SOLAR_EFFIGY = registerItem("charged_empty_solar_effigy",
+            new ChargedEmptySolarEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item CHARGED_EMPTY_LUNAR_EFFIGY = registerItem("charged_empty_lunar_effigy",
+            new ChargedEmptyLunarEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item CHARGED_EMPTY_ESOTERIC_EFFIGY = registerItem("charged_empty_esoteric_effigy",
+            new ChargedEmptyEsotericEffigy(new FabricItemSettings().maxCount(1)));
 
     public static final Item TEST = registerItem("test",
             new TestItem(new FabricItemSettings().maxCount(1)));
@@ -79,9 +85,37 @@ public class ModItems {
             new CrusherDiamond(new FabricItemSettings().maxDamage(7)));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
             new CrusherNetherite(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
+            new BaseInvertedWeapon(new FabricItemSettings()));
+    public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_CUTTER = registerItem("inverted_cutter",
+            new FastInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item SMILEYS_IMPULSE = registerItem("smileys_impulse",
+            new SmileyInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_BRAND = registerItem("inverted_brand",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item SOUL_INVERSION = registerItem("soul_inversion",
+            new SoulInversion(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_BLADE = registerItem("inverted_blade",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_BITE = registerItem("inverted_bite",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+    public  static final Item INVERTED_HAMMER = registerItem("inverted_hammer",
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
 
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
+            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item ESOTERIC_EFFIGY = registerItem("esoteric_effigy",
+            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item LUNAR_EFFIGY = registerItem("lunar_effigy",
+            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item SOLAR_EFFIGY = registerItem("solar_effigy",
+            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item ECLIPSE_EFFIGY = registerItem("eclipse_effigy",
             new JadeEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item SOUL_EFFIGY = registerItem("soul_effigy",
             new SoulEffigy(new FabricItemSettings().maxCount(1)));
