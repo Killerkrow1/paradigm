@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "paradigm:item/inverted_spear_of_the_soul"
+  }
+}
