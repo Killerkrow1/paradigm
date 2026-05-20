@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paradigm:block/dead_dirt",
+    "up": "paradigm:block/dead_grass_block_top",
+    "north": "paradigm:block/dead_grass_block_side",
+    "east": "paradigm:block/dead_grass_block_side",
+    "south": "paradigm:block/dead_grass_block_side",
+    "west": "paradigm:block/dead_grass_block_side",
+    "particle": "paradigm:block/dead_dirt"
+  },
+  "render_type": "solid"
+}

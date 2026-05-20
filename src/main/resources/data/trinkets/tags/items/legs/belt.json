@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "paradigm:jade_effigy",
+    "paradigm:solar_effigy",
+    "paradigm:lunar_effigy",
+    "paradigm:eclipse_effigy",
+    "paradigm:esoteric_effigy",
     "paradigm:soul_effigy",
     "paradigm:afterlife_effigy",
     "paradigm:demigod_effigy",

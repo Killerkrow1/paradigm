@@ -2,7 +2,9 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.killerkrow.paradigm.block.ModBlocks;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -13,6 +15,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
-
+        //getOrCreateTagBuilder(BlockTags.WALLS)
+                //.add(ModBlocks.GILDEN_BRICK_WALL)
+                //.add(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
     }
 }

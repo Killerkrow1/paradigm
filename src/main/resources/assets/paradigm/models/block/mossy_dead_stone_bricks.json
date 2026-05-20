@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "paradigm:block/mossy_dead_stone_bricks"
+  }
+}

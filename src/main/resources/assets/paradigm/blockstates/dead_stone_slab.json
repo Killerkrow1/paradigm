@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "paradigm:block/dead_stone_slab"
+    },
+    "type=double": {
+      "model": "paradigm:block/dead_stone"
+    },
+    "type=top": {
+      "model": "paradigm:block/dead_stone_slab_top"
+    }
+  }
+}

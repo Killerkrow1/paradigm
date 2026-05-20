@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "paradigm:block/dead_cobblestone",
+    "side": "paradigm:block/dead_cobblestone",
+    "top": "paradigm:block/dead_cobblestone"
+  }
+}

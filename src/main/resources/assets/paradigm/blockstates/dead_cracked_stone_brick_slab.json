@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "paradigm:block/dead_cracked_stone_brick_slab"
+    },
+    "type=double": {
+      "model": "paradigm:block/dead_cracked_stone_bricks"
+    },
+    "type=top": {
+      "model": "paradigm:block/dead_cracked_stone_brick_slab_top"
+    }
+  }
+}

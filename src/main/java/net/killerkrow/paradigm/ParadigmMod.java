@@ -2,10 +2,13 @@ package net.killerkrow.paradigm;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.effect.WatchedEffect;
 import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
+import net.killerkrow.paradigm.sound.ModSounds;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -28,8 +31,10 @@ public class ParadigmMod implements ModInitializer {
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("paradigm",
 				"watched_effect"), WATCHED_EFFECT);
 
-
-
+		ModSounds.registerSounds();
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS_PANE, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GILDEN_ICON, RenderLayer.getTranslucent());
 
 	}
 }

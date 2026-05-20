@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "paradigm:block/cracked_gilden_brick_slab"
+    },
+    "type=double": {
+      "model": "paradigm:block/cracked_gilden_bricks"
+    },
+    "type=top": {
+      "model": "paradigm:block/cracked_gilden_brick_slab_top"
+    }
+  }
+}

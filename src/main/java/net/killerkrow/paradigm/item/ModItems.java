@@ -31,6 +31,30 @@ public class ModItems {
     //extended normal items
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
             new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
+    public static final Item FAVOR_OF_DIVINITY = registerItem("favor_of_divinity",
+            new DivinityFavor(new FabricItemSettings().maxCount(1)));
+    public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",
+            new EffigyExtract(new FabricItemSettings().maxCount(1)));
+    public static final Item EFFIGY_CORE = registerItem("effigy_core",
+            new EffigyCore(new FabricItemSettings().maxCount(1)));
+    public static final Item MARK_OF_THE_ARCHITECT = registerItem("mark_of_the_architect",
+            new MarkOfTheArchitect(new FabricItemSettings().maxCount(1)));
+
+    public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item NOVINGARD_BINDMENT = registerItem("novingard_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item ASTRAL_BINDMENT = registerItem("astral_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item GERO_BINDMENT = registerItem("gero_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item ISMENE_BINDMENT = registerItem("ismene_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item ULTIMUS_BINDMENT = registerItem("ultimus_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item UNKNOWN_BINDMENT = registerItem("unknown_bindment",
+            new BindmentBook(new FabricItemSettings().maxCount(1)));
+
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item EMPTY_DEMI_EFFIGY = registerItem("empty_demi_effigy",
@@ -86,7 +110,7 @@ public class ModItems {
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
             new CrusherNetherite(new FabricItemSettings().maxDamage(8)));
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
-            new BaseInvertedWeapon(new FabricItemSettings()));
+            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
             new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
@@ -110,13 +134,13 @@ public class ModItems {
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
             new JadeEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item ESOTERIC_EFFIGY = registerItem("esoteric_effigy",
-            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+            new EsotericEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item LUNAR_EFFIGY = registerItem("lunar_effigy",
-            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+            new LunarEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item SOLAR_EFFIGY = registerItem("solar_effigy",
-            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+            new SolarEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item ECLIPSE_EFFIGY = registerItem("eclipse_effigy",
-            new JadeEffigy(new FabricItemSettings().maxCount(1)));
+            new EclipseEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item SOUL_EFFIGY = registerItem("soul_effigy",
             new SoulEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item AFTERLIFE_EFFIGY = registerItem("afterlife_effigy",

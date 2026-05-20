@@ -1,0 +1,16 @@
+{
+  "dead_sound": {
+    "subtitle": "sounds.paradigm.dead_sound",
+    "sounds": [
+      "paradigm:dead_sound"
+    ]
+  }
+},
+{
+  "squeak_sound": {
+    "subtitle": "sounds.paradigm.squeak_sound",
+    "sounds": [
+      "paradigm:squeak_sound"
+    ]
+  }
+}

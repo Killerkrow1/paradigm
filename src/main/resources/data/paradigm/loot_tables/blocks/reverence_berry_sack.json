@@ -2,19 +2,21 @@
   "type": "minecraft:block",
   "pools": [
     {
-     "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "paradigm:reverence_berry_sack"
+          "functions": [
+            {
+              "add": false,
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "paradigm:reverence_berry"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ]
 }

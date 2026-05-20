@@ -2,6 +2,8 @@ package net.killerkrow.paradigm;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.killerkrow.paradigm.datagen.ModBlockTagProvider;
+import net.killerkrow.paradigm.datagen.ModLootTableProvider;
 import net.killerkrow.paradigm.datagen.ModModelProvider;
 
 public class ParadigmModDataGenerator implements DataGeneratorEntrypoint {
@@ -10,5 +12,8 @@ public class ParadigmModDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
+		pack.addProvider(ModBlockTagProvider::new);
+
 	}
 }

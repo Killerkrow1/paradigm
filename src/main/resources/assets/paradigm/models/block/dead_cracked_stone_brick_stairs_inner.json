@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "paradigm:block/dead_cracked_stone_bricks",
+    "side": "paradigm:block/dead_cracked_stone_bricks",
+    "top": "paradigm:block/dead_cracked_stone_bricks"
+  }
+}

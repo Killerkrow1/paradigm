@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "paradigm:block/mossy_dead_cobblestone",
+    "side": "paradigm:block/mossy_dead_cobblestone",
+    "top": "paradigm:block/mossy_dead_cobblestone"
+  }
+}

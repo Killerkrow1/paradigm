@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "paradigm:dead_cobblestone_wall",
+    "paradigm:dead_cracked_stone_brick_wall",
+    "paradigm:dead_stone_brick_wall",
+    "paradigm:mossy_dead_stone_brick_wall",
+    "paradigm:mossy_dead_cobblestone_wall",
+    "paradigm:gilden_brick_wall",
+    "paradigm:cracked_gilden_brick_wall"
+  ]
+}
