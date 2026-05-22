@@ -27,7 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         //crackedGildenBricks.wall(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
         //crackedGildenBricks.stairs(ModBlocks.CRACKED_GILDEN_BRICK_STAIRS);
         //crackedGildenBricks.slab(ModBlocks.CRACKED_GILDEN_BRICK_SLAB);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
 
     }
 

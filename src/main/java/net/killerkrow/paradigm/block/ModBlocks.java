@@ -3,8 +3,10 @@ package net.killerkrow.paradigm.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.block.custom.ReverenceSack;
 import net.killerkrow.paradigm.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,11 +15,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-public class ModBlocks {
+import static net.minecraft.block.Blocks.*;
 
-    //Normal Blocks
-    public static final Block REVERENCE_BERRY_SACK = registerBlock("reverence_berry_sack",
-            new Block(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.WOOL)));
+public class ModBlocks {
 
     public static final Block VOYD_DARK = registerBlock("voyd_dark",
             new Block(FabricBlockSettings.copyOf(Blocks.BEDROCK).sounds(ModSounds.DEAD_BLOCK_SOUNDS)
@@ -381,7 +381,18 @@ public class ModBlocks {
     public static final Block POTTED_SHADOWTHORN = Registry.register(Registries.BLOCK, new Identifier(ParadigmMod.MOD_ID, "potted_shadowthorn"),
             new FlowerPotBlock(SHADOWTHORN, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
 
+    public static final Block EFFIGERIUM_FURNACE = registerBlock("effigerium_furnace",
+            new FurnaceBlock(
+                    AbstractBlock.Settings.copy(REINFORCED_DEEPSLATE)
+                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                            .mapColor(MapColor.STONE_GRAY)
+                            .instrument(Instrument.BASEDRUM)
+                            .luminance(createLightLevelFromLitBlockState(13))
+            )
+    );
 
+    public static final Block REVERENCE_BERRY_SACK = registerBlock("reverence_berry_sack",
+            new ReverenceSack(FabricBlockSettings.copyOf(WHITE_WOOL).sounds(BlockSoundGroup.WOOL)));
 
 
 

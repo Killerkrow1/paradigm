@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "paradigm:block/reverence_berry_sack"
-    }
+    "facing=north": { "model": "paradigm:block/reverence_berry_sack", "y": 180  },
+    "facing=east": { "model": "paradigm:block/reverence_berry_sack", "y": 270 },
+    "facing=south": { "model": "paradigm:block/reverence_berry_sack", "y": 0 },
+    "facing=west": { "model": "paradigm:block/reverence_berry_sack", "y": 90 }
   }
 }

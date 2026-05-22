@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "paradigm:block/effigerium_furnace_top",
+    "up": "paradigm:block/effigerium_furnace_top",
+    "north": "paradigm:block/effigerium_furnace_front_off",
+    "east": "paradigm:block/effigerium_furnace_side",
+    "south": "paradigm:block/effigerium_furnace_side",
+    "west": "paradigm:block/effigerium_furnace_side",
+    "particle": "paradigm:block/effigerium_furnace_top"
+  },
+  "render_type": "solid"
+}

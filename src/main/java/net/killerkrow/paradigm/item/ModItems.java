@@ -109,8 +109,10 @@ public class ModItems {
             new CrusherDiamond(new FabricItemSettings().maxDamage(7)));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
             new CrusherNetherite(new FabricItemSettings().maxDamage(8)));
+
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(new Item.Settings()));
+
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
             new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",

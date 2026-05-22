@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "facing=north": { "model": "paradigm:block/effigerium_furnace", "y": 0 },
+    "facing=east": { "model": "paradigm:block/effigerium_furnace", "y": 90 },
+    "facing=south": { "model": "paradigm:block/effigerium_furnace", "y": 180 },
+    "facing=west": { "model": "paradigm:block/effigerium_furnace", "y": 270 }
+  },
+    "lit=true": {
+      "model": "paradigm:block/effigerium_furnace_on"
+    },
+    "lit=false": {
+      "model": "paradigm:block/effigerium_furnace"
+    }
+}
