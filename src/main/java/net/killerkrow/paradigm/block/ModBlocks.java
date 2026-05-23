@@ -7,6 +7,7 @@ import net.killerkrow.paradigm.block.custom.ReverenceSack;
 import net.killerkrow.paradigm.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -382,12 +383,25 @@ public class ModBlocks {
             new FlowerPotBlock(SHADOWTHORN, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
 
     public static final Block EFFIGERIUM_FURNACE = registerBlock("effigerium_furnace",
-            new FurnaceBlock(
+            new BlastFurnaceBlock(
                     AbstractBlock.Settings.copy(REINFORCED_DEEPSLATE)
                             .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                             .mapColor(MapColor.STONE_GRAY)
                             .instrument(Instrument.BASEDRUM)
                             .luminance(createLightLevelFromLitBlockState(13))
+            )
+    );
+
+    public static final Block SOUL_CHARGED_LANTERN = registerBlock("soul_charged_lantern",
+            new LanternBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.IRON_GRAY)
+                    .solid()
+                    .requiresTool()
+                    .strength(3.5F)
+                    .sounds(BlockSoundGroup.LANTERN)
+                    .luminance(state -> 10)
+                    .nonOpaque()
+                    .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
 

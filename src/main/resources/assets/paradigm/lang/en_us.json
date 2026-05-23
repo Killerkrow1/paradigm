@@ -188,5 +188,8 @@
   "block.paradigm.cracked_gilden_bricks": "Cracked Gilden Bricks",
   "block.paradigm.cracked_gilden_brick_stairs": "Cracked Gilden Brick Stairs",
   "block.paradigm.cracked_gilden_brick_slab": "Cracked Gilden Brick Slab",
-  "block.paradigm.cracked_gilden_brick_wall": "Cracked Gilden Brick Walk"
+  "block.paradigm.cracked_gilden_brick_wall": "Cracked Gilden Brick Walk",
+  "block.paradigm.effigerium_furnace": "Effigerium Furnace",
+  "block.paradigm.soul_charged_lantern": "Soul Charged Lantern",
+  "tooltip.paradigm.cooking_knife.tooltip": "A cooking tool needed in every kitchen, and wanted by every chef."
 }

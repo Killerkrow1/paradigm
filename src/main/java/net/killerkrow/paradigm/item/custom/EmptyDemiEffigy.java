@@ -86,7 +86,7 @@ public class EmptyDemiEffigy extends Item {
             // Check if all blocks have been absorbed
             if (absorbedList.size() >= REQUIRED_COUNT) {
                 // Change to a different item (e.g., Items.DIAMOND)
-                ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_SOUL_EFFIGY);
+                ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_DEMI_EFFIGY);
                 transformedStack.setNbt(nbt); // Carry over NBT if needed
                 player.setStackInHand(context.getHand(), transformedStack);
             }

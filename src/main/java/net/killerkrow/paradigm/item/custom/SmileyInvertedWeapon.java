@@ -25,7 +25,7 @@ public class SmileyInvertedWeapon extends Item {
         if (!attacker.getWorld().isClient()) { // Ensure it runs on the server
             // Check if the attacker is a player
             if (attacker instanceof PlayerEntity player) {
-                player.sendMessage(Text.literal("You hit: " + target.getName().getString() + "While using an Inverted Weapon!")
+                player.sendMessage(Text.literal("You hit: " + target.getName().getString() + " while using an Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
             }
 

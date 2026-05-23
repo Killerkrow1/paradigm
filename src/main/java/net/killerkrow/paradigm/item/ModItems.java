@@ -3,7 +3,9 @@ package net.killerkrow.paradigm.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
+import net.killerkrow.paradigm.item.foods.BerryItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.StewItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -39,6 +41,8 @@ public class ModItems {
             new EffigyCore(new FabricItemSettings().maxCount(1)));
     public static final Item MARK_OF_THE_ARCHITECT = registerItem("mark_of_the_architect",
             new MarkOfTheArchitect(new FabricItemSettings().maxCount(1)));
+    public static final Item ATLAS_COOKING_KNIFE = registerItem("atlas_cooking_knife",
+            new CookingKnife(new FabricItemSettings().maxCount(1).recipeRemainder(ModItems.ATLAS_COOKING_KNIFE)));
 
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1)));
@@ -96,23 +100,22 @@ public class ModItems {
 
     // weapons n stuff
     public  static final Item WOODEN_CRUSHER = registerItem("wooden_crusher",
-            new CrusherWooden(new FabricItemSettings().maxDamage(2)));
+            new CrusherWooden(new FabricItemSettings().maxDamage(2).recipeRemainder(ModItems.WOODEN_CRUSHER)));
     public  static final Item STONE_CRUSHER = registerItem("stone_crusher",
-            new CrusherStone(new FabricItemSettings().maxDamage(3)));
+            new CrusherStone(new FabricItemSettings().maxDamage(3).recipeRemainder(ModItems.STONE_CRUSHER)));
     public  static final Item IRON_CRUSHER = registerItem("iron_crusher",
-            new CrusherIron(new FabricItemSettings().maxDamage(4)));
+            new CrusherIron(new FabricItemSettings().maxDamage(4).recipeRemainder(ModItems.IRON_CRUSHER)));
     public  static final Item GOLD_CRUSHER = registerItem("gold_crusher",
-            new CrusherGold(new FabricItemSettings().maxDamage(5)));
+            new CrusherGold(new FabricItemSettings().maxDamage(5).recipeRemainder(ModItems.GOLD_CRUSHER)));
     public  static final Item JADE_CRUSHER = registerItem("jade_crusher",
-            new CrusherJade(new FabricItemSettings().maxDamage(6)));
+            new CrusherJade(new FabricItemSettings().maxDamage(6).recipeRemainder(ModItems.JADE_CRUSHER)));
     public  static final Item DIAMOND_CRUSHER = registerItem("diamond_crusher",
-            new CrusherDiamond(new FabricItemSettings().maxDamage(7)));
+            new CrusherDiamond(new FabricItemSettings().maxDamage(7).recipeRemainder(ModItems.DIAMOND_CRUSHER)));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
-            new CrusherNetherite(new FabricItemSettings().maxDamage(8)));
+            new CrusherNetherite(new FabricItemSettings().maxDamage(8).recipeRemainder(ModItems.NETHERITE_CRUSHER)));
 
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
             new BaseInvertedWeapon(new Item.Settings()));
-
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
             new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
@@ -156,9 +159,31 @@ public class ModItems {
 
     //foods and related
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",
-            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
+            new BerryItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
     public static final Item GOLDEN_REVERENCE_BERRY = registerItem("golden_reverence_berry",
-            new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY)));
+            new BerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
+    public static final Item REVERENCE_STEM = registerItem("reverence_stem",
+            new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
+    public static final Item POPCORN = registerItem("popcorn",
+            new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
+    public static final Item COOKED_SCULK_RICE = registerItem("cooked_sculk_rice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_SCULK_RICE)));
+    public static final Item SCULK_ROLL = registerItem("cooked_roll",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_ROLL)));
+    public static final Item SCULK_ROLL_SLICE = registerItem("sculk_roll_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_ROLL_SLICE)));
+    public static final Item SCULK_FRITTER = registerItem("sculk_fritter",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_FRITTER)));
+    public static final Item BOWL_OF_REVERENCE_BERRIES = registerItem("bowl_of_reverence_berries",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.BOWL_OF_REVERENCE_BERRIES).maxCount(16)));
+    public static final Item SCULK_CABBAGE = registerItem("sculk_cabbage",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_CABBAGE)));
+    public static final Item SCULK_CHEESE = registerItem("sculk_cheese",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_CHEESE)));
+    public static final Item SCULK_TEA = registerItem("sculk_tea",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_TEA).maxCount(16)));
+    public static final Item SCULK_BREAD = registerItem("sculk_bread",
+            new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_BREAD)));
 
 
     private static Item registerItem(String name, Item item) {

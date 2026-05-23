@@ -18,9 +18,21 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.paradigm_tab"))
                     .icon(() -> new ItemStack(ModItems.REVERENCE_BERRY)).entries((displayContext, entries) -> {
 
+                        entries.add(ModItems.REVERENCE_STEM);
                         entries.add(ModItems.REVERENCE_BERRY);
                         entries.add(ModItems.GOLDEN_REVERENCE_BERRY);
+                        entries.add(ModItems.BOWL_OF_REVERENCE_BERRIES);
                         entries.add(ModBlocks.REVERENCE_BERRY_SACK);
+                        entries.add(ModItems.POPCORN);
+                        entries.add(ModItems.COOKED_SCULK_RICE);
+                        entries.add(ModItems.SCULK_ROLL);
+                        entries.add(ModItems.SCULK_ROLL_SLICE);
+                        entries.add(ModItems.SCULK_FRITTER);
+                        entries.add(ModItems.SCULK_CABBAGE);
+                        entries.add(ModItems.SCULK_CHEESE);
+                        entries.add(ModItems.SCULK_TEA);
+                        entries.add(ModItems.SCULK_BREAD);
+                        entries.add(ModItems.ATLAS_COOKING_KNIFE);
                         entries.add(ModItems.EFFIGERIUM_SHARDS);
                         entries.add(ModItems.EFFIGERIUM_INGOT);
                         entries.add(ModItems.EFFIGERIUM_DUST);
@@ -42,6 +54,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.VOYD_DARK);
                         entries.add(ModBlocks.VOYD_LIGHT);
+                        entries.add(ModBlocks.SOUL_CHARGED_LANTERN);
                         entries.add(ModBlocks.DEAD_GRASS);
                         entries.add(ModBlocks.DEAD_DIRT);
                         entries.add(ModBlocks.DEAD_STONE);

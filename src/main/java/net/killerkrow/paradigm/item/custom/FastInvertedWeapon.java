@@ -41,7 +41,7 @@ public class FastInvertedWeapon extends Item {
             builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
                     ATTACK_SPEED_MODIFIER_ID,
                     "Weapon attack speed",
-                    3.0, // Increase this value to swing significantly faster
+                    10.0, // Increase this value to swing significantly faster
                     EntityAttributeModifier.Operation.MULTIPLY_TOTAL
             ));
 
@@ -56,7 +56,7 @@ public class FastInvertedWeapon extends Item {
         if (!attacker.getWorld().isClient()) { // Ensure it runs on the server
             // Check if the attacker is a player
             if (attacker instanceof PlayerEntity player) {
-                player.sendMessage(Text.literal("You hit: " + target.getName().getString() + "While using an Inverted Weapon!")
+                player.sendMessage(Text.literal("You hit: " + target.getName().getString() + " while using an Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
             }
 

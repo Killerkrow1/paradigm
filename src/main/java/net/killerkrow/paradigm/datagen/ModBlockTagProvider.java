@@ -18,5 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //getOrCreateTagBuilder(BlockTags.WALLS)
                 //.add(ModBlocks.GILDEN_BRICK_WALL)
                 //.add(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
+        //getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+              //  .add(ModBlocks.SOUL_CHARGED_LANTERN);
     }
 }

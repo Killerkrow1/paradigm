@@ -61,7 +61,7 @@ public class SolarEffigy extends TrinketItem {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 200, 1
             ));
             {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 200, 1
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 200, 1
                 ));
             }
         }

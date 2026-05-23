@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "paradigm:block/soul_charged_lantern"
+    },
+    "hanging=true": {
+      "model": "paradigm:block/soul_charged_lantern_hanging"
+    }
+  }
+}

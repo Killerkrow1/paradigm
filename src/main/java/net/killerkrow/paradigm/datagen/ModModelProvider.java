@@ -28,11 +28,14 @@ public class ModModelProvider extends FabricModelProvider {
         //crackedGildenBricks.stairs(ModBlocks.CRACKED_GILDEN_BRICK_STAIRS);
         //crackedGildenBricks.slab(ModBlocks.CRACKED_GILDEN_BRICK_SLAB);
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
+        //blockStateModelGenerator.registerLantern(ModBlocks.SOUL_CHARGED_LANTERN);
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.FAVOR_OF_DIVINITY, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.SOUL_CHARGED_LANTERN, Models.GENERATED);
+
     }
 }

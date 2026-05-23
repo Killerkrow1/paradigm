@@ -1,4 +1,5 @@
-// 1.20.1	2026-05-19T22:40:54.9838035	Paradigm Mod/Model Definitions
-c388f4790b2d02c9e86b14771c6f9ba82df20699 assets\paradigm\blockstates\dead_chiseled_stone_bricks.json
-9ccdb8d57076cf7a4b06a49d9db3c9930e2518bd assets\paradigm\models\block\dead_chiseled_stone_bricks.json
-fc2eb036606d6f4b5e55f19a7d4f5a304e7ae342 assets\paradigm\models\item\dead_chiseled_stone_bricks.json
+// 1.20.1	2026-05-22T16:33:51.1978988	Paradigm Mod/Model Definitions
+8ca4c9a823fc1aed9f44948db2b2436fb610f978 assets\paradigm\models\item\soul_charged_lantern.json
+063b134661a79b7075536941649468dd4b12c3a9 assets\paradigm\models\block\soul_charged_lantern_hanging.json
+ab6742e97d3364e4c7d609c6c6d01438d8551c86 assets\paradigm\blockstates\soul_charged_lantern.json
+113df17c5ad52c90687a75a8e6933bc66e950eb2 assets\paradigm\models\block\soul_charged_lantern.json
