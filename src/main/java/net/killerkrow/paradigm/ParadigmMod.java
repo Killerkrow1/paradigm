@@ -35,6 +35,6 @@ public class ParadigmMod implements ModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS_PANE, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GILDEN_ICON, RenderLayer.getTranslucent());
-
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOUL_CHARGED_LANTERN, RenderLayer.getTranslucent());
 	}
 }

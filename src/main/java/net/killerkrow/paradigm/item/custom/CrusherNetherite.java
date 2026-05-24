@@ -6,6 +6,9 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.MiningToolItem;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -13,9 +16,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CrusherNetherite extends Item {
-    public CrusherNetherite(Settings settings) {
-        super(settings);
+public class CrusherNetherite extends MiningToolItem {
+    public CrusherNetherite(ToolMaterial material, int attackDamage, float attackSpeed, Item.Settings settings) {
+        super(attackDamage, attackSpeed, material, BlockTags.PICKAXE_MINEABLE, settings);
+    }
+
+    @Override
+    public ItemStack getRecipeRemainder(ItemStack stack) {
+        // Creates a new, undamaged copy of the tool to remain in the grid
+        return new ItemStack(this);
     }
 
     @Override
@@ -49,7 +58,6 @@ public class CrusherNetherite extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
         tooltip.add(Text.literal("Crush Attack: Deals bonus damage while falling!").formatted(Formatting.GOLD));
-            tooltip.add(Text.literal("Max Damage: 8").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }

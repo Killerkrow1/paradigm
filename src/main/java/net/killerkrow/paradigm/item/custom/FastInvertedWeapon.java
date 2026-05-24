@@ -6,9 +6,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemStackSet;
+import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -16,38 +14,24 @@ import org.jetbrains.annotations.Nullable;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.EquipmentSlot;
 
 import java.util.List;
-import java.util.UUID;
 
-public class FastInvertedWeapon extends Item {
-    private static final UUID ATTACK_SPEED_MODIFIER_ID = UUID.fromString("0a35e4d2-7a8f-4b0c-99e2-2a281da96d93");
+public class FastInvertedWeapon extends SwordItem implements Vanishable {
+    private final float attackDamage;
+    private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public FastInvertedWeapon(Settings settings) {
-        super(settings);
+    public FastInvertedWeapon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
+        this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
+        ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
+        builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", (double) this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
+        builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", (double) attackSpeed, EntityAttributeModifier.Operation.ADDITION));
+        this.attributeModifiers = builder.build();
     }
 
-    public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
-        // Get the default modifiers for the item from the superclass
-        Multimap<EntityAttribute, EntityAttributeModifier> modifiers = super.getAttributeModifiers(EquipmentSlot.MAINHAND);
-
-        if (slot == EquipmentSlot.MAINHAND) {
-            ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
-            // Put all default modifiers back
-            builder.putAll(modifiers);
-
-            // Add custom attack speed (Amount is a multiplier on attack cooldown, a higher number attacks faster)
-            builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(
-                    ATTACK_SPEED_MODIFIER_ID,
-                    "Weapon attack speed",
-                    10.0, // Increase this value to swing significantly faster
-                    EntityAttributeModifier.Operation.MULTIPLY_TOTAL
-            ));
-
-            return builder.build();
-        }
-        return modifiers;
+    public float getAttackDamage() {
+        return this.attackDamage;
     }
 
     // Messages sent when you hit an entity

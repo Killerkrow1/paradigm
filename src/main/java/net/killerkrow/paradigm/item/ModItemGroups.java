@@ -39,6 +39,9 @@ public class ModItemGroups {
                         entries.add(ModItems.GRODIUM_CRYSTALS);
                         entries.add(ModItems.GRODIUM_INGOT);
                         entries.add(ModItems.GRODIUM_DUST);
+                        entries.add(ModItems.IMPERIUM_ROYALIUM);
+                        entries.add(ModItems.IMPERIUM_INGOT);
+                        entries.add(ModItems.IMPERIUM_DUST);
                         entries.add(ModItems.FAVOR_OF_DIVINITY);
                         entries.add(ModItems.EFFIGY_CORE);
                         entries.add(ModItems.EFFIGY_EXTRACT);

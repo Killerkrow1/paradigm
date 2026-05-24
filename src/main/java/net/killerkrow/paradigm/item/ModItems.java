@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
+import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.minecraft.item.Item;
 import net.minecraft.item.StewItem;
 import net.minecraft.registry.Registries;
@@ -28,6 +29,12 @@ public class ModItems {
     public static final Item GRODIUM_INGOT = registerItem("grodium_ingot",
             new Item(new FabricItemSettings()));
     public static final Item GRODIUM_DUST = registerItem("grodium_dust",
+            new Item(new FabricItemSettings()));
+    public static final Item IMPERIUM_ROYALIUM = registerItem("imperium_royalium",
+            new Item(new FabricItemSettings()));
+    public static final Item IMPERIUM_INGOT = registerItem("imperium_ingot",
+            new Item(new FabricItemSettings()));
+    public static final Item IMPERIUM_DUST = registerItem("imperium_dust",
             new Item(new FabricItemSettings()));
 
     //extended normal items
@@ -100,40 +107,40 @@ public class ModItems {
 
     // weapons n stuff
     public  static final Item WOODEN_CRUSHER = registerItem("wooden_crusher",
-            new CrusherWooden(new FabricItemSettings().maxDamage(2).recipeRemainder(ModItems.WOODEN_CRUSHER)));
+            new CrusherWooden(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
     public  static final Item STONE_CRUSHER = registerItem("stone_crusher",
-            new CrusherStone(new FabricItemSettings().maxDamage(3).recipeRemainder(ModItems.STONE_CRUSHER)));
+            new CrusherStone(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
     public  static final Item IRON_CRUSHER = registerItem("iron_crusher",
-            new CrusherIron(new FabricItemSettings().maxDamage(4).recipeRemainder(ModItems.IRON_CRUSHER)));
+            new CrusherIron(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
     public  static final Item GOLD_CRUSHER = registerItem("gold_crusher",
-            new CrusherGold(new FabricItemSettings().maxDamage(5).recipeRemainder(ModItems.GOLD_CRUSHER)));
+            new CrusherGold(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
     public  static final Item JADE_CRUSHER = registerItem("jade_crusher",
-            new CrusherJade(new FabricItemSettings().maxDamage(6).recipeRemainder(ModItems.JADE_CRUSHER)));
+            new CrusherJade(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
     public  static final Item DIAMOND_CRUSHER = registerItem("diamond_crusher",
-            new CrusherDiamond(new FabricItemSettings().maxDamage(7).recipeRemainder(ModItems.DIAMOND_CRUSHER)));
+            new CrusherDiamond(ParadigmToolMaterials.CRUSHERDIAMOND, 1, 2, new FabricItemSettings()));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
-            new CrusherNetherite(new FabricItemSettings().maxDamage(8).recipeRemainder(ModItems.NETHERITE_CRUSHER)));
+            new CrusherNetherite(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
 
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
-            new BaseInvertedWeapon(new Item.Settings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_CUTTER = registerItem("inverted_cutter",
-            new FastInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new FastInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 0.1f, new FabricItemSettings()));
     public  static final Item SMILEYS_IMPULSE = registerItem("smileys_impulse",
-            new SmileyInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new SmileyInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_BRAND = registerItem("inverted_brand",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item SOUL_INVERSION = registerItem("soul_inversion",
-            new SoulInversion(new FabricItemSettings().maxDamage(8)));
+            new SoulInversion(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_BLADE = registerItem("inverted_blade",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_BITE = registerItem("inverted_bite",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
     public  static final Item INVERTED_HAMMER = registerItem("inverted_hammer",
-            new BaseInvertedWeapon(new FabricItemSettings().maxDamage(8)));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
 
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
@@ -153,7 +160,7 @@ public class ModItems {
     public static final Item SEMIGOD_EFFIGY = registerItem("semigod_effigy",
             new SemiGodEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item DEMIGOD_EFFIGY = registerItem("demigod_effigy",
-            new DemiGodEffigy(new FabricItemSettings().rarity(Rarity.UNCOMMON).maxCount(1)));
+            new DemiGodEffigy(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
     public static final Item GOD_EFFIGY = registerItem("god_effigy",
             new GodEffigy(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
 

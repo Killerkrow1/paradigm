@@ -1,12 +1,16 @@
 package net.killerkrow.paradigm.item.custom;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -14,9 +18,21 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SmileyInvertedWeapon extends Item {
-    public SmileyInvertedWeapon(Settings settings) {
-        super(settings);
+public class SmileyInvertedWeapon extends SwordItem implements Vanishable {
+    private final float attackDamage;
+    private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
+
+    public SmileyInvertedWeapon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
+        super(toolMaterial, attackDamage, attackSpeed, settings);
+        this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
+        ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
+        builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", (double) this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
+        builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", (double) attackSpeed, EntityAttributeModifier.Operation.ADDITION));
+        this.attributeModifiers = builder.build();
+    }
+
+    public float getAttackDamage() {
+        return this.attackDamage;
     }
 
     // Messages sent when you hit an entity
