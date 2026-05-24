@@ -42,11 +42,15 @@ public class ModItemGroups {
                         entries.add(ModItems.IMPERIUM_ROYALIUM);
                         entries.add(ModItems.IMPERIUM_INGOT);
                         entries.add(ModItems.IMPERIUM_DUST);
+                        entries.add(ModItems.GILDEN_ORE);
+                        entries.add(ModItems.GILDEN_INGOT);
+                        entries.add(ModItems.GILDEN_DUST);
                         entries.add(ModItems.FAVOR_OF_DIVINITY);
                         entries.add(ModItems.EFFIGY_CORE);
                         entries.add(ModItems.EFFIGY_EXTRACT);
                         entries.add(ModItems.MARK_OF_THE_ARCHITECT);
                         entries.add(ModBlocks.EFFIGERIUM_FURNACE);
+                        entries.add(ModItems.BROKEN_HEART);
 
                     }).build());
 
@@ -207,6 +211,26 @@ public class ModItemGroups {
                                 entries.add(ModItems.ISMENE_BINDMENT);
                                 entries.add(ModItems.ULTIMUS_BINDMENT);
                                 entries.add(ModItems.UNKNOWN_BINDMENT);
+
+                                entries.add(ModItems.ATLAS_WRATH);
+                                entries.add(ModItems.ATLAS_BETRAYAL);
+                                entries.add(ModItems.NOVINGARD_BLESSING);
+                                entries.add(ModItems.NOVINGARD_WISH);
+                                entries.add(ModItems.ASTRAL_PRIDE);
+                                entries.add(ModItems.ASTRAL_FURY);
+                                entries.add(ModItems.GERO_SCAR);
+                                entries.add(ModItems.GERO_LUST);
+                                entries.add(ModItems.ISMENE_LINE);
+                                entries.add(ModItems.ULTIMUS_RING);
+                                entries.add(ModItems.UNKNOWN_DARKNESS);
+                                entries.add(ModItems.DARK_BINDMENT);
+                                entries.add(ModItems.TWIN_SHIELD_ATLAS);
+                                entries.add(ModItems.TWIN_SWORD_ATLAS);
+                                entries.add(ModItems.DEAD_HEART);
+                                entries.add(ModItems.CHARGED_HEART);
+                                entries.add(ModItems.FRAGMENTED_ICON);
+                                entries.add(ModItems.SKULL_SCYTHE);
+                                entries.add(ModItems.GILDEN_BLADE);
 
                             }).build());
 

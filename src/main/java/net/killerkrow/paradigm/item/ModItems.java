@@ -5,8 +5,7 @@ import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
 import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
-import net.minecraft.item.Item;
-import net.minecraft.item.StewItem;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -36,6 +35,14 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item IMPERIUM_DUST = registerItem("imperium_dust",
             new Item(new FabricItemSettings()));
+    public static final Item GILDEN_ORE = registerItem("gilden_ore",
+            new Item(new FabricItemSettings()));
+    public static final Item GILDEN_INGOT = registerItem("gilden_ingot",
+            new Item(new FabricItemSettings()));
+    public static final Item GILDEN_DUST = registerItem("gilden_dust",
+            new Item(new FabricItemSettings()));
+    public static final Item BROKEN_HEART = registerItem("broken_heart",
+            new Item(new FabricItemSettings()));
 
     //extended normal items
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
@@ -49,7 +56,8 @@ public class ModItems {
     public static final Item MARK_OF_THE_ARCHITECT = registerItem("mark_of_the_architect",
             new MarkOfTheArchitect(new FabricItemSettings().maxCount(1)));
     public static final Item ATLAS_COOKING_KNIFE = registerItem("atlas_cooking_knife",
-            new CookingKnife(new FabricItemSettings().maxCount(1).recipeRemainder(ModItems.ATLAS_COOKING_KNIFE)));
+            new CookingKnife(ToolMaterials.IRON, 1, 2,
+                    new FabricItemSettings().recipeRemainder(ModItems.ATLAS_COOKING_KNIFE)));
 
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1)));
@@ -142,6 +150,47 @@ public class ModItems {
     public  static final Item INVERTED_HAMMER = registerItem("inverted_hammer",
             new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
 
+    public  static final Item ATLAS_WRATH = registerItem("atlas_wrath",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item ATLAS_BETRAYAL = registerItem("atlas_betrayal",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item ASTRAL_PRIDE = registerItem("astral_pride",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item ASTRAL_FURY = registerItem("astral_fury",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item GERO_SCAR = registerItem("gero_scar",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item GERO_LUST = registerItem("gero_lust",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item NOVINGARD_BLESSING = registerItem("novingard_blessing",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item NOVINGARD_WISH = registerItem("novingard_wish",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item ISMENE_LINE = registerItem("ismene_line",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item ULTIMUS_RING = registerItem("ultimus_ring",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item UNKNOWN_DARKNESS = registerItem("unknown_darkness",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item TWIN_SWORD_ATLAS = registerItem("twin_sword_atlas",
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+    public  static final Item TWIN_SHIELD_ATLAS = registerItem("twin_shield_atlas",
+            new ShieldItem(new FabricItemSettings()));
+
+    public  static final Item FRAGMENTED_ICON = registerItem("fragmented_icon",
+            new FragmentedIcon(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
+    public  static final Item DARK_BINDMENT = registerItem("dark_bindment",
+            new DarkBindment(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
+    public  static final Item SKULL_SCYTHE = registerItem("skull_scythe",
+            new SwordItem(ParadigmToolMaterials.AFTERLIFE, 1, 2, new FabricItemSettings()));
+
+    public  static final Item DEAD_HEART = registerItem("dead_heart",
+            new SwordItem(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
+    public  static final Item CHARGED_HEART = registerItem("charged_heart",
+            new SwordItem(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
+    public  static final Item GILDEN_BLADE = registerItem("gilden_blade",
+            new SwordItem(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
+
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
             new JadeEffigy(new FabricItemSettings().maxCount(1)));
@@ -175,7 +224,7 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
     public static final Item COOKED_SCULK_RICE = registerItem("cooked_sculk_rice",
             new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_SCULK_RICE)));
-    public static final Item SCULK_ROLL = registerItem("cooked_roll",
+    public static final Item SCULK_ROLL = registerItem("sculk_roll",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_ROLL)));
     public static final Item SCULK_ROLL_SLICE = registerItem("sculk_roll_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_ROLL_SLICE)));

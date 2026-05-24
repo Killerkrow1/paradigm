@@ -27,7 +27,13 @@ public enum ParadigmToolMaterials implements ToolMaterial {
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
     IMPERIUM(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
-            () -> Ingredient.ofItems(ModItems.IMPERIUM_INGOT));
+            () -> Ingredient.ofItems(ModItems.IMPERIUM_INGOT)),
+    GOD(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+            () -> Ingredient.ofItems(ModItems.EFFIGERIUM_INGOT)),
+    AFTERLIFE(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+            () -> Ingredient.ofItems(Items.BONE)),
+    UNIQUE(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+            () -> Ingredient.ofItems(ModItems.GILDEN_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

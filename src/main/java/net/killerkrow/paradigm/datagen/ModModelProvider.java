@@ -35,7 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.FAVOR_OF_DIVINITY, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.SOUL_CHARGED_LANTERN, Models.GENERATED);
-
+        //itemModelGenerator.register(ModItems.ATLAS_WRATH, Models.HANDHELD);
     }
 }

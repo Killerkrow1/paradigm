@@ -1,5 +1,21 @@
-// 1.20.1	2026-05-22T16:33:51.1978988	Paradigm Mod/Model Definitions
-8ca4c9a823fc1aed9f44948db2b2436fb610f978 assets\paradigm\models\item\soul_charged_lantern.json
-063b134661a79b7075536941649468dd4b12c3a9 assets\paradigm\models\block\soul_charged_lantern_hanging.json
-ab6742e97d3364e4c7d609c6c6d01438d8551c86 assets\paradigm\blockstates\soul_charged_lantern.json
-113df17c5ad52c90687a75a8e6933bc66e950eb2 assets\paradigm\models\block\soul_charged_lantern.json
+// 1.20.1	2026-05-24T16:38:22.9763583	Paradigm Mod/Model Definitions
+41faed723eaab55889cb34eac3798b80cb27ac40 assets\paradigm\models\item\astral_pride.json
+243f26b7b45842359c166ae2f6ce2f15e6831223 assets\paradigm\models\item\ismene_line.json
+6f0796c00eb78d4ec21f461842f9f3ed186b8a57 assets\paradigm\models\item\gero_scar.json
+b9ac3d84dc42fab42b38d928e1e0ef4313adceb1 assets\paradigm\models\item\twin_shield_atlas.json
+fc48074d073b80866b34f85a4665c8c923ef08b8 assets\paradigm\models\item\charged_heart.json
+e93944db7e399ca7529f320636a9ab30c9273b24 assets\paradigm\models\item\novingard_wish.json
+1278e853d5c0c23455f9d58cdc5f2226e169a1c2 assets\paradigm\models\item\novingard_blessing.json
+5803b338090531c91ea846c9f25e88fcbc8bc3da assets\paradigm\models\item\ultimus_ring.json
+d25f9ee24ae6d1e1f4ef788cfc246a725ca30b3a assets\paradigm\models\item\dark_bindment.json
+8f7f6033425547e980e55deb14c0f668be0eebd9 assets\paradigm\models\item\twin_sword_atlas.json
+64561f2fe4779127352024becde2669e763d46e6 assets\paradigm\models\item\gilden_blade.json
+17b59ecac124d1fb88921cafef884f76acc3fd6a assets\paradigm\models\item\gero_lust.json
+3c0f096edf4603500749eb71d7ed0cc40c20ac11 assets\paradigm\models\item\broken_heart.json
+5398b3cf0bda79509e5b4819a99c2be1299694b7 assets\paradigm\models\item\dead_heart.json
+02bfeadb8ba50cbeb202ac163e0123c62c2a15be assets\paradigm\models\item\fragmented_icon.json
+8aa9aa6ac665dceb46caaee73e139fcaf297c8f1 assets\paradigm\models\item\astral_fury.json
+ac36e76ec1c0e42d4c16b70564fbe310417d7290 assets\paradigm\models\item\atlas_betrayal.json
+28d0ad456dfaf289946f06e571efdf03fb7742a2 assets\paradigm\models\item\atlas_wrath.json
+9b4aa1ae6452310b1859b03307699ba581690549 assets\paradigm\models\item\skull_scythe.json
+e9012a753bfb7dec3b29b7ffaebce8bac4a02714 assets\paradigm\models\item\unknown_darkness.json
