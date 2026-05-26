@@ -231,7 +231,34 @@ public class ModItemGroups {
                                 entries.add(ModItems.FRAGMENTED_ICON);
                                 entries.add(ModItems.SKULL_SCYTHE);
                                 entries.add(ModItems.GILDEN_BLADE);
+                                entries.add(ModItems.GILDEN_CROWN);
+                                entries.add(ModItems.TERMINUS_COVERUS);
+                                entries.add(ModItems.ENDLESS_MASK);
+                                entries.add(ModItems.FLORA_VEIL);
+                                entries.add(ModItems.HELLISH_IDENTITY);
+                                entries.add(ModItems.ETHEREAL_COVER);
+                                entries.add(ModItems.UNKNOWN_SLIDE);
+                                entries.add(ModItems.UNKNOWN_MASK);
 
+                                entries.add(ModItems.ADMINCHAIN_HELMET);
+                                entries.add(ModItems.ADMINCHAIN_CHESTPLATE);
+                                entries.add(ModItems.ADMINCHAIN_LEGGINGS);
+                                entries.add(ModItems.ADMINCHAIN_BOOTS);
+
+                                entries.add(ModItems.NETHERITECHAIN_HELMET);
+                                entries.add(ModItems.NETHERITECHAIN_CHESTPLATE);
+                                entries.add(ModItems.NETHERITECHAIN_LEGGINGS);
+                                entries.add(ModItems.NETHERITECHAIN_BOOTS);
+
+                                entries.add(ModItems.DIAMONDCHAIN_HELMET);
+                                entries.add(ModItems.DIAMONDCHAIN_CHESTPLATE);
+                                entries.add(ModItems.DIAMONDCHAIN_LEGGINGS);
+                                entries.add(ModItems.DIAMONDCHAIN_BOOTS);
+
+                                entries.add(ModItems.IRONCHAIN_HELMET);
+                                entries.add(ModItems.IRONCHAIN_CHESTPLATE);
+                                entries.add(ModItems.IRONCHAIN_LEGGINGS);
+                                entries.add(ModItems.IRONCHAIN_BOOTS);
                             }).build());
 
     public static void registerItemGroups() {

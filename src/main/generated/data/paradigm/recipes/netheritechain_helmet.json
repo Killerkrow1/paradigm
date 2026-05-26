@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:netherite_helmet"
+    }
+  ],
+  "result": {
+    "item": "paradigm:netherite_chain_helmet"
+  }
+}

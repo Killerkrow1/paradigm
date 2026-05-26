@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "paradigm:item/terminus_coverus",
+    "layer1": "minecraft:trims/items/helmet_trim_emerald"
+  }
+}

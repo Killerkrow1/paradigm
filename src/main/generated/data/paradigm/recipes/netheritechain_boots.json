@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:netherite_boots"
+    }
+  ],
+  "result": {
+    "item": "paradigm:netherite_chain_boots"
+  }
+}

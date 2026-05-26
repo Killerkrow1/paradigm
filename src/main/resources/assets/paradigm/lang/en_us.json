@@ -233,5 +233,22 @@
   "item.paradigm.dead_heart": "Dead Heart",
   "item.paradigm.charged_heart": "Charged Soul Heart",
   "item.paradigm.gilden_blade": "Gilden Blade",
-  "item.paradigm.broken_heart": "Broken Heart"
+  "item.paradigm.broken_heart": "Broken Heart",
+  "item.paradigm.netherite_chain_boots": "Netheritechain Boots",
+  "item.paradigm.netherite_chain_chestplate": "Netheritechain Chestplate",
+  "item.paradigm.netherite_chain_helmet": "Netheritechain Helmet",
+  "item.paradigm.netherite_chain_leggings": "Netheritechain Leggings",
+  "item.paradigm.iron_chain_boots": "Ironchain Boots",
+  "item.paradigm.iron_chain_chestplate": "Ironchain Chestplate",
+  "item.paradigm.iron_chain_helmet": "Ironchain Helmet",
+  "item.paradigm.iron_chain_leggings": "Ironchain Leggings",
+  "item.paradigm.diamond_chain_boots": "Diamondchain Boots",
+  "item.paradigm.diamond_chain_chestplate": "Diamondchain Chestplate",
+  "item.paradigm.diamond_chain_helmet": "Diamondchain Helmet",
+  "item.paradigm.diamond_chain_leggings": "Diamondchain Leggings",
+  "item.paradigm.admin_chain_boots": "Adminchain Boots",
+  "item.paradigm.admin_chain_chestplate": "Adminchain Chestplate",
+  "item.paradigm.admin_chain_helmet": "Adminchain Helmet",
+  "item.paradigm.admin_chain_leggings": "Adminchain Leggings",
+  "tooltip.paradigm.unknown_mask.tooltip": "A mask dedicated to the Seventh God and channeling mystical energy."
 }

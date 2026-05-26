@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
+import net.killerkrow.paradigm.misc.ModArmorMaterials;
 import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -212,6 +213,64 @@ public class ModItems {
             new DemiGodEffigy(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
     public static final Item GOD_EFFIGY = registerItem("god_effigy",
             new GodEffigy(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+    public static final Item UNKNOWN_MASK = registerItem("unknown_mask",
+            new UnknownMask(new FabricItemSettings().maxCount(1)));
+
+    //Gilden Crown
+    public static final Item GILDEN_CROWN = registerItem("gilden_crown",
+            new ArmorItem(ModArmorMaterials.GILDEN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ENDLESS_MASK = registerItem("endless_mask",
+            new ArmorItem(ModArmorMaterials.ENDLESS_MASK, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item FLORA_VEIL = registerItem("flora_veil",
+            new ArmorItem(ModArmorMaterials.FLORA_VEIL, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item TERMINUS_COVERUS = registerItem("terminus_coverus",
+            new ArmorItem(ModArmorMaterials.TERMINUS_COVERUS, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item HELLISH_IDENTITY = registerItem("hellish_identity",
+            new ArmorItem(ModArmorMaterials.HELLISH_IDENTITY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ETHEREAL_COVER = registerItem("ethereal_cover",
+            new ArmorItem(ModArmorMaterials.ETHEREAL_COVER, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item UNKNOWN_SLIDE = registerItem("unknown_slide",
+            new ArmorItem(ModArmorMaterials.UNKNOWN_SLIDE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+
+    //Iron Chain
+    public static final Item IRONCHAIN_HELMET = registerItem("iron_chain_helmet",
+            new ArmorItem(ModArmorMaterials.IRONCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item IRONCHAIN_CHESTPLATE = registerItem("iron_chain_chestplate",
+            new ArmorItem(ModArmorMaterials.IRONCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item IRONCHAIN_LEGGINGS = registerItem("iron_chain_leggings",
+            new ArmorItem(ModArmorMaterials.IRONCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item IRONCHAIN_BOOTS = registerItem("iron_chain_boots",
+            new ArmorItem(ModArmorMaterials.IRONCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    //Diamond Chain
+    public static final Item DIAMONDCHAIN_HELMET = registerItem("diamond_chain_helmet",
+            new ArmorItem(ModArmorMaterials.DIAMONDCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item DIAMONDCHAIN_CHESTPLATE = registerItem("diamond_chain_chestplate",
+            new ArmorItem(ModArmorMaterials.DIAMONDCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item DIAMONDCHAIN_LEGGINGS = registerItem("diamond_chain_leggings",
+            new ArmorItem(ModArmorMaterials.DIAMONDCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item DIAMONDCHAIN_BOOTS = registerItem("diamond_chain_boots",
+            new ArmorItem(ModArmorMaterials.DIAMONDCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    //Netherite Chain
+    public static final Item NETHERITECHAIN_HELMET = registerItem("netherite_chain_helmet",
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item NETHERITECHAIN_CHESTPLATE = registerItem("netherite_chain_chestplate",
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item NETHERITECHAIN_LEGGINGS = registerItem("netherite_chain_leggings",
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item NETHERITECHAIN_BOOTS = registerItem("netherite_chain_boots",
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    //Admin Chain
+    public static final Item ADMINCHAIN_HELMET = registerItem("admin_chain_helmet",
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ADMINCHAIN_CHESTPLATE = registerItem("admin_chain_chestplate",
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ADMINCHAIN_LEGGINGS = registerItem("admin_chain_leggings",
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ADMINCHAIN_BOOTS = registerItem("admin_chain_boots",
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     //foods and related
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",

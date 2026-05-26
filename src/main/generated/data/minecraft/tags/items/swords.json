@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "paradigm:wooden_crusher",
+    "paradigm:stone_crusher",
+    "paradigm:iron_crusher",
+    "paradigm:gold_crusher",
+    "paradigm:jade_crusher",
+    "paradigm:diamond_crusher",
+    "paradigm:netherite_crusher"
+  ]
+}

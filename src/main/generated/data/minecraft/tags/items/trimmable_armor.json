@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "paradigm:admin_chain_boots",
+    "paradigm:admin_chain_leggings",
+    "paradigm:admin_chain_chestplate",
+    "paradigm:admin_chain_helmet",
+    "paradigm:iron_chain_boots",
+    "paradigm:iron_chain_leggings",
+    "paradigm:iron_chain_chestplate",
+    "paradigm:iron_chain_helmet",
+    "paradigm:diamond_chain_boots",
+    "paradigm:diamond_chain_leggings",
+    "paradigm:diamond_chain_chestplate",
+    "paradigm:diamond_chain_helmet",
+    "paradigm:netherite_chain_boots",
+    "paradigm:netherite_chain_leggings",
+    "paradigm:netherite_chain_chestplate",
+    "paradigm:netherite_chain_helmet"
+  ]
+}

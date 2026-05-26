@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:diamond_chestplate"
+    }
+  ],
+  "result": {
+    "item": "paradigm:diamond_chain_chestplate"
+  }
+}
