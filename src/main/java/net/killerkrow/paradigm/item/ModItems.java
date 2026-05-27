@@ -93,6 +93,8 @@ public class ModItems {
             new EmptySolarEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item EMPTY_ESOTERIC_EFFIGY = registerItem("empty_esoteric_effigy",
             new EmptyEsotericEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item EMPTY_REVERENCE_EFFIGY = registerItem("empty_reverence_effigy",
+            new EmptyReverenceEffigy(new FabricItemSettings().maxCount(1)));
 
     public static final Item CHARGED_EMPTY_DEMI_EFFIGY = registerItem("charged_empty_demi_effigy",
             new ChargedEmptyDemiEffigy(new FabricItemSettings().maxCount(1)));
@@ -110,6 +112,8 @@ public class ModItems {
             new ChargedEmptyLunarEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item CHARGED_EMPTY_ESOTERIC_EFFIGY = registerItem("charged_empty_esoteric_effigy",
             new ChargedEmptyEsotericEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item CHARGED_EMPTY_REVERENCE_EFFIGY = registerItem("charged_empty_reverence_effigy",
+            new ChargedEmptyReverenceEffigy(new FabricItemSettings().maxCount(1)));
 
     public static final Item TEST = registerItem("test",
             new TestItem(new FabricItemSettings().maxCount(1)));
@@ -195,6 +199,8 @@ public class ModItems {
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",
             new JadeEffigy(new FabricItemSettings().maxCount(1)));
+    public static final Item REVERENCE_EFFIGY = registerItem("reverence_effigy",
+            new ReverenceEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item ESOTERIC_EFFIGY = registerItem("esoteric_effigy",
             new EsotericEffigy(new FabricItemSettings().maxCount(1)));
     public static final Item LUNAR_EFFIGY = registerItem("lunar_effigy",

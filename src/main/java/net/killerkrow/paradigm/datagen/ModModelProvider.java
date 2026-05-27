@@ -36,7 +36,9 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.UNKNOWN_MASK, Models.GENERATED);
-        //itemModelGenerator.register(ModItems.ATLAS_WRATH, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.REVERENCE_EFFIGY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHARGED_EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));

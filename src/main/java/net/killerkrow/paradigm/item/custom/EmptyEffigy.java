@@ -1,6 +1,7 @@
 package net.killerkrow.paradigm.item.custom;
 
 import dev.emi.trinkets.api.TrinketItem;
+import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -48,6 +49,7 @@ public class EmptyEffigy extends TrinketItem {
                 || state.isOf(Blocks.INFESTED_STONE) || state.isOf(Blocks.INFESTED_DEEPSLATE) //Esoteric Effigy Starter
                 || state.isOf(Blocks.CALCITE) || state.isOf(Blocks.SOUL_SAND) //Lunar Effigy Starter
                 || state.isOf(Blocks.SHROOMLIGHT) || state.isOf(Blocks.MAGMA_BLOCK) //Solar Effigy Starter
+                || state.isOf(ModBlocks.REVERENCE_BERRY_SACK) //Reverence Effigy Starter
         ) {
             if (!world.isClient()) {
                 NbtCompound nbt = stack.getOrCreateNbt();
@@ -171,6 +173,12 @@ public class EmptyEffigy extends TrinketItem {
 
         else if (state.isOf(Blocks.MAGMA_BLOCK)) {
             return new ItemStack(ModItems.EMPTY_SOLAR_EFFIGY);
+        }
+
+        //Start of the Solar Effigy Givers
+
+        else if (state.isOf(ModBlocks.REVERENCE_BERRY_SACK)) {
+            return new ItemStack(ModItems.EMPTY_REVERENCE_EFFIGY);
         }
 
 

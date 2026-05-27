@@ -63,6 +63,7 @@
   "tooltip.paradigm.charged_empty_solar_effigy.tooltip": "The Charged and near complete form of the Solar Effigy.",
   "tooltip.paradigm.charged_empty_lunar_effigy.tooltip": "The Charged and near complete form of the Lunar Effigy.",
   "tooltip.paradigm.charged_empty_esoteric_effigy.tooltip": "The Charged and near complete form of the Esoteric Effigy.",
+  "tooltip.paradigm.charged_empty_reverence_effigy.tooltip": "The Charged and near complete form of the Reverence Effigy.",
 
   "item.paradigm.wooden_crusher": "Wooden Crusher",
   "item.paradigm.stone_crusher": "Stone Crusher",
@@ -250,5 +251,8 @@
   "item.paradigm.admin_chain_chestplate": "Adminchain Chestplate",
   "item.paradigm.admin_chain_helmet": "Adminchain Helmet",
   "item.paradigm.admin_chain_leggings": "Adminchain Leggings",
+  "item.paradigm.reverence_effigy": "Reverence Effigy",
+  "item.paradigm.empty_reverence_effigy": "Empty Reverence Effigy",
+  "item.paradigm.charged_empty_reverence_effigy": "Charged Empty Reverence Effigy",
   "tooltip.paradigm.unknown_mask.tooltip": "A mask dedicated to the Seventh God and channeling mystical energy."
 }

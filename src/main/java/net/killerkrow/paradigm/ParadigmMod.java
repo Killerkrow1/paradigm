@@ -26,12 +26,11 @@ public class ParadigmMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 
-			// Register the effect with your mod's ID
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("paradigm",
 				"watched_effect"), WATCHED_EFFECT);
 
-		ModSounds.registerSounds();
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS_PANE, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GILDEN_ICON, RenderLayer.getTranslucent());
