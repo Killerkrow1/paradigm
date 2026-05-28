@@ -45,6 +45,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GILDEN_ORE);
                         entries.add(ModItems.GILDEN_INGOT);
                         entries.add(ModItems.GILDEN_DUST);
+                        entries.add(ModItems.DEMIGOD_FAVOR);
+                        entries.add(ModItems.GOD_FAVOR);
                         entries.add(ModItems.FAVOR_OF_DIVINITY);
                         entries.add(ModItems.EFFIGY_CORE);
                         entries.add(ModItems.EFFIGY_EXTRACT);
@@ -214,6 +216,25 @@ public class ModItemGroups {
                                 entries.add(ModItems.ISMENE_BINDMENT);
                                 entries.add(ModItems.ULTIMUS_BINDMENT);
                                 entries.add(ModItems.UNKNOWN_BINDMENT);
+
+                                entries.add(ModItems.ATLAS_FAVOR);
+                                entries.add(ModItems.NOVINGARD_FAVOR);
+                                entries.add(ModItems.ASTRAL_FAVOR);
+                                entries.add(ModItems.GERO_FAVOR);
+                                entries.add(ModItems.ISMENE_FAVOR);
+                                entries.add(ModItems.ULTIMUS_FAVOR);
+                                entries.add(ModItems.UNKNOWN_FAVOR);
+                                entries.add(ModItems.PUMPKIN_FAVOR);
+                                entries.add(ModItems.TOGG_FAVOR);
+                                entries.add(ModItems.VELEN_FAVOR);
+                                entries.add(ModItems.ZAPA_FAVOR);
+                                entries.add(ModItems.SHADOW_FAVOR);
+                                entries.add(ModItems.SMILEY_FAVOR);
+                                entries.add(ModItems.NERA_FAVOR);
+                                entries.add(ModItems.INVICTUS_FAVOR);
+                                entries.add(ModItems.SPECTER_FAVOR);
+                                entries.add(ModItems.YETI_FAVOR);
+                                entries.add(ModItems.BLANK_FAVOR);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);

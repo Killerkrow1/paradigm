@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    },
+    {
+      "tag": "paradigm:favor_item"
+    }
+  ],
+  "result": {
+    "item": "paradigm:demigod_favor"
+  }
+}

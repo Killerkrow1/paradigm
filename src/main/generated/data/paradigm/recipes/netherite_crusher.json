@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "minecraft:blaze_rod"
+    },
+    "Q": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "S": {
+      "item": "paradigm:diamond_crusher"
+    }
+  },
+  "pattern": [
+    " QB",
+    "CSQ",
+    "QC "
+  ],
+  "result": {
+    "item": "paradigm:netherite_crusher"
+  },
+  "show_notification": true
+}

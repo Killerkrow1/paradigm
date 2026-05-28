@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "paradigm:gilden_ingot"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "G G",
+    "   "
+  ],
+  "result": {
+    "item": "paradigm:gilden_crown"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "paradigm:crusher_item"
+    },
+    {
+      "item": "paradigm:imperium_ingot"
+    }
+  ],
+  "result": {
+    "item": "paradigm:imperium_dust"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "paradigm:gilden_ingot"
+    },
+    "R": {
+      "item": "paradigm:gilden_ore"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " G ",
+    "RGR",
+    " S "
+  ],
+  "result": {
+    "item": "paradigm:gilden_blade"
+  },
+  "show_notification": true
+}

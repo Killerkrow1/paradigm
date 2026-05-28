@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "paradigm:gold_crusher"
+    }
+  },
+  "pattern": [
+    " BB",
+    "BSB",
+    "BB "
+  ],
+  "result": {
+    "item": "paradigm:jade_crusher"
+  },
+  "show_notification": true
+}

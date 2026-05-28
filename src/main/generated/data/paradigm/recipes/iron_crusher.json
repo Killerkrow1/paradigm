@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:bone"
+    },
+    "S": {
+      "item": "paradigm:stone_crusher"
+    }
+  },
+  "pattern": [
+    " BB",
+    "CSB",
+    "CC "
+  ],
+  "result": {
+    "item": "paradigm:iron_crusher"
+  },
+  "show_notification": true
+}

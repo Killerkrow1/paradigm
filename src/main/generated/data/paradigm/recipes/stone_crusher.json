@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "C": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "paradigm:wooden_crusher"
+    }
+  },
+  "pattern": [
+    " BB",
+    "CSB",
+    "CC "
+  ],
+  "result": {
+    "item": "paradigm:stone_crusher"
+  },
+  "show_notification": true
+}

@@ -40,6 +40,27 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.ATLAS_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NOVINGARD_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ASTRAL_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GERO_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ISMENE_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ULTIMUS_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNKNOWN_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PUMPKIN_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOGG_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VELEN_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZAPA_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHADOW_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SMILEY_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NERA_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.INVICTUS_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPECTER_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YETI_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLANK_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DEMIGOD_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOD_FAVOR, Models.GENERATED);
+
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_LEGGINGS));

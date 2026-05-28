@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "paradigm:atlas_bindment",
+    "paradigm:novingard_bindment",
+    "paradigm:astral_bindment",
+    "paradigm:gero_bindment",
+    "paradigm:ismene_bindment",
+    "paradigm:ultimus_bindment",
+    "paradigm:unknown_bindment"
+  ]
+}

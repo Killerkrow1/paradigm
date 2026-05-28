@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "group": "imperium_ingot_furnace",
+  "ingredient": {
+    "item": "paradigm:imperium_royalium"
+  },
+  "result": "paradigm:imperium_ingot"
+}

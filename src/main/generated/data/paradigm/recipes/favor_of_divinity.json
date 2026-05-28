@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:god_favor"
+    },
+    {
+      "item": "paradigm:demigod_favor"
+    }
+  ],
+  "result": {
+    "item": "paradigm:favor_of_divinity"
+  }
+}

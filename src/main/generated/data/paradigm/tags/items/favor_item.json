@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "paradigm:atlas_favor",
+    "paradigm:novingard_favor",
+    "paradigm:astral_favor",
+    "paradigm:gero_favor",
+    "paradigm:ismene_favor",
+    "paradigm:ultimus_favor",
+    "paradigm:unknown_favor",
+    "paradigm:pumpkin_favor",
+    "paradigm:togg_favor",
+    "paradigm:velen_favor",
+    "paradigm:zapa_favor",
+    "paradigm:shadow_favor",
+    "paradigm:smiley_favor",
+    "paradigm:nera_favor",
+    "paradigm:invictus_favor",
+    "paradigm:specter_favor",
+    "paradigm:yeti_favor",
+    "paradigm:blank_favor",
+    "paradigm:favor_of_divinity",
+    "paradigm:god_favor",
+    "paradigm:demigod_favor"
+  ]
+}

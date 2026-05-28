@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "S": {
+      "item": "paradigm:jade_crusher"
+    }
+  },
+  "pattern": [
+    " BB",
+    "CSB",
+    "CC "
+  ],
+  "result": {
+    "item": "paradigm:diamond_crusher"
+  },
+  "show_notification": true
+}

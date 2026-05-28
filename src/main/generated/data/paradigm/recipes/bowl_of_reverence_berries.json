@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "paradigm:reverence_berry"
+    },
+    "N": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    "BNB"
+  ],
+  "result": {
+    "item": "paradigm:bowl_of_reverence_berries"
+  },
+  "show_notification": true
+}

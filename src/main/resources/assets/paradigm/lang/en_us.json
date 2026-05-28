@@ -254,5 +254,9 @@
   "item.paradigm.reverence_effigy": "Reverence Effigy",
   "item.paradigm.empty_reverence_effigy": "Empty Reverence Effigy",
   "item.paradigm.charged_empty_reverence_effigy": "Charged Empty Reverence Effigy",
-  "tooltip.paradigm.unknown_mask.tooltip": "A mask dedicated to the Seventh God and channeling mystical energy."
+  "tooltip.paradigm.unknown_mask.tooltip": "A mask dedicated to the Seventh God and channeling mystical energy.",
+  "tooltip.paradigm.demigod_favor.tooltip": "This favor channels the energy of every Demigod, treat it with care.",
+  "tooltip.paradigm.god_favor.tooltip": "This favor channels the energy of every God, treat it with care.",
+  "tooltip.paradigm.favor.tooltip": "It channels the energy of one of the divines.",
+  "tooltip.paradigm.blank_favor.tooltip": "Waiting to resonate with one of the Divines."
 }

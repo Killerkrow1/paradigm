@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 72000,
+  "experience": 200.0,
+  "group": "effigerium_ingot_blasting",
+  "ingredient": {
+    "item": "paradigm:imperium_ingot"
+  },
+  "result": "paradigm:imperium_ingot"
+}

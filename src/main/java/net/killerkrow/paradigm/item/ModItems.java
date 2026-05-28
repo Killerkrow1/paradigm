@@ -48,8 +48,6 @@ public class ModItems {
     //extended normal items
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
             new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
-    public static final Item FAVOR_OF_DIVINITY = registerItem("favor_of_divinity",
-            new DivinityFavor(new FabricItemSettings().maxCount(1)));
     public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",
             new EffigyExtract(new FabricItemSettings().maxCount(1)));
     public static final Item EFFIGY_CORE = registerItem("effigy_core",
@@ -59,6 +57,51 @@ public class ModItems {
     public static final Item ATLAS_COOKING_KNIFE = registerItem("atlas_cooking_knife",
             new CookingKnife(ToolMaterials.IRON, 1, 2,
                     new FabricItemSettings().recipeRemainder(ModItems.ATLAS_COOKING_KNIFE)));
+
+    //Favor Items
+    public static final Item ATLAS_FAVOR = registerItem("atlas_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item NOVINGARD_FAVOR = registerItem("novingard_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ASTRAL_FAVOR = registerItem("astral_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GERO_FAVOR = registerItem("gero_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ISMENE_FAVOR = registerItem("ismene_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ULTIMUS_FAVOR = registerItem("ultimus_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item UNKNOWN_FAVOR = registerItem("unknown_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item PUMPKIN_FAVOR = registerItem("pumpkin_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOGG_FAVOR = registerItem("togg_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item VELEN_FAVOR = registerItem("velen_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item ZAPA_FAVOR = registerItem("zapa_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SHADOW_FAVOR = registerItem("shadow_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SMILEY_FAVOR = registerItem("smiley_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item NERA_FAVOR = registerItem("nera_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item INVICTUS_FAVOR = registerItem("invictus_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item SPECTER_FAVOR = registerItem("specter_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item YETI_FAVOR = registerItem("yeti_favor",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item BLANK_FAVOR = registerItem("blank_favor",
+            new BlankFavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item GOD_FAVOR = registerItem("god_favor",
+            new GodFavor(new FabricItemSettings().maxCount(1)));
+    public static final Item DEMIGOD_FAVOR = registerItem("demigod_favor",
+            new DemigodFavor(new FabricItemSettings().maxCount(1)));
+    public static final Item FAVOR_OF_DIVINITY = registerItem("favor_of_divinity",
+            new DivinityFavor(new FabricItemSettings().maxCount(1)));
+
 
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1)));

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "paradigm:iron_crusher"
+    }
+  },
+  "pattern": [
+    " BB",
+    "CSB",
+    "RC "
+  ],
+  "result": {
+    "item": "paradigm:gold_crusher"
+  },
+  "show_notification": true
+}
