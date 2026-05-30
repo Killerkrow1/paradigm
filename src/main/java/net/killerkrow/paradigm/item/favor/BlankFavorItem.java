@@ -1,6 +1,5 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.favor;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -12,8 +11,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class FavorItem extends Item {
-    public FavorItem(Settings settings) {
+public class BlankFavorItem extends Item {
+    public BlankFavorItem(Settings settings) {
         super(settings);
     }
 
@@ -26,7 +25,7 @@ public class FavorItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.favor.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.blank_favor.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }

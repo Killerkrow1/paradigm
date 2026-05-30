@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_imperium_ingot": {
+    "has_gold_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "paradigm:imperium_ingot"
+              "minecraft:gold_ingot"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:imperium_ingot_from_smelting_imperium_ingot"
+        "recipe": "minecraft:gilden_ore_from_smelting_gold_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_imperium_ingot",
+      "has_gold_ingot",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:imperium_ingot_from_smelting_imperium_ingot"
+      "minecraft:gilden_ore_from_smelting_gold_ingot"
     ]
   },
   "sends_telemetry_event": false

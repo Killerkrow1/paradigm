@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "paradigm:gilden_ingot"
+    },
+    "R": {
+      "item": "paradigm:gilden_ore"
+    }
+  },
+  "pattern": [
+    "GR ",
+    "RG ",
+    "   "
+  ],
+  "result": {
+    "item": "paradigm:gilden_bricks"
+  },
+  "show_notification": true
+}

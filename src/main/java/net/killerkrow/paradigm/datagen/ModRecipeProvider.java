@@ -2,32 +2,24 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
-import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.util.ModTags;
-import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.ShapelessRecipe;
-import net.minecraft.recipe.SmeltingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    private static final List<ItemConvertible> EFFIGERIUM_SMELT = List.of(ModItems.EFFIGERIUM_SHARDS);
 
 
     public ModRecipeProvider(FabricDataOutput output) {
@@ -153,6 +145,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.WOODEN_CRUSHER), conditionsFromItem(ModItems.WOODEN_CRUSHER))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "broken_heart"));
 
+        // Greater Favor Recipes
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOD_FAVOR)
                 .input(ModTags.Items.FAVOR_ITEM)
                 .input(ModTags.Items.FAVOR_ITEM)
@@ -183,6 +176,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GOD_FAVOR), conditionsFromItem(ModItems.GOD_FAVOR))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "favor_of_divinity"));
 
+        // Crusher Recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_CRUSHER)
                 .pattern(" BB")
                 .pattern(" SB")
@@ -248,6 +242,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.DIAMOND_CRUSHER), conditionsFromItem(ModItems.DIAMOND_CRUSHER))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "netherite_crusher"));
 
+        //Gilden Recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GILDEN_BLADE)
                 .pattern(" G ")
                 .pattern("RGR")
@@ -264,6 +259,89 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('G',ModItems.GILDEN_INGOT)
                 .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_crown"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_BRICKS)
+                .pattern("GR ")
+                .pattern("RG ")
+                .pattern("   ")
+                .input('G',ModItems.GILDEN_INGOT)
+                .input('R',ModItems.GILDEN_ORE)
+                .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick"));
+
+        // Favor recipes
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ATLAS_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.GOLD_INGOT)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "atlas_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NOVINGARD_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.END_STONE)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "novingard_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ASTRAL_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',ItemTags.FLOWERS)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "astral_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GERO_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.NETHERRACK)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gero_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ISMENE_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.CLOCK)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ismene_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ULTIMUS_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.GUNPOWDER)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ultimus_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.UNKNOWN_BINDMENT)
+                .pattern("BOB")
+                .pattern("OAO")
+                .pattern("BOB")
+                .input('O',Items.ROTTEN_FLESH)
+                .input('B',Items.BOOK)
+                .input('A',ModItems.ATLAS_FAVOR)
+                .criterion(hasItem(ModItems.ATLAS_FAVOR), conditionsFromItem(ModItems.ATLAS_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "unknown_bindment"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SOUL_DEAL)
+                .pattern("BOB")
+                .pattern("PSP")
+                .pattern("BOB")
+                .input('P',Items.BOOK)
+                .input('O',Items.PAPER)
+                .input('B', Blocks.SOUL_SAND)
+                .input('S',ModItems.SHADOW_FAVOR)
+                .criterion(hasItem(ModItems.SHADOW_FAVOR), conditionsFromItem(ModItems.SHADOW_FAVOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "soul_deal"));
 
 
 
@@ -271,13 +349,28 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ItemConvertible cookedImperiumItem = ModItems.IMPERIUM_INGOT;
         ItemConvertible rawEffigeriumItem = ModItems.EFFIGERIUM_SHARDS;
         ItemConvertible cookedEffigeriumItem = ModItems.EFFIGERIUM_INGOT;
+        ItemConvertible rawGildenItem = ModItems.GILDEN_ORE;
+        ItemConvertible cookedGildenItem = ModItems.GILDEN_INGOT;
+        ItemConvertible rawGrodiumItem = ModItems.GRODIUM_CRYSTALS;
+        ItemConvertible cookedGrodiumItem = ModItems.GRODIUM_INGOT;
+        ItemConvertible popcornRaw = Items.WHEAT;
+        ItemConvertible popcorn = ModItems.POPCORN;
+        ItemConvertible gold = Items.GOLD_INGOT;
 
         // --- Smelting ---
         // offerSmelting takes: exporter, input, category, output, experience, cookingTime, group
         offerSmelting(exporter, List.of(rawEffigeriumItem), RecipeCategory.MISC, cookedEffigeriumItem, 200.0f,
                 72000, "effigerium_ingot_furnace");
-        offerSmelting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 2.0f,
-                200, "imperium_ingot_furnace");
+        offerSmelting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
+                400, "imperium_ingot_furnace");
+        offerSmelting(exporter, List.of(rawGildenItem), RecipeCategory.MISC, cookedGildenItem, 0.8f,
+                160, "gilden_ingot_furnace");
+        offerSmelting(exporter, List.of(rawGrodiumItem), RecipeCategory.MISC, cookedGrodiumItem, 20.0f,
+                400, "grodium_ingot_furnace");
+        offerSmelting(exporter, List.of(popcornRaw), RecipeCategory.FOOD, popcorn, 0.1f,
+                60, "popcorn");
+        offerSmelting(exporter, List.of(gold), RecipeCategory.FOOD, rawGildenItem, 0.4f,
+                160, "raw_gilden_furnace");
 
         // --- Blasting ---
         // offerBlasting takes the same parameters, but uses a shorter cooking time (e.g., 100 ticks)
@@ -285,5 +378,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 72000, "effigerium_ingot_blasting");
         offerBlasting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
                 200, "imperium_ingot_blasting");
+        offerBlasting(exporter, List.of(rawGildenItem), RecipeCategory.MISC, cookedGildenItem, 0.8f,
+                80,  "gilden_ingot_blasting");
+        offerBlasting(exporter, List.of(rawGrodiumItem), RecipeCategory.MISC, cookedGrodiumItem, 20.0f,
+                200, "grodium_ingot_blasting");
+        offerBlasting(exporter, List.of(gold), RecipeCategory.MISC, rawGildenItem, 0.4f,
+                80, "raw_gilden_blasting");
     }
 }

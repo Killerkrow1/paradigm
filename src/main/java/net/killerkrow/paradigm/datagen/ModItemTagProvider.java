@@ -2,9 +2,11 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -48,7 +50,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ATLAS_FAVOR, ModItems.NOVINGARD_FAVOR, ModItems.ASTRAL_FAVOR, ModItems.GERO_FAVOR, ModItems.ISMENE_FAVOR,
                         ModItems.ULTIMUS_FAVOR, ModItems.UNKNOWN_FAVOR, ModItems.PUMPKIN_FAVOR, ModItems.TOGG_FAVOR, ModItems.VELEN_FAVOR,
                         ModItems.ZAPA_FAVOR, ModItems.SHADOW_FAVOR, ModItems.SMILEY_FAVOR, ModItems.NERA_FAVOR, ModItems.INVICTUS_FAVOR,
-                        ModItems.SPECTER_FAVOR, ModItems.YETI_FAVOR, ModItems.BLANK_FAVOR, ModItems.FAVOR_OF_DIVINITY, ModItems.GOD_FAVOR,
+                        ModItems.SPECTER_FAVOR, ModItems.YETI_FAVOR, ModItems.CASTIEL_FAVOR, ModItems.FAVOR_OF_DIVINITY, ModItems.GOD_FAVOR,
                         ModItems.DEMIGOD_FAVOR);
+
+        getOrCreateTagBuilder(ItemTags.FLOWERS)
+                .add(ModBlocks.ASTRAVEN.asItem(), ModBlocks.WOLFSBANE.asItem(), ModBlocks.KAGAMI_BUD.asItem(), ModBlocks.ROOTFERN.asItem(),
+                        ModBlocks.AKAMI_ROSE.asItem(), ModBlocks.HANME.asItem(), ModBlocks.ASTRAVEN.asItem(), ModBlocks.MOONBLOOM.asItem(),
+                        ModBlocks.SILVERTHORN.asItem(), ModBlocks.DAWN_LILLY.asItem(), ModBlocks.STARBRIGHT_PETAL.asItem(), ModBlocks.RENMI.asItem(),
+                        ModBlocks.GILDED_ORCHID.asItem(), ModBlocks.THORNSHADE.asItem(), ModBlocks.MISTVINE.asItem(), ModBlocks.GLOWFERN.asItem(),
+                        ModBlocks.FROST_PETAL.asItem(), ModBlocks.EMBERLOTUS.asItem(), ModBlocks.SPECTRAL_ORCHID.asItem(), ModBlocks.PHANTOM_LACE.asItem(),
+                        ModBlocks.VOIDMOSS.asItem(), ModBlocks.SCARLET_CURL.asItem(), ModBlocks.STARSHADE.asItem(), ModBlocks.BRIMROSE.asItem(),
+                        ModBlocks.GLASSLEAF.asItem(), ModBlocks.FLAMESPIRE.asItem(), ModBlocks.LUNAR_PEONY.asItem(), ModBlocks.BLOOMCROWN.asItem(),
+                        ModBlocks.INFERNO_BELL.asItem(), ModBlocks.SEARLING.asItem(), ModBlocks.EBON_ROSE.asItem(), ModBlocks.FADEWISP.asItem(),
+                        ModBlocks.GLOOMVINE.asItem(), ModBlocks.EMBERBRUSH.asItem(), ModBlocks.SPIRESAGE.asItem(), ModBlocks.BRIGHTBLOOM.asItem(),
+                        ModBlocks.MIRAGE_LOTUS.asItem(), ModBlocks.SHADOWTHORN.asItem()
+                );
     }
 }

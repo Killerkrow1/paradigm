@@ -3,9 +3,11 @@ package net.killerkrow.paradigm.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
+import net.killerkrow.paradigm.item.favor.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
 import net.killerkrow.paradigm.misc.ModArmorMaterials;
 import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
+import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -46,8 +48,6 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     //extended normal items
-    public static final Item SMILEY_NOTES = registerItem("smiley_notes",
-            new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
     public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",
             new EffigyExtract(new FabricItemSettings().maxCount(1)));
     public static final Item EFFIGY_CORE = registerItem("effigy_core",
@@ -93,6 +93,8 @@ public class ModItems {
             new FavorItem(new FabricItemSettings().maxCount(1)));
     public static final Item YETI_FAVOR = registerItem("yeti_favor",
             new FavorItem(new FabricItemSettings().maxCount(1)));
+    public static final Item CASTIEL_FAVOR = registerItem("CASTIEL_FAVOR",
+            new FavorItem(new FabricItemSettings().maxCount(1)));
     public static final Item BLANK_FAVOR = registerItem("blank_favor",
             new BlankFavorItem(new FabricItemSettings().maxCount(1)));
     public static final Item GOD_FAVOR = registerItem("god_favor",
@@ -102,7 +104,7 @@ public class ModItems {
     public static final Item FAVOR_OF_DIVINITY = registerItem("favor_of_divinity",
             new DivinityFavor(new FabricItemSettings().maxCount(1)));
 
-
+    //Favor Craftables
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1)));
     public static final Item NOVINGARD_BINDMENT = registerItem("novingard_bindment",
@@ -117,6 +119,14 @@ public class ModItems {
             new BindmentBook(new FabricItemSettings().maxCount(1)));
     public static final Item UNKNOWN_BINDMENT = registerItem("unknown_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1)));
+    public static final Item SOUL_DEAL = registerItem("soul_deal",
+            new SoulDeal(new FabricItemSettings().maxCount(1)));
+    public static final Item SOUL_DEAL_SIGNED = registerItem("soul_deal_signed",
+            new SignedSoulDeal(new Item.Settings().maxCount(1), ModRarities.SOUL_DEAL));
+    public static final Item SMILEY_NOTES = registerItem("smiley_notes",
+            new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
+
+
 
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));
@@ -319,7 +329,7 @@ public class ModItems {
     public static final Item ADMINCHAIN_LEGGINGS = registerItem("admin_chain_leggings",
             new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ADMINCHAIN_BOOTS = registerItem("admin_chain_boots",
-            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     //foods and related
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",

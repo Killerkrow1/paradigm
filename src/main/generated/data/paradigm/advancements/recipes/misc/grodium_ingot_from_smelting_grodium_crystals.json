@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_grodium_crystals": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:grodium_crystals"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:grodium_ingot_from_smelting_grodium_crystals"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_grodium_crystals",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:grodium_ingot_from_smelting_grodium_crystals"
+    ]
+  },
+  "sends_telemetry_event": false
+}

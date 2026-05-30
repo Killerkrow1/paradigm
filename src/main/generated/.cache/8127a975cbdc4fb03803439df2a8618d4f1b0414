@@ -1,4 +1,5 @@
-// 1.20.1	2026-05-27T22:27:44.8796501	Paradigm Mod/Tags for minecraft:item
+// 1.20.1	2026-05-29T23:38:27.1305943	Paradigm Mod/Tags for minecraft:item
+593f22f99f8f02ae9909affd64fc48f4fc2c1f55 data\minecraft\tags\items\flowers.json
 be5ff5ab754b7bef332718ab0b7bfbf3ce3aab75 data\minecraft\tags\items\swords.json
 bcfd4b3690ad8b1c5cedd79720d6c43c54d62b62 data\paradigm\tags\items\bindment_item.json
 fa6d07efc9aca67a052e568aec84413e295b2fc8 data\paradigm\tags\items\favor_item.json

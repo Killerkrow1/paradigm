@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:soul_sand"
+    },
+    "O": {
+      "item": "minecraft:paper"
+    },
+    "P": {
+      "item": "minecraft:book"
+    },
+    "S": {
+      "item": "paradigm:shadow_favor"
+    }
+  },
+  "pattern": [
+    "BOB",
+    "PSP",
+    "BOB"
+  ],
+  "result": {
+    "item": "paradigm:soul_deal"
+  },
+  "show_notification": true
+}

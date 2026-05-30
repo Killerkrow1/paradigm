@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.favor;
 
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -34,9 +34,8 @@ public class SmileyNotesItem extends Item {
     //Lowkey another thing I googled
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if (!world.isClient()) { // Ensure we are on the server side
+        if (!world.isClient()) {
 
-            // 1. Check/Set Cooldown (5 seconds = 100 ticks)
             if (user instanceof ServerPlayerEntity serverPlayer) {
                 if (serverPlayer.getItemCooldownManager().isCoolingDown(this)) {
                     return TypedActionResult.fail(user.getStackInHand(hand));
@@ -44,11 +43,9 @@ public class SmileyNotesItem extends Item {
                 serverPlayer.getItemCooldownManager().set(this, 100);
             }
 
-            // 2. Play Sound for Everyone (null means everyone hears it)
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     SoundEvents.ENTITY_WITHER_SPAWN, SoundCategory.PLAYERS, 0.1f, 1.0f);
 
-            // 3. Send Message to User
             user.sendMessage(Text.literal("The notes are empty and your mind hazes as they look at the notes. It's almost like they serve no purpose anymore."), false);
         }
         return TypedActionResult.success(user.getStackInHand(hand));

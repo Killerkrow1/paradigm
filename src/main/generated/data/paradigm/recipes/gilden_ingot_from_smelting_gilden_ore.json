@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 160,
+  "experience": 0.8,
+  "group": "gilden_ingot_furnace",
+  "ingredient": {
+    "item": "paradigm:gilden_ore"
+  },
+  "result": "paradigm:gilden_ingot"
+}

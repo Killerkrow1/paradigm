@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 80,
+  "experience": 0.8,
+  "group": "gilden_ingot_blasting",
+  "ingredient": {
+    "item": "paradigm:gilden_ore"
+  },
+  "result": "paradigm:gilden_ingot"
+}

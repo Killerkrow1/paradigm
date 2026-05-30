@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 400,
   "experience": 20.0,
-  "group": "imperium_ingot_furnace",
+  "group": "grodium_ingot_furnace",
   "ingredient": {
-    "item": "paradigm:imperium_royalium"
+    "item": "paradigm:grodium_crystals"
   },
-  "result": "paradigm:imperium_ingot"
+  "result": "paradigm:grodium_ingot"
 }

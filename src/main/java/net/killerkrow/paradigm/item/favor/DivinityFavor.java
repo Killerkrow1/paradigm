@@ -1,6 +1,5 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.favor;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -12,8 +11,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DemigodFavor extends Item {
-    public DemigodFavor(Settings settings) {
+public class DivinityFavor extends Item {
+    public DivinityFavor(Settings settings) {
         super(settings);
     }
 
@@ -26,7 +25,7 @@ public class DemigodFavor extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.demigod_favor.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.divinity_favor.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }

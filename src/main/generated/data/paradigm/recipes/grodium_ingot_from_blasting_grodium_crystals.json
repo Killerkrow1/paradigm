@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 20.0,
+  "group": "grodium_ingot_blasting",
+  "ingredient": {
+    "item": "paradigm:grodium_crystals"
+  },
+  "result": "paradigm:grodium_ingot"
+}

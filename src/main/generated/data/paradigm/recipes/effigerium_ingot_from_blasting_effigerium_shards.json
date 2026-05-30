@@ -5,7 +5,7 @@
   "experience": 200.0,
   "group": "effigerium_ingot_blasting",
   "ingredient": {
-    "item": "paradigm:imperium_ingot"
+    "item": "paradigm:effigerium_shards"
   },
-  "result": "paradigm:imperium_ingot"
+  "result": "paradigm:effigerium_ingot"
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "paradigm:atlas_favor"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "O": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "pattern": [
+    "BOB",
+    "OAO",
+    "BOB"
+  ],
+  "result": {
+    "item": "paradigm:astral_bindment"
+  },
+  "show_notification": true
+}

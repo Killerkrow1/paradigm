@@ -2,14 +2,11 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
-import net.minecraft.block.Block;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -60,6 +57,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BLANK_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEMIGOD_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOD_FAVOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SOUL_DEAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_DEAL_SIGNED, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));

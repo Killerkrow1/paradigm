@@ -38,14 +38,12 @@ public class SmileyInvertedWeapon extends SwordItem implements Vanishable {
     // Messages sent when you hit an entity
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (!attacker.getWorld().isClient()) { // Ensure it runs on the server
-            // Check if the attacker is a player
+        if (!attacker.getWorld().isClient()) {
             if (attacker instanceof PlayerEntity player) {
                 player.sendMessage(Text.literal("You hit: " + target.getName().getString() + " while using an Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
             }
 
-            // Send a message to the entity being hit if it's a player
             if (target instanceof PlayerEntity victim) {
                 victim.sendMessage(Text.literal("You were hit by " + attacker.getName().getString() + " while they used a Soul Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
@@ -54,7 +52,6 @@ public class SmileyInvertedWeapon extends SwordItem implements Vanishable {
         return super.postHit(stack, target, attacker);
     }
 
-    // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {

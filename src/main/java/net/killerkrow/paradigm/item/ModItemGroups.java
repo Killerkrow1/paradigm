@@ -217,6 +217,9 @@ public class ModItemGroups {
                                 entries.add(ModItems.ULTIMUS_BINDMENT);
                                 entries.add(ModItems.UNKNOWN_BINDMENT);
 
+                                entries.add(ModItems.SOUL_DEAL);
+
+                                entries.add(ModItems.BLANK_FAVOR);
                                 entries.add(ModItems.ATLAS_FAVOR);
                                 entries.add(ModItems.NOVINGARD_FAVOR);
                                 entries.add(ModItems.ASTRAL_FAVOR);
@@ -234,7 +237,7 @@ public class ModItemGroups {
                                 entries.add(ModItems.INVICTUS_FAVOR);
                                 entries.add(ModItems.SPECTER_FAVOR);
                                 entries.add(ModItems.YETI_FAVOR);
-                                entries.add(ModItems.BLANK_FAVOR);
+                                entries.add(ModItems.CASTIEL_FAVOR);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);
