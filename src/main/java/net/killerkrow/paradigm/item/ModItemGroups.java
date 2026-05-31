@@ -209,16 +209,6 @@ public class ModItemGroups {
                                 entries.add(ModItems.SOUL_INVERSION);
                                 entries.add(ModItems.SMILEYS_IMPULSE);
 
-                                entries.add(ModItems.ATLAS_BINDMENT);
-                                entries.add(ModItems.NOVINGARD_BINDMENT);
-                                entries.add(ModItems.ASTRAL_BINDMENT);
-                                entries.add(ModItems.GERO_BINDMENT);
-                                entries.add(ModItems.ISMENE_BINDMENT);
-                                entries.add(ModItems.ULTIMUS_BINDMENT);
-                                entries.add(ModItems.UNKNOWN_BINDMENT);
-
-                                entries.add(ModItems.SOUL_DEAL);
-
                                 entries.add(ModItems.BLANK_FAVOR);
                                 entries.add(ModItems.ATLAS_FAVOR);
                                 entries.add(ModItems.NOVINGARD_FAVOR);
@@ -238,6 +228,16 @@ public class ModItemGroups {
                                 entries.add(ModItems.SPECTER_FAVOR);
                                 entries.add(ModItems.YETI_FAVOR);
                                 entries.add(ModItems.CASTIEL_FAVOR);
+
+                                entries.add(ModItems.ATLAS_BINDMENT);
+                                entries.add(ModItems.NOVINGARD_BINDMENT);
+                                entries.add(ModItems.ASTRAL_BINDMENT);
+                                entries.add(ModItems.GERO_BINDMENT);
+                                entries.add(ModItems.ISMENE_BINDMENT);
+                                entries.add(ModItems.ULTIMUS_BINDMENT);
+                                entries.add(ModItems.UNKNOWN_BINDMENT);
+                                entries.add(ModItems.SOUL_DEAL);
+                                entries.add(ModItems.WORLD_PLACEMENT_MARKER);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);

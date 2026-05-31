@@ -93,7 +93,7 @@ public class ModItems {
             new FavorItem(new FabricItemSettings().maxCount(1)));
     public static final Item YETI_FAVOR = registerItem("yeti_favor",
             new FavorItem(new FabricItemSettings().maxCount(1)));
-    public static final Item CASTIEL_FAVOR = registerItem("CASTIEL_FAVOR",
+    public static final Item CASTIEL_FAVOR = registerItem("castiel_favor",
             new FavorItem(new FabricItemSettings().maxCount(1)));
     public static final Item BLANK_FAVOR = registerItem("blank_favor",
             new BlankFavorItem(new FabricItemSettings().maxCount(1)));
@@ -125,6 +125,8 @@ public class ModItems {
             new SignedSoulDeal(new Item.Settings().maxCount(1), ModRarities.SOUL_DEAL));
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
             new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
+    public static final Item WORLD_PLACEMENT_MARKER = registerItem("world_placement_marker",
+            new SaveTPItem(new FabricItemSettings().maxCount(1)));
 
 
 
