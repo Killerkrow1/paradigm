@@ -237,7 +237,9 @@ public class ModItemGroups {
                                 entries.add(ModItems.ULTIMUS_BINDMENT);
                                 entries.add(ModItems.UNKNOWN_BINDMENT);
                                 entries.add(ModItems.SOUL_DEAL);
-                                entries.add(ModItems.WORLD_PLACEMENT_MARKER);
+                                entries.add(ModItems.STASIS_MARK);
+                                entries.add(ModItems.DRAGON_HORN);
+                                entries.add(ModItems.PHOENIX_GRAIL);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "lantern": "paradigm:item/soul_charged_lantern"
+    "layer0": "paradigm:item/stasis_mark"
   }
 }

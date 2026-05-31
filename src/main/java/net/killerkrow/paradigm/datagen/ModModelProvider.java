@@ -56,10 +56,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.YETI_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLANK_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.DEMIGOD_FAVOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CASTIEL_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.GOD_FAVOR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SOUL_DEAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.SOUL_DEAL_SIGNED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PHOENIX_GRAIL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRAGON_HORN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STASIS_MARK, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));

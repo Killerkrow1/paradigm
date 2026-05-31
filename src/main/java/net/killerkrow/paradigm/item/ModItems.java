@@ -125,10 +125,12 @@ public class ModItems {
             new SignedSoulDeal(new Item.Settings().maxCount(1), ModRarities.SOUL_DEAL));
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
             new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
-    public static final Item WORLD_PLACEMENT_MARKER = registerItem("world_placement_marker",
+    public static final Item STASIS_MARK = registerItem("stasis_mark",
             new SaveTPItem(new FabricItemSettings().maxCount(1)));
-
-
+    public static final Item DRAGON_HORN = registerItem("dragon_horn",
+            new DragonHorn(new FabricItemSettings().maxCount(1)));
+    public static final Item PHOENIX_GRAIL = registerItem("phoenix_grail",
+            new PhoenixGrail(new FabricItemSettings().maxCount(1)));
 
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));
