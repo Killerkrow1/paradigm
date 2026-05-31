@@ -258,5 +258,7 @@
   "tooltip.paradigm.demigod_favor.tooltip": "This favor channels the energy of every Demigod, treat it with care.",
   "tooltip.paradigm.god_favor.tooltip": "This favor channels the energy of every God, treat it with care.",
   "tooltip.paradigm.favor.tooltip": "It channels the energy of one of the divines.",
-  "tooltip.paradigm.blank_favor.tooltip": "Waiting to resonate with one of the Divines."
+  "tooltip.paradigm.blank_favor.tooltip": "Waiting to resonate with one of the Divines.",
+  "tooltip.paradigm.tp_item.tooltip": "Sneak + Right Click to save a location",
+  "tooltip.paradigm.tp_item_line_2.tooltip": "Right Click to TP to that location in your dimension."
 }
