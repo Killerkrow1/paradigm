@@ -2,8 +2,12 @@ package net.killerkrow.paradigm;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.killerkrow.paradigm.block.ModBlocks;
+import net.killerkrow.paradigm.fluids.ModFluids;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.Identifier;
 
 public class ParadigmModClient implements ClientModInitializer {
     @Override
@@ -84,5 +88,25 @@ public class ParadigmModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_MIRAGE_LOTUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SHADOWTHORN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_SHADOWTHORN, RenderLayer.getCutout());
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_DEAD_WATER, ModFluids.FLOWING_DEAD_WATER,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/dead_water"),
+                        new Identifier("paradigm:block/dead_water"),
+                        0xA1948E94
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_DEAD_WATER, ModFluids.FLOWING_DEAD_WATER);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_VOYD_ESSENCE, ModFluids.FLOWING_VOYD_ESSENCE,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/voyd_essence"),
+                        new Identifier("paradigm:block/voyd_essence"),
+                        0xA1B528FC
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_VOYD_ESSENCE, ModFluids.FLOWING_VOYD_ESSENCE);
     }
 }

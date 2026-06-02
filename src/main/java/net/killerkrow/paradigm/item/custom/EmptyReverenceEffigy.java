@@ -28,7 +28,7 @@ public class EmptyReverenceEffigy extends Item {
     private static final String[] REQUIRED_BLOCKS = {
             "paradigm:reverence_berry_sack"
     };
-    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 1023;
+    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 255;
 
     public EmptyReverenceEffigy(Settings settings) {
         super(settings);
@@ -103,7 +103,7 @@ public class EmptyReverenceEffigy extends Item {
         }
 
         // Display current tracker in tooltip
-        tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+        tooltip.add(Text.literal("Reverence Berry Sacks Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);

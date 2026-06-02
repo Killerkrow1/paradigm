@@ -216,7 +216,7 @@
   "tooltip.paradigm.dark_bindment.tooltip": "A spectacular weapon from another world from unknown origin.",
   "tooltip.paradigm.base_god_weapon.tooltip": "A weapon from the gods and channeling their energies.",
   "item.paradigm.atlas_wrath": "Atlas' Wrath",
-  "item.paradigm.atlas_betrayal": "Alas' Betrayal",
+  "item.paradigm.atlas_betrayal": "Atlas' Betrayal",
   "item.paradigm.astral_pride": "Astral's Pride",
   "item.paradigm.astral_fury": "Astral's Fury",
   "item.paradigm.gero_scar": "Gero's Scar",
@@ -295,5 +295,14 @@
   "item.paradigm.unknown_slide": "Unknown Slide",
   "item.paradigm.unknown_mask": "Unknown Mask",
   "item.paradigm.god_favor": "The God's Favor",
-  "item.paradigm.demigod_favor": "The Demigod's Favor"
+  "item.paradigm.demigod_favor": "The Demigod's Favor",
+  "item.paradigm.dead_water_bucket": "Dead Water Bucket",
+  "item.paradigm.voyd_essence_bucket": "Voyd Essence Bucket",
+  "block.paradigm.brimstone": "Brimstone",
+  "block.paradigm.dead_water_block": "Dead Water",
+  "block.paradigm.voyd_essence_block": "Voyd Essence",
+  "tooltip.paradigm.thundersprite.tooltip": "Charged with the pure electric energy of Zapa, it will strike your foes.",
+  "tooltip.paradigm.silent_charm.tooltip": ". . .",
+  "tooltip.paradigm.healing_touch.tooltip": "Some say that when it's held those around yourself will find themselves feeling better.",
+  "tooltip.paradigm.chaos_mark.tooltip": "Chaotic forces run through any who try and hold this elegant source."
 }

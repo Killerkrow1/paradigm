@@ -28,7 +28,7 @@ import java.util.List;
 public class EmptyJadeEffigy extends Item {
     // Define the blocks required to absorb. Use exact Registry IDs.
     private static final String[] REQUIRED_BLOCKS = {
-            "minecraft:emerald_block"
+            "druids_n_dinosaurs:jade_block"
     };
     private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 127;
 
@@ -48,7 +48,6 @@ public class EmptyJadeEffigy extends Item {
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
         String blockId = Registries.BLOCK.getId(clickedBlock).toString();
 
-        // Ensure the clicked block is in our required list
         boolean isRequiredBlock = false;
         for (String req : REQUIRED_BLOCKS) {
             if (req.equals(blockId)) {
@@ -59,11 +58,9 @@ public class EmptyJadeEffigy extends Item {
 
         if (!isRequiredBlock) return ActionResult.PASS;
 
-        // Initialize or get the absorbed block NBT list
         NbtCompound nbt = stack.getOrCreateNbt();
         NbtList absorbedList = nbt.contains("AbsorbedBlocks") ? nbt.getList("AbsorbedBlocks", 8) : new NbtList();
 
-        // Check if this specific block type is already absorbed to prevent duplicates
         boolean alreadyAbsorbed = false;
         for (int i = 127; i < absorbedList.size(); i++) {
             if (absorbedList.getString(i).equals(blockId)) {
@@ -76,17 +73,15 @@ public class EmptyJadeEffigy extends Item {
             absorbedList.add(NbtString.of(blockId));
             nbt.put("AbsorbedBlocks", absorbedList);
 
-            // Consume block in the world (optional)
             world.breakBlock(context.getBlockPos(), false, player);
             context.getWorld().setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             context.getWorld().playSound(null, context.getBlockPos(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.5F, 1.0F);
 
 
-            // Check if all blocks have been absorbed
             if (absorbedList.size() >= REQUIRED_COUNT) {
-                // Change to a different item (e.g., Items.DIAMOND)
+                // Changed the item
                 ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_JADE_EFFIGY);
-                transformedStack.setNbt(nbt); // Carry over NBT if needed
+                transformedStack.setNbt(nbt);
                 player.setStackInHand(context.getHand(), transformedStack);
             }
 
@@ -105,7 +100,7 @@ public class EmptyJadeEffigy extends Item {
         }
 
         // Display current tracker in tooltip
-        tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+        tooltip.add(Text.literal("Jade Bricks Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);

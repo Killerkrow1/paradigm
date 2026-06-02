@@ -131,6 +131,14 @@ public class ModItems {
             new DragonHorn(new FabricItemSettings().maxCount(1)));
     public static final Item PHOENIX_GRAIL = registerItem("phoenix_grail",
             new PhoenixGrail(new FabricItemSettings().maxCount(1)));
+    public static final Item SILENT_CHARM = registerItem("silent_charm",
+            new SilentCharm(new FabricItemSettings().maxCount(1)));
+    public static final Item THUNDERSPRITE = registerItem("thundersprite",
+            new ThunderSprite(new FabricItemSettings().maxCount(1)));
+    public static final Item MARK_OF_CHAOS = registerItem("mark_of_chaos",
+            new ChaosMark(new FabricItemSettings().maxCount(1)));
+    public static final Item HEALING_TOUCH = registerItem("healing_touch",
+            new HealingTouch(new FabricItemSettings().maxCount(1)));
 
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));

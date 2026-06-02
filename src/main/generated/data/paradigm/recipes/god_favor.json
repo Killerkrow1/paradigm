@@ -3,31 +3,31 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:atlas_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:novingard_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:astral_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:gero_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:ismene_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:ultimus_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:unknown_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:smiley_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:nera_favor"
     }
   ],
   "result": {

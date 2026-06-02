@@ -383,7 +383,7 @@ public class ModBlocks {
             new FlowerPotBlock(SHADOWTHORN, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
 
     public static final Block EFFIGERIUM_FURNACE = registerBlock("effigerium_furnace",
-            new BlastFurnaceBlock(
+            new FurnaceBlock(
                     AbstractBlock.Settings.copy(REINFORCED_DEEPSLATE)
                             .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                             .mapColor(MapColor.STONE_GRAY)
@@ -407,6 +407,34 @@ public class ModBlocks {
 
     public static final Block REVERENCE_BERRY_SACK = registerBlock("reverence_berry_sack",
             new ReverenceSack(FabricBlockSettings.copyOf(WHITE_WOOL).sounds(BlockSoundGroup.WOOL)));
+    public static final Block BRIMSTONE = registerBlock("brimstone",
+            new MagmaBlock(FabricBlockSettings.copyOf(MAGMA_BLOCK)));
+
+
+//    public static final Block REVERENCE_VINES = register("reverence_vines",
+//            new ReverenceVines(
+//                    AbstractBlock.Settings.create()
+//                            .mapColor(MapColor.DARK_GREEN)
+//                            .ticksRandomly()
+//                            .noCollision()
+//                            .luminance(CaveVines.getLuminanceSupplier(14))
+//                            .breakInstantly()
+//                            .sounds(BlockSoundGroup.CAVE_VINES)
+//                            .pistonBehavior(PistonBehavior.DESTROY)
+//            )
+//    );
+//    public static final Block REVERENCE_VINES_PLANT = register(
+//            "cave_vines_plant",
+//            new ReverenceVinesPlant(
+//                    AbstractBlock.Settings.create()
+//                            .mapColor(MapColor.DARK_GREEN)
+//                            .noCollision()
+//                            .luminance(CaveVines.getLuminanceSupplier(14))
+//                            .breakInstantly()
+//                            .sounds(BlockSoundGroup.CAVE_VINES)
+//                            .pistonBehavior(PistonBehavior.DESTROY)
+//            )
+//    );
 
 
 

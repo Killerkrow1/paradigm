@@ -2,6 +2,8 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.killerkrow.paradigm.block.ModBlocks;
+import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -27,7 +29,7 @@ public class ModModelProvider extends FabricModelProvider {
         //crackedGildenBricks.slab(ModBlocks.CRACKED_GILDEN_BRICK_SLAB);
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
         //blockStateModelGenerator.registerLantern(ModBlocks.SOUL_CHARGED_LANTERN);
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BRIMSTONE);
     }
 
     @Override
@@ -64,6 +66,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PHOENIX_GRAIL, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRAGON_HORN, Models.GENERATED);
         itemModelGenerator.register(ModItems.STASIS_MARK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SILENT_CHARM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MARK_OF_CHAOS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THUNDERSPRITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEALING_TOUCH, Models.GENERATED);
+
+        itemModelGenerator.register(ModFluids.DEAD_WATER_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.VOYD_ESSENCE_BUCKET, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));

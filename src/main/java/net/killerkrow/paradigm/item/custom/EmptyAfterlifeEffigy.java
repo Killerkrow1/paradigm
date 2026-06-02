@@ -105,7 +105,7 @@ public class EmptyAfterlifeEffigy extends Item {
         }
 
         // Display current tracker in tooltip
-        tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+        tooltip.add(Text.literal("Bone Blocks Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);

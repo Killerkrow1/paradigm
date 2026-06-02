@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "paradigm:afterlife_effigy"
+    },
+    "D": {
+      "item": "paradigm:demigod_effigy"
+    },
+    "E": {
+      "item": "paradigm:effigy_core"
+    },
+    "F": {
+      "item": "paradigm:favor_of_divinity"
+    },
+    "G": {
+      "item": "paradigm:semigod_effigy"
+    },
+    "Q": {
+      "item": "paradigm:mark_of_the_architect"
+    },
+    "R": {
+      "item": "minecraft:barrier"
+    },
+    "S": {
+      "item": "paradigm:soul_effigy"
+    },
+    "T": {
+      "item": "paradigm:effigy_extract"
+    }
+  },
+  "pattern": [
+    "ARS",
+    "TEF",
+    "DQG"
+  ],
+  "result": {
+    "item": "paradigm:god_effigy"
+  },
+  "show_notification": true
+}

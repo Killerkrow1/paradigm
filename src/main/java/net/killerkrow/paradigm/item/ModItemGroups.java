@@ -3,6 +3,8 @@ package net.killerkrow.paradigm.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.ModBlocks;
+import net.killerkrow.paradigm.fluids.ModFluids;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -103,6 +105,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_GILDEN_BRICK_STAIRS);
                         entries.add(ModBlocks.CRACKED_GILDEN_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
+                        entries.add(ModBlocks.BRIMSTONE);
+                        entries.add(ModFluids.DEAD_WATER_BUCKET);
+                        entries.add(ModFluids.VOYD_ESSENCE_BUCKET);
 
                     }).build());
 
@@ -240,6 +245,10 @@ public class ModItemGroups {
                                 entries.add(ModItems.STASIS_MARK);
                                 entries.add(ModItems.DRAGON_HORN);
                                 entries.add(ModItems.PHOENIX_GRAIL);
+                                entries.add(ModItems.SILENT_CHARM);
+                                entries.add(ModItems.THUNDERSPRITE);
+                                entries.add(ModItems.MARK_OF_CHAOS);
+                                entries.add(ModItems.HEALING_TOUCH);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);

@@ -106,7 +106,7 @@ public class EmptyDemiEffigy extends Item {
         }
 
         // Display current tracker in tooltip
-        tooltip.add(Text.literal("Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+        tooltip.add(Text.literal("Spawners & Beacons Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);

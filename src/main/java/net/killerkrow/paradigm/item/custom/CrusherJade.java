@@ -28,11 +28,6 @@ public class CrusherJade extends MiningToolItem {
     }
 
     @Override
-    public boolean hasGlint(ItemStack stack) {
-        return true; // Enables the enchanted shimmer
-    }
-
-    @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player) {
             // Check if the player is falling (distance in blocks)

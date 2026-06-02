@@ -3,8 +3,11 @@ package net.killerkrow.paradigm;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.effect.WatchedEffect;
+import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.sound.ModSounds;
@@ -27,6 +30,7 @@ public class ParadigmMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
+		ModFluids.register();
 
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("paradigm",
 				"watched_effect"), WATCHED_EFFECT);
@@ -35,5 +39,7 @@ public class ParadigmMod implements ModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS_PANE, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GILDEN_ICON, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOUL_CHARGED_LANTERN, RenderLayer.getTranslucent());
+
+
 	}
 }

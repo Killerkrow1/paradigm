@@ -3,31 +3,31 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:specter_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:invictus_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:shadow_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:yeti_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:zapa_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:pumpkin_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:castiel_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:togg_favor"
     },
     {
-      "tag": "paradigm:favor_item"
+      "item": "paradigm:velen_favor"
     }
   ],
   "result": {

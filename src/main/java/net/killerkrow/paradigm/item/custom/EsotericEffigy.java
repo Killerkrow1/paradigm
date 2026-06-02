@@ -47,10 +47,13 @@ public class EsotericEffigy extends TrinketItem {
         var modifiers = super.getModifiers(stack, slot, entity, uuid);
 
         // +15% movement speed
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "paradigm:movement_speed", -0.25,
+        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(uuid, "paradigm:movement_speed", -0.75,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         // +10% max health
-        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.25,
+        modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.5,
+                EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+        // +10% max health
+        modifiers.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.25,
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
 
         return modifiers;
@@ -58,7 +61,6 @@ public class EsotericEffigy extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        // Only apply effects on the server side to prevent duplication and desync
         if (!entity.getWorld().isClient()) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 1
             ));

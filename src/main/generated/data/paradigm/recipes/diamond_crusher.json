@@ -8,14 +8,17 @@
     "C": {
       "item": "minecraft:heart_of_the_sea"
     },
+    "P": {
+      "item": "minecraft:prismarine_shard"
+    },
     "S": {
       "item": "paradigm:jade_crusher"
     }
   },
   "pattern": [
     " BB",
-    "CSB",
-    "CC "
+    "PSB",
+    "CP "
   ],
   "result": {
     "item": "paradigm:diamond_crusher"

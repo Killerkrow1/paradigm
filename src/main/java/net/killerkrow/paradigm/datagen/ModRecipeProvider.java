@@ -21,6 +21,10 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
 
+    public static final net.minecraft.block.Block JADE_BLOCK = net.minecraft.registry.Registries.BLOCK.get(
+            new net.minecraft.util.Identifier("druids_n_dinosaurs", "jade_block"));
+    public static final net.minecraft.item.Item JADE_INGOT = net.minecraft.registry.Registries.ITEM.get(
+            new net.minecraft.util.Identifier("druids_n_dinosaurs", "jade_ingot"));
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -147,34 +151,40 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Greater Favor Recipes
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOD_FAVOR)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
+                .input(ModItems.ATLAS_FAVOR)
+                .input(ModItems.NOVINGARD_FAVOR)
+                .input(ModItems.ASTRAL_FAVOR)
+                .input(ModItems.GERO_FAVOR)
+                .input(ModItems.ISMENE_FAVOR)
+                .input(ModItems.ULTIMUS_FAVOR)
+                .input(ModItems.UNKNOWN_FAVOR)
+                .input(ModItems.SMILEY_FAVOR)
+                .input(ModItems.NERA_FAVOR)
                 .criterion(hasItem(ModItems.GILDEN_ORE), conditionsFromItem(ModItems.GILDEN_ORE))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "god_favor"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DEMIGOD_FAVOR)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
-                .input(ModTags.Items.FAVOR_ITEM)
+                .input(ModItems.SPECTER_FAVOR)
+                .input(ModItems.INVICTUS_FAVOR)
+                .input(ModItems.SHADOW_FAVOR)
+                .input(ModItems.YETI_FAVOR)
+                .input(ModItems.ZAPA_FAVOR)
+                .input(ModItems.PUMPKIN_FAVOR)
+                .input(ModItems.CASTIEL_FAVOR)
+                .input(ModItems.TOGG_FAVOR)
+                .input(ModItems.VELEN_FAVOR)
                 .criterion(hasItem(ModItems.GILDEN_ORE), conditionsFromItem(ModItems.GILDEN_ORE))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "demigod_favor"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FAVOR_OF_DIVINITY)
                 .input(ModItems.GOD_FAVOR)
                 .input(ModItems.DEMIGOD_FAVOR)
+                .input(ModItems.BLANK_FAVOR)
                 .criterion(hasItem(ModItems.GOD_FAVOR), conditionsFromItem(ModItems.GOD_FAVOR))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "favor_of_divinity"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REVERENCE_BERRY)
+                .input(ModItems.REVERENCE_STEM)
+                .input(Items.GLOW_BERRIES)
+                .criterion(hasItem(ModItems.REVERENCE_STEM), conditionsFromItem(ModItems.REVERENCE_STEM))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "stem_to_berry"));
 
         // Crusher Recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_CRUSHER)
@@ -224,11 +234,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_crusher"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMOND_CRUSHER)
                 .pattern(" BB")
-                .pattern("CSB")
-                .pattern("CC ")
+                .pattern("PSB")
+                .pattern("CP ")
                 .input('B',Items.DIAMOND)
                 .input('S', ModItems.JADE_CRUSHER)
                 .input('C', Items.HEART_OF_THE_SEA)
+                .input('P', Items.PRISMARINE_SHARD)
                 .criterion(hasItem(ModItems.JADE_CRUSHER), conditionsFromItem(ModItems.JADE_CRUSHER))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "diamond_crusher"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NETHERITE_CRUSHER)
@@ -260,11 +271,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_crown"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_BRICKS)
-                .pattern("GR ")
-                .pattern("RG ")
+                .pattern("GG ")
+                .pattern("GG ")
                 .pattern("   ")
                 .input('G',ModItems.GILDEN_INGOT)
-                .input('R',ModItems.GILDEN_ORE)
                 .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick"));
 
@@ -342,6 +352,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S',ModItems.SHADOW_FAVOR)
                 .criterion(hasItem(ModItems.SHADOW_FAVOR), conditionsFromItem(ModItems.SHADOW_FAVOR))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "soul_deal"));
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOD_EFFIGY)
+                .pattern("ARS")
+                .pattern("TEF")
+                .pattern("DQG")
+                .input('A',ModItems.AFTERLIFE_EFFIGY)
+                .input('R',Items.BARRIER)
+                .input('S',ModItems.SOUL_EFFIGY)
+                .input('T',ModItems.EFFIGY_EXTRACT)
+                .input('E',ModItems.EFFIGY_CORE)
+                .input('F',ModItems.FAVOR_OF_DIVINITY)
+                .input('D',ModItems.DEMIGOD_EFFIGY)
+                .input('Q',ModItems.MARK_OF_THE_ARCHITECT)
+                .input('G',ModItems.SEMIGOD_EFFIGY)
+                .criterion(hasItem(ModItems.MARK_OF_CHAOS), conditionsFromItem(ModItems.MARK_OF_CHAOS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "god_effigy"));
 
 
 

@@ -4,14 +4,11 @@
   "key": {
     "G": {
       "item": "paradigm:gilden_ingot"
-    },
-    "R": {
-      "item": "paradigm:gilden_ore"
     }
   },
   "pattern": [
-    "GR ",
-    "RG ",
+    "GG ",
+    "GG ",
     "   "
   ],
   "result": {
