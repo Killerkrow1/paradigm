@@ -55,6 +55,7 @@ public class ModItemGroups {
                         entries.add(ModItems.MARK_OF_THE_ARCHITECT);
                         entries.add(ModBlocks.EFFIGERIUM_FURNACE);
                         entries.add(ModItems.BROKEN_HEART);
+                        entries.add(ModItems.JADE_BRICK);
 
                     }).build());
 
@@ -106,6 +107,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CRACKED_GILDEN_BRICK_SLAB);
                         entries.add(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
                         entries.add(ModBlocks.BRIMSTONE);
+                        entries.add(ModBlocks.JADE_BLOCK);
                         entries.add(ModFluids.DEAD_WATER_BUCKET);
                         entries.add(ModFluids.VOYD_ESSENCE_BUCKET);
 

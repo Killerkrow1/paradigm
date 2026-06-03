@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "druids_n_dinosaurs:jade_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "paradigm:jade_block"
+  }
+}

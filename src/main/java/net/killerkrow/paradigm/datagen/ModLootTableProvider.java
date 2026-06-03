@@ -36,6 +36,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //addDrop(ModBlocks.CRACKED_GILDEN_BRICK_WALL);
         //addDropWithSilkTouch(ModBlocks.GILDEN_ICON);
         //addDrop(ModBlocks.SOUL_CHARGED_LANTERN);
+        addDrop(ModBlocks.JADE_BLOCK);
     }
 
 

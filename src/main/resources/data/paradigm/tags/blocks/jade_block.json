@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "druids_n_dinosaurs:jade_block"
+    "druids_n_dinosaurs:jade_block",
+    "paradigm:jade_block"
   ]
 }

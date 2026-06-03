@@ -409,6 +409,8 @@ public class ModBlocks {
             new ReverenceSack(FabricBlockSettings.copyOf(WHITE_WOOL).sounds(BlockSoundGroup.WOOL)));
     public static final Block BRIMSTONE = registerBlock("brimstone",
             new MagmaBlock(FabricBlockSettings.copyOf(MAGMA_BLOCK)));
+    public static final Block JADE_BLOCK = registerBlock("jade_block",
+            new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
 
 
 //    public static final Block REVERENCE_VINES = register("reverence_vines",

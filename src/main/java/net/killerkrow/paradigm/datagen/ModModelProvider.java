@@ -30,6 +30,7 @@ public class ModModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
         //blockStateModelGenerator.registerLantern(ModBlocks.SOUL_CHARGED_LANTERN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BRIMSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JADE_BLOCK);
     }
 
     @Override
@@ -38,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REVERENCE_EFFIGY, Models.GENERATED);
         itemModelGenerator.register(ModItems.EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JADE_BRICK, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ATLAS_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.NOVINGARD_FAVOR, Models.GENERATED);

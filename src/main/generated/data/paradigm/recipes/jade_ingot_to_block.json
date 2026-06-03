@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    },
+    {
+      "item": "paradigm:jade_brick"
+    }
+  ],
+  "result": {
+    "item": "paradigm:jade_block"
+  }
+}

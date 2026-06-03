@@ -24,6 +24,8 @@ public class ModTags {
                 createTag("bindment_item");
         public static final TagKey<Item> FAVOR_ITEM =
                 createTag("favor_item");
+        public static final TagKey<Item> JADE_BRICK =
+                createTag("jade_brick");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(ParadigmMod.MOD_ID, name));

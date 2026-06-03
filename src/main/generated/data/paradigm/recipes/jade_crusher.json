@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "B": {
-      "item": "minecraft:emerald"
+      "tag": "paradigm:jade_brick"
     },
     "S": {
       "item": "paradigm:gold_crusher"

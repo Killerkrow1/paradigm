@@ -1,6 +1,8 @@
 package net.killerkrow.paradigm.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.favor.*;
@@ -45,6 +47,8 @@ public class ModItems {
     public static final Item GILDEN_DUST = registerItem("gilden_dust",
             new Item(new FabricItemSettings()));
     public static final Item BROKEN_HEART = registerItem("broken_heart",
+            new Item(new FabricItemSettings()));
+    public static final Item JADE_BRICK = registerItem("jade_brick",
             new Item(new FabricItemSettings()));
 
     //extended normal items
@@ -376,11 +380,18 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(ParadigmMod.MOD_ID, name), item);
     }
 
+    private static void addItemsToOperatorTabItemsGroup(FabricItemGroupEntries entries) {
+        entries.add(SMILE_ITEM);
+        entries.add(TEST);
+        entries.add(ASTRAVEN_LOGO);
+    }
     public static void registerModItems() {
         ParadigmMod.LOGGER.info("Registering Mod Items for " + ParadigmMod.MOD_ID);
 
+
+
         //This is kinda useless, but ima keep it for keepsakes
-        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemsGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(ModItems::addItemsToOperatorTabItemsGroup);
 
     }
 }

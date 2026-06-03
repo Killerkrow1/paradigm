@@ -2,6 +2,7 @@ package net.killerkrow.paradigm.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBlockTags;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
@@ -13,6 +14,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
@@ -20,11 +22,6 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-
-    public static final net.minecraft.block.Block JADE_BLOCK = net.minecraft.registry.Registries.BLOCK.get(
-            new net.minecraft.util.Identifier("druids_n_dinosaurs", "jade_block"));
-    public static final net.minecraft.item.Item JADE_INGOT = net.minecraft.registry.Registries.ITEM.get(
-            new net.minecraft.util.Identifier("druids_n_dinosaurs", "jade_ingot"));
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -185,6 +182,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.GLOW_BERRIES)
                 .criterion(hasItem(ModItems.REVERENCE_STEM), conditionsFromItem(ModItems.REVERENCE_STEM))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "stem_to_berry"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.JADE_BRICK, 9)
+                .input(ModBlocks.JADE_BLOCK)
+                .criterion(hasItem(ModItems.REVERENCE_STEM), conditionsFromItem(ModItems.REVERENCE_STEM))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_block_to_ingot"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.JADE_BLOCK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .input(ModItems.JADE_BRICK)
+                .criterion(hasItem(ModItems.REVERENCE_STEM), conditionsFromItem(ModItems.REVERENCE_STEM))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_ingot_to_block"));
 
         // Crusher Recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_CRUSHER)
@@ -228,7 +241,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" BB")
                 .pattern("BSB")
                 .pattern("BB ")
-                .input('B',Items.EMERALD)
+                .input('B',ModTags.Items.JADE_BRICK)
                 .input('S', ModItems.GOLD_CRUSHER)
                 .criterion(hasItem(ModItems.GOLD_CRUSHER), conditionsFromItem(ModItems.GOLD_CRUSHER))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_crusher"));

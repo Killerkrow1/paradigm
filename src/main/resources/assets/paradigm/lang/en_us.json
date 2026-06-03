@@ -304,5 +304,8 @@
   "tooltip.paradigm.thundersprite.tooltip": "Charged with the pure electric energy of Zapa, it will strike your foes.",
   "tooltip.paradigm.silent_charm.tooltip": ". . .",
   "tooltip.paradigm.healing_touch.tooltip": "Some say that when it's held those around yourself will find themselves feeling better.",
-  "tooltip.paradigm.chaos_mark.tooltip": "Chaotic forces run through any who try and hold this elegant source."
+  "tooltip.paradigm.chaos_mark.tooltip": "Chaotic forces run through any who try and hold this elegant source.",
+  "block.paradigm.jade_block": "Jade Block",
+  "item.paradigm.jade_brick": "Jade Brick",
+  "tooltip.paradigm.reverenceeffigy.tooltip": "The fueling power of Reverence put into an Effigy. Can you eat it?"
 }

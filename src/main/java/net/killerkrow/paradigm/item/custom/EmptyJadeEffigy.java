@@ -1,9 +1,7 @@
 package net.killerkrow.paradigm.item.custom;
 
-import dev.emi.trinkets.api.TrinketItem;
 import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,7 +17,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -28,9 +25,10 @@ import java.util.List;
 public class EmptyJadeEffigy extends Item {
     // Define the blocks required to absorb. Use exact Registry IDs.
     private static final String[] REQUIRED_BLOCKS = {
-            "druids_n_dinosaurs:jade_block"
+            "druids_n_dinosaurs:jade_block",
+            "paradigm:jade_block"
     };
-    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 127;
+    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 126;
 
     public EmptyJadeEffigy(Settings settings) {
         super(settings);
@@ -100,7 +98,7 @@ public class EmptyJadeEffigy extends Item {
         }
 
         // Display current tracker in tooltip
-        tooltip.add(Text.literal("Jade Bricks Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
+        tooltip.add(Text.literal("Jade Blocks Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 
         super.appendTooltip(stack, world, tooltip, context);
