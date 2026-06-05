@@ -189,67 +189,67 @@ public class ModItems {
 
     // weapons n stuff
     public  static final Item WOODEN_CRUSHER = registerItem("wooden_crusher",
-            new CrusherWooden(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherWooden(ParadigmToolMaterials.CRUSHERWOOD, 0, -3.4f, new FabricItemSettings()));
     public  static final Item STONE_CRUSHER = registerItem("stone_crusher",
-            new CrusherStone(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherStone(ParadigmToolMaterials.CRUSHERSTONE, 0, -3.4f, new FabricItemSettings()));
     public  static final Item IRON_CRUSHER = registerItem("iron_crusher",
-            new CrusherIron(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherIron(ParadigmToolMaterials.CRUSHERIRON, 0, -3.4f, new FabricItemSettings()));
     public  static final Item GOLD_CRUSHER = registerItem("gold_crusher",
-            new CrusherGold(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherGold(ParadigmToolMaterials.CRUSHERGOLD, 0, -3.4f, new FabricItemSettings()));
     public  static final Item JADE_CRUSHER = registerItem("jade_crusher",
-            new CrusherJade(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherJade(ParadigmToolMaterials.CRUSHERJADE, 0, -3.4f, new FabricItemSettings()));
     public  static final Item DIAMOND_CRUSHER = registerItem("diamond_crusher",
-            new CrusherDiamond(ParadigmToolMaterials.CRUSHERDIAMOND, 1, 2, new FabricItemSettings()));
+            new CrusherDiamond(ParadigmToolMaterials.CRUSHERDIAMOND, 0, -3.4f, new FabricItemSettings()));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
-            new CrusherNetherite(ParadigmToolMaterials.CRUSHERNETHERITE, 1, 2, new FabricItemSettings()));
+            new CrusherNetherite(ParadigmToolMaterials.CRUSHERNETHERITE, 0, -3.4f, new FabricItemSettings().fireproof()));
 
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 16, -2.8f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 6, -2.2f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_CUTTER = registerItem("inverted_cutter",
-            new FastInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 0.1f, new FabricItemSettings()));
+            new FastInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 11, -2.0f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item SMILEYS_IMPULSE = registerItem("smileys_impulse",
-            new SmileyInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new SmileyInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 29, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BRAND = registerItem("inverted_brand",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item SOUL_INVERSION = registerItem("soul_inversion",
-            new SoulInversion(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new SoulInversion(ParadigmToolMaterials.IMPERIUM, 17, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BLADE = registerItem("inverted_blade",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BITE = registerItem("inverted_bite",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 15, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_HAMMER = registerItem("inverted_hammer",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 1, 2, new FabricItemSettings()));
+            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 18, -3.1f, new FabricItemSettings(), ModRarities.INVERTED));
 
     public  static final Item ATLAS_WRATH = registerItem("atlas_wrath",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item ATLAS_BETRAYAL = registerItem("atlas_betrayal",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item ASTRAL_PRIDE = registerItem("astral_pride",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item ASTRAL_FURY = registerItem("astral_fury",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item GERO_SCAR = registerItem("gero_scar",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item GERO_LUST = registerItem("gero_lust",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item NOVINGARD_BLESSING = registerItem("novingard_blessing",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item NOVINGARD_WISH = registerItem("novingard_wish",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item ISMENE_LINE = registerItem("ismene_line",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item ULTIMUS_RING = registerItem("ultimus_ring",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item UNKNOWN_DARKNESS = registerItem("unknown_darkness",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item TWIN_SWORD_ATLAS = registerItem("twin_sword_atlas",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
     public  static final Item TWIN_SHIELD_ATLAS = registerItem("twin_shield_atlas",
-            new ShieldItem(new FabricItemSettings()));
+            new ShieldItem(new FabricItemSettings().fireproof()));
 
     public  static final Item FRAGMENTED_ICON = registerItem("fragmented_icon",
             new FragmentedIcon(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
@@ -287,7 +287,7 @@ public class ModItems {
     public static final Item DEMIGOD_EFFIGY = registerItem("demigod_effigy",
             new DemiGodEffigy(new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
     public static final Item GOD_EFFIGY = registerItem("god_effigy",
-            new GodEffigy(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1)));
+            new GodEffigy(new FabricItemSettings().rarity(Rarity.EPIC).maxCount(1).fireproof()));
     public static final Item UNKNOWN_MASK = registerItem("unknown_mask",
             new UnknownMask(new FabricItemSettings().maxCount(1)));
 
@@ -329,21 +329,21 @@ public class ModItems {
 
     //Netherite Chain
     public static final Item NETHERITECHAIN_HELMET = registerItem("netherite_chain_helmet",
-            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item NETHERITECHAIN_CHESTPLATE = registerItem("netherite_chain_chestplate",
-            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item NETHERITECHAIN_LEGGINGS = registerItem("netherite_chain_leggings",
-            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
     public static final Item NETHERITECHAIN_BOOTS = registerItem("netherite_chain_boots",
-            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
     //Admin Chain
     public static final Item ADMINCHAIN_HELMET = registerItem("admin_chain_helmet",
-            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item ADMINCHAIN_CHESTPLATE = registerItem("admin_chain_chestplate",
-            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item ADMINCHAIN_LEGGINGS = registerItem("admin_chain_leggings",
-            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
     public static final Item ADMINCHAIN_BOOTS = registerItem("admin_chain_boots",
             new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 

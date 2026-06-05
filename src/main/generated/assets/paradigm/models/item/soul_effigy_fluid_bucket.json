@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "paradigm:item/soul_effigy_fluid_bucket"
+  }
+}

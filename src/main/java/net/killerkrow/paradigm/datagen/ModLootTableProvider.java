@@ -3,7 +3,6 @@ package net.killerkrow.paradigm.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.killerkrow.paradigm.block.ModBlocks;
-import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;

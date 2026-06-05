@@ -108,5 +108,105 @@ public class ParadigmModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_VOYD_ESSENCE, ModFluids.FLOWING_VOYD_ESSENCE);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_JADE_EFFIGY, ModFluids.FLOWING_JADE_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/jade_fluid"),
+                        new Identifier("paradigm:block/jade_fluid"),
+                        0xA7BD16D
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_JADE_EFFIGY, ModFluids.FLOWING_JADE_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_AFTERLIFE_EFFIGY, ModFluids.FLOWING_AFTERLIFE_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/afterlife_fluid"),
+                        new Identifier("paradigm:block/afterlife_fluid"),
+                        0xAF51818
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_AFTERLIFE_EFFIGY, ModFluids.FLOWING_AFTERLIFE_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_ESOTERIC_EFFIGY, ModFluids.FLOWING_ESOTERIC_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/esoteric_fluid"),
+                        new Identifier("paradigm:block/esoteric_fluid"),
+                        0xA705F32
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_ESOTERIC_EFFIGY, ModFluids.FLOWING_ESOTERIC_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_SOUL_EFFIGY, ModFluids.FLOWING_SOUL_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/soul_fluid"),
+                        new Identifier("paradigm:block/soul_fluid"),
+                        0xA45E6E6
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_SOUL_EFFIGY, ModFluids.FLOWING_SOUL_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_DEMIGOD_EFFIGY, ModFluids.FLOWING_DEMIGOD_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/demigod_fluid"),
+                        new Identifier("paradigm:block/demigod_fluid"),
+                        0xA319E9E
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_DEMIGOD_EFFIGY, ModFluids.FLOWING_DEMIGOD_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_REVERENCE_EFFIGY, ModFluids.FLOWING_REVERENCE_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/reverence_fluid"),
+                        new Identifier("paradigm:block/reverence_fluid"),
+                        0xA42E6FF
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_REVERENCE_EFFIGY, ModFluids.FLOWING_REVERENCE_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_SEMIGOD_EFFIGY, ModFluids.FLOWING_SEMIGOD_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/semigod_fluid"),
+                        new Identifier("paradigm:block/semigod_fluid"),
+                        0xAED6FC8
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_SEMIGOD_EFFIGY, ModFluids.FLOWING_SEMIGOD_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LUNAR_EFFIGY, ModFluids.FLOWING_LUNAR_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/lunar_fluid"),
+                        new Identifier("paradigm:block/lunar_fluid"),
+                        0xAE8DAE4
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_LUNAR_EFFIGY, ModFluids.FLOWING_LUNAR_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_SOLAR_EFFIGY, ModFluids.FLOWING_SOLAR_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/solar_fluid"),
+                        new Identifier("paradigm:block/solar_fluid"),
+                        0xAFF9452
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_SOLAR_EFFIGY, ModFluids.FLOWING_SOLAR_EFFIGY);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_GOD_EFFIGY, ModFluids.FLOWING_GOD_EFFIGY,
+                new SimpleFluidRenderHandler(
+                        new Identifier("paradigm:block/god_fluid"),
+                        new Identifier("paradigm:block/god_fluid"),
+                        0xACB38E0
+                ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
+                ModFluids.STILL_GOD_EFFIGY, ModFluids.FLOWING_GOD_EFFIGY);
     }
 }

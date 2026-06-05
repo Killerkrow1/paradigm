@@ -11,28 +11,28 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ParadigmToolMaterials implements ToolMaterial {
-    CRUSHERWOOD(MiningLevels.WOOD, 59, 2.0F, 4.0F, 15,
+    CRUSHERWOOD(MiningLevels.WOOD, 59, 4.0F, 3.0F, 15,
             () -> Ingredient.fromTag(ItemTags.PLANKS)),
-    CRUSHERSTONE(MiningLevels.STONE, 131, 4.0F, 5.0F, 5,
+    CRUSHERSTONE(MiningLevels.STONE, 131, 5.0F, 4.0F, 5,
             () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
-    CRUSHERIRON(MiningLevels.IRON, 250, 6.0F, 6.0F, 14,
+    CRUSHERIRON(MiningLevels.IRON, 250, 6.0F, 5.0F, 14,
             () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    CRUSHERGOLD(MiningLevels.IRON, 561, 7.0F, 6.0F, 22,
+    CRUSHERGOLD(MiningLevels.IRON, 561, 9.0F, 5.0F, 22,
             () -> Ingredient.ofItems(Items.GOLD_INGOT)),
-    CRUSHERJADE(MiningLevels.DIAMOND, 1084, 8.0F, 7.0F, 10,
-            () -> Ingredient.ofItems(Items.EMERALD)),
-    CRUSHERDIAMOND(MiningLevels.DIAMOND, 1561 , 8.0F, 7.0F, 10,
+    CRUSHERJADE(MiningLevels.DIAMOND, 1084, 7.0F, 6.0F, 10,
+            () -> Ingredient.ofItems(ModItems.JADE_BRICK)),
+    CRUSHERDIAMOND(MiningLevels.DIAMOND, 1561 , 7.0F, 6.0F, 10,
             () -> Ingredient.ofItems(Items.DIAMOND)),
-    CRUSHERNETHERITE(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+    CRUSHERNETHERITE(MiningLevels.NETHERITE, 2031, 8.0F, 7.0F, 15,
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
 
-    IMPERIUM(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+    IMPERIUM(MiningLevels.NETHERITE, 2031, 9.0F, 0.0F, 15,
             () -> Ingredient.ofItems(ModItems.IMPERIUM_INGOT)),
-    GOD(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+    GOD(MiningLevels.NETHERITE, 2031, 9.0F, 0.0F, 15,
             () -> Ingredient.ofItems(ModItems.EFFIGERIUM_INGOT)),
-    AFTERLIFE(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+    AFTERLIFE(MiningLevels.NETHERITE, 2031, 9.0F, 0.0F, 15,
             () -> Ingredient.ofItems(Items.BONE)),
-    UNIQUE(MiningLevels.NETHERITE, 2031, 9.0F, 8.0F, 15,
+    UNIQUE(MiningLevels.NETHERITE, 2031, 9.0F, 0.0F, 15,
             () -> Ingredient.ofItems(ModItems.GILDEN_INGOT));
 
     private final int miningLevel;

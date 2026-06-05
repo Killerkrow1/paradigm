@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "paradigm:dead_water",
-    "paradigm:flowing_dead_water",
     "paradigm:voyd_essence",
     "paradigm:flowing_voyd_essence"
   ]

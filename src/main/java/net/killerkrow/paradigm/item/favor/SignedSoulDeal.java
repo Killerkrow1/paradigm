@@ -6,6 +6,7 @@ import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -14,8 +15,17 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class SignedSoulDeal extends CustomRarityItem {
+    private final ModRarities rarity;
     public SignedSoulDeal(Settings settings, ModRarities rarity) {
         super(settings, rarity);
+        this.rarity = rarity;
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        Text baseName = super.getName(stack);
+
+        return baseName.copy().setStyle(Style.EMPTY.withColor(rarity.color));
     }
 
     @Override

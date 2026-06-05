@@ -75,6 +75,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModFluids.DEAD_WATER_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModFluids.VOYD_ESSENCE_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.JADE_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.AFTERLIFE_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.ESOTERIC_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SOUL_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.DEMIGOD_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.REVERENCE_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SEMIGOD_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.LUNAR_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.SOLAR_EFFIGY_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModFluids.GOD_EFFIGY_BUCKET, Models.GENERATED);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));

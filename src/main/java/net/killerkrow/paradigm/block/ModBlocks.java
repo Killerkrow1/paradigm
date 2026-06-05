@@ -405,6 +405,8 @@ public class ModBlocks {
             )
     );
 
+
+
     public static final Block REVERENCE_BERRY_SACK = registerBlock("reverence_berry_sack",
             new ReverenceSack(FabricBlockSettings.copyOf(WHITE_WOOL).sounds(BlockSoundGroup.WOOL)));
     public static final Block BRIMSTONE = registerBlock("brimstone",

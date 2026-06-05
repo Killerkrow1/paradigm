@@ -3,13 +3,12 @@ package net.killerkrow.paradigm;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
-import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.effect.WatchedEffect;
 import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
+import net.killerkrow.paradigm.painting.ModPaintings;
 import net.killerkrow.paradigm.sound.ModSounds;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;
@@ -31,6 +30,7 @@ public class ParadigmMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
 		ModFluids.register();
+		ModPaintings.registerPaintings();
 
 		Registry.register(Registries.STATUS_EFFECT, new Identifier("paradigm",
 				"watched_effect"), WATCHED_EFFECT);

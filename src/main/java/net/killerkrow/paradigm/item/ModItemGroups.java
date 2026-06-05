@@ -4,11 +4,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.fluids.ModFluids;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -110,6 +107,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.JADE_BLOCK);
                         entries.add(ModFluids.DEAD_WATER_BUCKET);
                         entries.add(ModFluids.VOYD_ESSENCE_BUCKET);
+                        entries.add(ModFluids.JADE_EFFIGY_BUCKET);
+                        entries.add(ModFluids.AFTERLIFE_EFFIGY_BUCKET);
+                        entries.add(ModFluids.ESOTERIC_EFFIGY_BUCKET);
+                        entries.add(ModFluids.SOUL_EFFIGY_BUCKET);
+                        entries.add(ModFluids.DEMIGOD_EFFIGY_BUCKET);
+                        entries.add(ModFluids.SEMIGOD_EFFIGY_BUCKET);
+                        entries.add(ModFluids.REVERENCE_EFFIGY_BUCKET);
+                        entries.add(ModFluids.LUNAR_EFFIGY_BUCKET);
+                        entries.add(ModFluids.SOLAR_EFFIGY_BUCKET);
+                        entries.add(ModFluids.GOD_EFFIGY_BUCKET);
 
                     }).build());
 
