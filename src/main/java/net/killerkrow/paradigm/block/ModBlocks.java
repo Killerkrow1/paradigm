@@ -132,6 +132,8 @@ public class ModBlocks {
 
     public static final Block GILDEN_ICON = registerBlock("gilden_icon",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.GLASS).nonOpaque()));
+    public static final Block GILDEN_PILLAR = registerBlock("gilden_pillar",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
 
     public static final Block GILDEN_BRICKS = registerBlock("gilden_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
@@ -412,6 +414,8 @@ public class ModBlocks {
     public static final Block BRIMSTONE = registerBlock("brimstone",
             new MagmaBlock(FabricBlockSettings.copyOf(MAGMA_BLOCK)));
     public static final Block JADE_BLOCK = registerBlock("jade_block",
+            new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
+    public static final Block GILDEN_JADE_BLOCK = registerBlock("gilden_jade_block",
             new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
 
 

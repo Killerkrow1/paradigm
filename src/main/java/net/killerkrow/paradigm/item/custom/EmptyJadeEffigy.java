@@ -26,9 +26,10 @@ public class EmptyJadeEffigy extends Item {
     // Define the blocks required to absorb. Use exact Registry IDs.
     private static final String[] REQUIRED_BLOCKS = {
             "druids_n_dinosaurs:jade_block",
-            "paradigm:jade_block"
+            "paradigm:jade_block",
+            "paradigm:gilden_jade_block"
     };
-    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 126;
+    private static final int REQUIRED_COUNT = REQUIRED_BLOCKS.length + 125;
 
     public EmptyJadeEffigy(Settings settings) {
         super(settings);

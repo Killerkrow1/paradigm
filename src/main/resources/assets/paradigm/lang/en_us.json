@@ -327,5 +327,9 @@
   "block.paradigm.reverence_effigy_fluid_block": "Reverence Fluid Block",
   "block.paradigm.lunar_effigy_fluid_block": "Lunar Fluid Block",
   "block.paradigm.solar_effigy_fluid_block": "Solar Fluid Block",
-  "block.paradigm.god_effigy_fluid_block": "God Fluid Block"
+  "block.paradigm.god_effigy_fluid_block": "God Fluid Block",
+  "block.paradigm.gilden_pillar": "Gilden Pillar",
+  "tooltip.paradigm.jade_heart.tooltip": "Scholars debate whether this is the Heart of Deco, or just a worthless relic.",
+  "item.paradigm.sep": "Soul-Engraved Power",
+  "tooltip.paradigm.sep.tooltip": "Inside is held the Soul-Engraved Power of a soul."
 }

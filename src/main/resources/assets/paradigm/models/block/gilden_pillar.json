@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paradigm:block/gilden_brick_pillar_top",
+    "up": "paradigm:block/gilden_brick_pillar_top",
+    "north": "paradigm:block/gilden_brick_pillar_side",
+    "east": "paradigm:block/gilden_brick_pillar_side",
+    "south": "paradigm:block/gilden_brick_pillar_side",
+    "west": "paradigm:block/gilden_brick_pillar_side",
+    "particle": "paradigm:block/gilden_brick_pillar_top"
+  },
+  "render_type": "solid"
+}

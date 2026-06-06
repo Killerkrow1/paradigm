@@ -53,6 +53,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.EFFIGERIUM_FURNACE);
                         entries.add(ModItems.BROKEN_HEART);
                         entries.add(ModItems.JADE_BRICK);
+                        entries.add(ModItems.SEP);
+                        entries.add(ModBlocks.GILDEN_JADE_BLOCK);
 
                     }).build());
 

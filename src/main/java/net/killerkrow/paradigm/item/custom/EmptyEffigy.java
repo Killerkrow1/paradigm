@@ -41,7 +41,7 @@ public class EmptyEffigy extends TrinketItem {
         ItemStack stack = context.getStack();
 
         // These are what blocks are being absorbed
-        if (state.isOf(ModBlocks.JADE_BLOCK) //Jade Effigy starter, Emerald is placeholder for now
+        if (state.isOf(ModBlocks.GILDEN_JADE_BLOCK) //Jade Effigy starter, Emerald is placeholder for now
                 || state.isOf(Blocks.SCULK_SHRIEKER) || state.isOf(Blocks.SCULK_CATALYST) || state.isOf(Blocks.SCULK_SENSOR) //Soul Effigy starter
                 || state.isOf(Blocks.BONE_BLOCK) //Afterlife Effigy starter
                 || state.isOf(Blocks.CONDUIT) || state.isOf(Blocks.NETHERITE_BLOCK) || state.isOf(Blocks.ENCHANTING_TABLE) //Semigod Effigy starter
@@ -86,7 +86,7 @@ public class EmptyEffigy extends TrinketItem {
     private ItemStack getTransformedItem(BlockState state) {
 
         //Start of the jade Effigy Givers
-        if (state.isOf(ModBlocks.JADE_BLOCK)) {
+        if (state.isOf(ModBlocks.GILDEN_JADE_BLOCK)) {
             return new ItemStack(ModItems.EMPTY_JADE_EFFIGY);
         }
 

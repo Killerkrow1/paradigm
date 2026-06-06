@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "paradigm:block/gilden_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "paradigm:block/gilden_pillar"
+    },
+    "axis=z": {
+      "model": "paradigm:block/gilden_pillar",
+      "x": 90
+    }
+  }
+}

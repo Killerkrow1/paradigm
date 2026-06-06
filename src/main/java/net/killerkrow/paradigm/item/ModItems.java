@@ -50,6 +50,10 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item JADE_BRICK = registerItem("jade_brick",
             new Item(new FabricItemSettings()));
+    public static final Item SEP = registerItem("sep",
+            new SEP(new FabricItemSettings().fireproof().maxCount(16), ModRarities.SEP));
+    public static final Item JADE_HEART = registerItem("jade_heart",
+            new JadeHeart(new FabricItemSettings().fireproof().maxCount(1)));
 
     //extended normal items
     public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",
