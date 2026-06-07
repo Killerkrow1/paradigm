@@ -1,5 +1,6 @@
 package net.killerkrow.paradigm.item.custom;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -8,8 +9,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -21,9 +20,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SEP extends Item {
+public class Soul extends Item {
     private final ModRarities rarity;
-    public SEP(Settings settings, ModRarities rarity) {
+    public Soul(Settings settings, ModRarities rarity) {
         super(settings);
         this.rarity = rarity;
     }
@@ -36,18 +35,6 @@ public class SEP extends Item {
     }
 
     @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack itemStack = user.getStackInHand(hand);
-        if (!world.isClient()) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0));
-            itemStack.decrement(1);
-            world.playSound(null, user.getX(), user.getY(), user.getZ(),
-                    SoundEvents.BLOCK_BEACON_POWER_SELECT, SoundCategory.PLAYERS, 0.1f, 1.0f);
-        }
-        return new TypedActionResult<>(ActionResult.SUCCESS, itemStack);
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true; // Enables the enchanted shimmer
     }
@@ -56,7 +43,7 @@ public class SEP extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.sep.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.soul.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }

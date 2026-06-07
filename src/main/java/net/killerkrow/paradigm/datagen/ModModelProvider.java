@@ -40,6 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_EMPTY_REVERENCE_EFFIGY, Models.GENERATED);
         itemModelGenerator.register(ModItems.JADE_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.JADE_HEART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_EXTRACTER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.ATLAS_FAVOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.NOVINGARD_FAVOR, Models.GENERATED);

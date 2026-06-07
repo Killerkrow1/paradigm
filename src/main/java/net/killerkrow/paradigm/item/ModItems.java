@@ -51,7 +51,11 @@ public class ModItems {
     public static final Item JADE_BRICK = registerItem("jade_brick",
             new Item(new FabricItemSettings()));
     public static final Item SEP = registerItem("sep",
-            new SEP(new FabricItemSettings().fireproof().maxCount(16), ModRarities.SEP));
+            new SEP(new FabricItemSettings().fireproof().maxCount(1), ModRarities.SEP));
+    public static final Item SOUL = registerItem("soul",
+            new Soul(new FabricItemSettings().fireproof().maxCount(1), ModRarities.SOUL));
+    public static final Item SOUL_EXTRACTER = registerItem("soul_extracter",
+            new SoulExtracter(new FabricItemSettings().fireproof().maxCount(1), ModRarities.SOUL));
     public static final Item JADE_HEART = registerItem("jade_heart",
             new JadeHeart(new FabricItemSettings().fireproof().maxCount(1)));
 

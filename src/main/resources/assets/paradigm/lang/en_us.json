@@ -329,7 +329,13 @@
   "block.paradigm.solar_effigy_fluid_block": "Solar Fluid Block",
   "block.paradigm.god_effigy_fluid_block": "God Fluid Block",
   "block.paradigm.gilden_pillar": "Gilden Pillar",
+  "block.paradigm.gilden_jade_block": "Gilden Jade Block",
   "tooltip.paradigm.jade_heart.tooltip": "Scholars debate whether this is the Heart of Deco, or just a worthless relic.",
   "item.paradigm.sep": "Soul-Engraved Power",
-  "tooltip.paradigm.sep.tooltip": "Inside is held the Soul-Engraved Power of a soul."
+  "tooltip.paradigm.sep.tooltip": "Inside is held the Soul-Engraved Power of a soul.",
+  "tooltip.paradigm.soul.tooltip": "Inside is held the soul of what was once a living thing.",
+  "item.paradigm.soul": "Soul",
+  "item.paradigm.soul_extracter": "Soul Extracter",
+  "item.paradigm.jade_heart": "Jade Heart",
+  "tooltip.paradigm.soul_extracter.tooltip": "A powerful tool used in Loop 4 to forcefully extract a targets soul."
 }

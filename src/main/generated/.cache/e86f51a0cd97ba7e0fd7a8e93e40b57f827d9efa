@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-06T00:53:53.9795681	Paradigm Mod/Recipes
+// 1.20.1	2026-06-06T23:12:07.32091	Paradigm Mod/Recipes
 e54759190473d420e7f468173c892451afb73640 data\paradigm\recipes\ultimus_bindment.json
 13131608f02c506cffd6977e5cd8dd6f47e78184 data\paradigm\advancements\recipes\misc\imperium_ingot_from_blasting_imperium_royalium.json
 bd9b80d70f0d16f649f5ac414934d86aa8d6423a data\paradigm\advancements\recipes\misc\gilden_crown.json
@@ -89,9 +89,9 @@ a3f5e725eb8a27f85c963d104d335b8713e5d185 data\paradigm\advancements\recipes\misc
 986e4587ad0547ceb94d6d9846f24eb3eca984d1 data\paradigm\recipes\soul_deal.json
 86e1f7114cf0cbbd073f221b209a599f8b439eaa data\paradigm\recipes\gilden_ingot_from_smelting_gilden_ore.json
 57b09d9d43286f9c63467f41390cb20f0621c137 data\paradigm\advancements\recipes\combat\diamondchain_boots.json
+3dbf5b63068b26a2aafa492f439459076ab1ebf7 data\paradigm\advancements\recipes\misc\effigerium_ingot_from_smelting_effigerium_shards.json
 36c81954de9cc23d641989578936d0f9e35413fc data\paradigm\advancements\recipes\misc\stem_to_berry.json
 b8fc20ff73d6f2abee90c7a28d351dd456b0f13e data\paradigm\recipes\ironchain_helmet.json
-3dbf5b63068b26a2aafa492f439459076ab1ebf7 data\paradigm\advancements\recipes\misc\effigerium_ingot_from_smelting_effigerium_shards.json
 eaedc28405ec30abe4cb364c098c2215acbb5f79 data\paradigm\advancements\recipes\combat\ironchain_boots.json
 dff641913e1af9bd420fa50d6ad3763df9ecda61 data\paradigm\recipes\ismene_bindment.json
 460db6b39124ef9d2989b89cb8c9dd19838a45dd data\paradigm\recipes\netheritechain_chestplate.json

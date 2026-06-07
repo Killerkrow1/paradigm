@@ -45,23 +45,21 @@ public class BaseInvertedWeapon extends SwordItem implements Vanishable {
         return this.attackDamage;
     }
 
+    //This is for the item to remain in the crafting table
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
-        // Creates a new, undamaged copy of the tool to remain in the grid
         return new ItemStack(this);
     }
 
     // Messages sent when you hit an entity
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (!attacker.getWorld().isClient()) { // Ensure it runs on the server
-            // Check if the attacker is a player
+        if (!attacker.getWorld().isClient()) {
             if (attacker instanceof PlayerEntity player) {
                 player.sendMessage(Text.literal("You hit: " + target.getName().getString() + " while using an Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
             }
 
-            // Send a message to the entity being hit if it's a player
             if (target instanceof PlayerEntity victim) {
                 victim.sendMessage(Text.literal("You were hit by " + attacker.getName().getString() + " while they used a Soul Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
