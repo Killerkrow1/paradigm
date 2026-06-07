@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "paradigm:block/reverence_vines_plant_lit"
+  }
+}

@@ -4,12 +4,16 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.favor.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
+import net.killerkrow.paradigm.item.foods.GoldenBerryItem;
+import net.killerkrow.paradigm.item.weapons.*;
 import net.killerkrow.paradigm.misc.ModArmorMaterials;
 import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.killerkrow.paradigm.util.ModRarities;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -58,6 +62,8 @@ public class ModItems {
             new SoulExtracter(new FabricItemSettings().fireproof().maxCount(1), ModRarities.SOUL));
     public static final Item JADE_HEART = registerItem("jade_heart",
             new JadeHeart(new FabricItemSettings().fireproof().maxCount(1)));
+    public static final Item EFFIGY_EXTRACTOR = registerItem("effigy_extractor",
+            new EffigyExtractor(new FabricItemSettings().fireproof().maxCount(1)));
 
     //extended normal items
     public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",
@@ -197,40 +203,40 @@ public class ModItems {
 
     // weapons n stuff
     public  static final Item WOODEN_CRUSHER = registerItem("wooden_crusher",
-            new CrusherWooden(ParadigmToolMaterials.CRUSHERWOOD, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERWOOD, 0, -3.4f, new FabricItemSettings().maxDamage(9)));
     public  static final Item STONE_CRUSHER = registerItem("stone_crusher",
-            new CrusherStone(ParadigmToolMaterials.CRUSHERSTONE, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERSTONE, 0, -3.4f, new FabricItemSettings().maxDamage(9)));
     public  static final Item IRON_CRUSHER = registerItem("iron_crusher",
-            new CrusherIron(ParadigmToolMaterials.CRUSHERIRON, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERIRON, 0, -3.4f, new FabricItemSettings().maxDamage(10)));
     public  static final Item GOLD_CRUSHER = registerItem("gold_crusher",
-            new CrusherGold(ParadigmToolMaterials.CRUSHERGOLD, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERGOLD, 0, -3.4f, new FabricItemSettings().maxDamage(10)));
     public  static final Item JADE_CRUSHER = registerItem("jade_crusher",
-            new CrusherJade(ParadigmToolMaterials.CRUSHERJADE, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERJADE, 0, -3.4f, new FabricItemSettings().maxDamage(15)));
     public  static final Item DIAMOND_CRUSHER = registerItem("diamond_crusher",
-            new CrusherDiamond(ParadigmToolMaterials.CRUSHERDIAMOND, 0, -3.4f, new FabricItemSettings()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERDIAMOND, 0, -3.4f, new FabricItemSettings().maxDamage(30)));
     public  static final Item NETHERITE_CRUSHER = registerItem("netherite_crusher",
-            new CrusherNetherite(ParadigmToolMaterials.CRUSHERNETHERITE, 0, -3.4f, new FabricItemSettings().fireproof()));
+            new CrusherWeapon(ParadigmToolMaterials.CRUSHERNETHERITE, 0, -3.4f, new FabricItemSettings().fireproof().maxDamage(60)));
 
     public  static final Item INVERTED_SPEAR = registerItem("inverted_spear",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedSpear(ParadigmToolMaterials.IMPERIUM, 14, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_DIVIDER = registerItem("inverted_divider",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 16, -2.8f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedDivider(ParadigmToolMaterials.IMPERIUM, 16, -2.8f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_DAGGER = registerItem("inverted_dagger",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 6, -2.2f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedDagger(ParadigmToolMaterials.IMPERIUM, 6, -2.2f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_CUTTER = registerItem("inverted_cutter",
             new FastInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 11, -2.0f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item SMILEYS_IMPULSE = registerItem("smileys_impulse",
             new SmileyInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 29, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BRAND = registerItem("inverted_brand",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedBrand(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item SOUL_INVERSION = registerItem("soul_inversion",
             new SoulInversion(ParadigmToolMaterials.IMPERIUM, 17, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BLADE = registerItem("inverted_blade",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedBlade(ParadigmToolMaterials.IMPERIUM, 14, -2.4f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_BITE = registerItem("inverted_bite",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 15, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedBite(ParadigmToolMaterials.IMPERIUM, 15, -2.5f, new FabricItemSettings(), ModRarities.INVERTED));
     public  static final Item INVERTED_HAMMER = registerItem("inverted_hammer",
-            new BaseInvertedWeapon(ParadigmToolMaterials.IMPERIUM, 18, -3.1f, new FabricItemSettings(), ModRarities.INVERTED));
+            new InvertedHammer(ParadigmToolMaterials.IMPERIUM, 18, -3.1f, new FabricItemSettings(), ModRarities.INVERTED));
 
     public  static final Item ATLAS_WRATH = registerItem("atlas_wrath",
             new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
@@ -357,9 +363,10 @@ public class ModItems {
 
     //foods and related
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",
-            new BerryItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
+            new BerryItem(ModBlocks.REVERENCE_VINES, new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
+
     public static final Item GOLDEN_REVERENCE_BERRY = registerItem("golden_reverence_berry",
-            new BerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
+            new GoldenBerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
     public static final Item REVERENCE_STEM = registerItem("reverence_stem",
             new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
     public static final Item POPCORN = registerItem("popcorn",

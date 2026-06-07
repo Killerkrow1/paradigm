@@ -55,7 +55,7 @@ public class SoulExtracter extends Item {
                 player.dropItem(givenItem, false);
             }
             player.sendMessage(
-                    Text.literal("You extracted:" + target.getName().getString() + "'s soul!'").formatted(Formatting.AQUA),
+                    Text.literal("You extracted: " + target.getName().getString() + "'s soul!'").formatted(Formatting.AQUA),
                     false
             );
             target.sendMessage(

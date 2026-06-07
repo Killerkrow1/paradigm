@@ -1,10 +1,9 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.weapons;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.MiningToolItem;
 import net.minecraft.item.ToolMaterial;
@@ -16,8 +15,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class CrusherJade extends MiningToolItem {
-    public CrusherJade(ToolMaterial material, int attackDamage, float attackSpeed, Item.Settings settings) {
+public class CrusherWeapon extends MiningToolItem {
+    public CrusherWeapon(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(attackDamage, attackSpeed, material, BlockTags.PICKAXE_MINEABLE, settings);
     }
 

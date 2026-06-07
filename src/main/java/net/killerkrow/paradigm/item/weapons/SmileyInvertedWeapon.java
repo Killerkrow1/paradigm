@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
@@ -9,6 +9,8 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.text.Style;
@@ -57,6 +59,10 @@ public class SmileyInvertedWeapon extends SwordItem implements Vanishable {
             if (target instanceof PlayerEntity victim) {
                 victim.sendMessage(Text.literal("You were hit by " + attacker.getName().getString() + " while they used a Soul Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
+                victim.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 100, 0));
+                victim.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 100, 0));
+                victim.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 0));
+                victim.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 100, 0));
             }
         }
         return super.postHit(stack, target, attacker);

@@ -80,7 +80,7 @@
   "item.paradigm.grodium_ingot": "Grodium Ingot",
   "item.paradigm.grodium_dust": "Grodium Dust",
   "tooltip.paradigm.base_inverted_weapon.tooltip": "Forged to conquer the soul, this is a weapon that exceeds Mortal Limits.",
-  "tooltip.paradigm.smiley_inverted.tooltip": "A powerful Inverted Weapon that is nearly as refined as the God Weapons.",
+  "tooltip.paradigm.smiley_inverted.tooltip": "The first mortal made god weapon. An Inverted Weapon that was made out of divine metal. Along with being powered by 2 souls, it has the ability to make the wielder immortal. For a price of course...",
   "item.paradigm.smileys_impulse": "Smiley's Impulse",
   "item.paradigm.inverted_dagger": "Inverted Dagger of the Soul",
   "item.paradigm.inverted_divider": "Inverted Divider of the Soul",
@@ -337,5 +337,15 @@
   "item.paradigm.soul": "Soul",
   "item.paradigm.soul_extracter": "Soul Extracter",
   "item.paradigm.jade_heart": "Jade Heart",
-  "tooltip.paradigm.soul_extracter.tooltip": "A powerful tool used in Loop 4 to forcefully extract a targets soul."
+  "tooltip.paradigm.soul_extracter.tooltip": "A powerful tool used in Loop 4 to forcefully extract a targets soul.",
+  "tooltip.paradigm.inverted_dagger.tooltip": "The smallest Inverted Weapon, though do not underestimate its capabilities.",
+  "tooltip.paradigm.inverted_blade.tooltip": "The simplest of the Inverted Weapons. Though it doesn't mean it is simple to understand.",
+  "tooltip.paradigm.inverted_brand.tooltip": "Built with lengthy conflicts in mind. One of the most dangerous Inverted Weapons. Be careful who you use it on.",
+  "tooltip.paradigm.inverted_bite.tooltip": "The Inverted Weapon that has the capability of poisoning whoever it strikes. A dangerous tool to kill both soul and body.",
+  "tooltip.paradigm.inverted_hammer.tooltip": "The heaviest of the Inverted Weapons. Has the ability to cause shockwaves where it strikes. Be careful with it.",
+  "tooltip.paradigm.inverted_cutter.tooltip": "The most mechanical out of all of the Inverted Weapons. Once it spun at the speed of sound. Though now its just a dual blade.",
+  "tooltip.paradigm.inverted_spear.tooltip": "An Inverted Weapon once thrown by The Soulsmith himself. Though it never returns to anyone. Excluding him.",
+  "tooltip.paradigm.inverted_divider.tooltip": "Something that attacks the heart and soul of an individual. Handle it with care.",
+  "tooltip.paradigm.soul_inversion.tooltip": "The Inverted Weapon that was once named his Perfect Creation, has the unique ability of inverting the positive effects and SEP effects of whoever it strikes. Truly something to admire.",
+  "tooltip.paradigm.effigy_extractor.tooltip": "A strange item that seems to have no use... but it resonates with the Effigies."
 }

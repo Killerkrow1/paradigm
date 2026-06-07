@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.custom.ReverenceSack;
+import net.killerkrow.paradigm.block.custom.ReverenceVines;
+import net.killerkrow.paradigm.block.custom.ReverenceVinesPlant;
 import net.killerkrow.paradigm.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -419,30 +421,29 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
 
 
-//    public static final Block REVERENCE_VINES = register("reverence_vines",
-//            new ReverenceVines(
-//                    AbstractBlock.Settings.create()
-//                            .mapColor(MapColor.DARK_GREEN)
-//                            .ticksRandomly()
-//                            .noCollision()
-//                            .luminance(CaveVines.getLuminanceSupplier(14))
-//                            .breakInstantly()
-//                            .sounds(BlockSoundGroup.CAVE_VINES)
-//                            .pistonBehavior(PistonBehavior.DESTROY)
-//            )
-//    );
-//    public static final Block REVERENCE_VINES_PLANT = register(
-//            "cave_vines_plant",
-//            new ReverenceVinesPlant(
-//                    AbstractBlock.Settings.create()
-//                            .mapColor(MapColor.DARK_GREEN)
-//                            .noCollision()
-//                            .luminance(CaveVines.getLuminanceSupplier(14))
-//                            .breakInstantly()
-//                            .sounds(BlockSoundGroup.CAVE_VINES)
-//                            .pistonBehavior(PistonBehavior.DESTROY)
-//            )
-//    );
+    public static final Block REVERENCE_VINES = register("reverence_vines",
+            new ReverenceVines(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .ticksRandomly()
+                            .noCollision()
+                            .luminance(CaveVines.getLuminanceSupplier(14))
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block REVERENCE_VINES_PLANT = register("reverence_vines_plant",
+            new ReverenceVinesPlant(
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.DARK_GREEN)
+                            .noCollision()
+                            .luminance(CaveVines.getLuminanceSupplier(14))
+                            .breakInstantly()
+                            .sounds(BlockSoundGroup.CAVE_VINES)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
 
 
