@@ -1,10 +1,10 @@
 {
   "variants": {
     "berries=false": {
-      "model": "paradigm:block/reverence_vines"
+      "model": "paradigm:block/reverence_vines_plant"
     },
     "berries=true": {
-      "model": "paradigm:block/reverence_vines_berries"
+      "model": "paradigm:block/reverence_vines_plant_berries"
     }
   }
 }
