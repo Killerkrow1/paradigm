@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.misc;
+package net.killerkrow.paradigm.util;
 
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.item.ModItems;

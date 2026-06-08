@@ -1,9 +1,7 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -17,11 +15,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class FragmentedIcon extends SwordItem implements Vanishable {
+public class CookingKnife extends SwordItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public FragmentedIcon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
+    public CookingKnife(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -30,25 +28,25 @@ public class FragmentedIcon extends SwordItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
-    public float getAttackDamage() {
-        return this.attackDamage;
-    }
-
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
         // Creates a new, undamaged copy of the tool to remain in the grid
         return new ItemStack(this);
     }
 
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true; // Enables the enchanted shimmer
+    }
+
     // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.fragmented_icon.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.cooking_knife.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }
-
 }

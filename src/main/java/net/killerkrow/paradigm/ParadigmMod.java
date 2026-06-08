@@ -8,7 +8,7 @@ import net.killerkrow.paradigm.effect.WatchedEffect;
 import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
-import net.killerkrow.paradigm.painting.ModPaintings;
+import net.killerkrow.paradigm.util.ModPaintings;
 import net.killerkrow.paradigm.sound.ModSounds;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;

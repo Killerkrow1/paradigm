@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.painting;
+package net.killerkrow.paradigm.util;
 
 import net.minecraft.entity.decoration.painting.PaintingVariant;
 import net.minecraft.registry.Registries;

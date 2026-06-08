@@ -10,10 +10,9 @@ import net.killerkrow.paradigm.item.favor.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
 import net.killerkrow.paradigm.item.foods.GoldenBerryItem;
 import net.killerkrow.paradigm.item.weapons.*;
-import net.killerkrow.paradigm.misc.ModArmorMaterials;
-import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
+import net.killerkrow.paradigm.util.ModArmorMaterials;
+import net.killerkrow.paradigm.util.ParadigmToolMaterials;
 import net.killerkrow.paradigm.util.ModRarities;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -389,7 +388,6 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_TEA).maxCount(16)));
     public static final Item SCULK_BREAD = registerItem("sculk_bread",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_BREAD)));
-
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ParadigmMod.MOD_ID, name), item);

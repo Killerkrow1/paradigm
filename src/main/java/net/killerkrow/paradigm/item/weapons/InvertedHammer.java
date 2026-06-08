@@ -2,8 +2,6 @@ package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;

@@ -1,9 +1,7 @@
-package net.killerkrow.paradigm.item.custom;
+package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.misc.ParadigmToolMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -17,11 +15,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class DarkBindment extends SwordItem implements Vanishable {
+public class FragmentedIcon extends SwordItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public DarkBindment(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
+    public FragmentedIcon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -44,7 +42,7 @@ public class DarkBindment extends SwordItem implements Vanishable {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.dark_bindment.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.fragmented_icon.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }
