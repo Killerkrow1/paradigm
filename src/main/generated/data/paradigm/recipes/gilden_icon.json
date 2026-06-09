@@ -2,20 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "paradigm:jade_brick"
+    "G": {
+      "item": "paradigm:gilden_ingot"
     },
     "S": {
-      "item": "paradigm:gold_crusher"
+      "item": "minecraft:glass"
     }
   },
   "pattern": [
-    " BB",
-    "BSB",
-    "BB "
+    " G ",
+    "GSG",
+    " G "
   ],
   "result": {
-    "item": "paradigm:jade_crusher"
+    "count": 6,
+    "item": "paradigm:gilden_icon"
   },
   "show_notification": true
 }

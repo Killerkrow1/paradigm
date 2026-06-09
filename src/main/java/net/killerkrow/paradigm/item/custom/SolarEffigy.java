@@ -49,7 +49,7 @@ public class SolarEffigy extends TrinketItem {
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         // +10% max health
         modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.1,
-                EntityAttributeModifier.Operation.ADDITION));
+                EntityAttributeModifier.Operation.MULTIPLY_BASE));
 
         return modifiers;
     }

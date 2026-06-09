@@ -3,11 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "druids_n_dinosaurs:jade_block"
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "paradigm:soul"
     }
   ],
   "result": {
-    "count": 1,
-    "item": "paradigm:jade_block"
+    "item": "paradigm:soul_charged_lantern"
   }
 }

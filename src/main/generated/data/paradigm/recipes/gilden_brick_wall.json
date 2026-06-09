@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "paradigm:gilden_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "GGG",
+    "GGG"
+  ],
+  "result": {
+    "count": 6,
+    "item": "paradigm:gilden_brick_wall"
+  },
+  "show_notification": true
+}

@@ -54,7 +54,7 @@ public class EclipseEffigy extends TrinketItem {
                 EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
         // +15% max health
         modifiers.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(uuid, "paradigm:max_health", 0.15,
-                EntityAttributeModifier.Operation.MULTIPLY_TOTAL));
+                EntityAttributeModifier.Operation.MULTIPLY_BASE));
 
         return modifiers;
     }

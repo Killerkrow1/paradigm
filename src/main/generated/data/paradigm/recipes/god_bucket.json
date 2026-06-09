@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:jade_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:afterlife_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:esoteric_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:soul_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:demigod_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:semigod_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:reverence_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:lunar_effigy_fluid_bucket"
+    },
+    {
+      "item": "paradigm:solar_effigy_fluid_bucket"
+    }
+  ],
+  "result": {
+    "item": "paradigm:god_effigy_fluid_bucket"
+  }
+}

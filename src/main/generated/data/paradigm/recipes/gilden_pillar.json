@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "paradigm:gilden_brick_slab"
+    }
+  },
+  "pattern": [
+    " G ",
+    " G ",
+    "   "
+  ],
+  "result": {
+    "count": 6,
+    "item": "paradigm:gilden_pillar"
+  },
+  "show_notification": true
+}

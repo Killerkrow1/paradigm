@@ -347,5 +347,8 @@
   "tooltip.paradigm.inverted_spear.tooltip": "An Inverted Weapon once thrown by The Soulsmith himself. Though it never returns to anyone. Excluding him.",
   "tooltip.paradigm.inverted_divider.tooltip": "Something that attacks the heart and soul of an individual. Handle it with care.",
   "tooltip.paradigm.soul_inversion.tooltip": "The Inverted Weapon that was once named his Perfect Creation, has the unique ability of inverting the positive effects and SEP effects of whoever it strikes. Truly something to admire.",
-  "tooltip.paradigm.effigy_extractor.tooltip": "A strange item that seems to have no use... but it resonates with the Effigies."
+  "tooltip.paradigm.effigy_extractor.tooltip": "A strange item that seems to have no use... but it resonates with the Effigies.",
+  "tooltip.paradigm.gilden_blade.tooltip": "A shattered blade created for speed and efficiency.",
+  "tooltip.paradigm.charged_heart.tooltip": "A weapon once crafted by the Late God of Items, and now reconstructed to reinstate fear.",
+  "tooltip.paradigm.skull_scythe.tooltip": "A weapon crafted to show the insecurities and weakness of the Living World."
 }

@@ -6,6 +6,8 @@ public enum ModRarities {
     SOUL_DEAL(TextColor.fromRgb(0xB39E68)),
     SEP(TextColor.fromRgb(0xED0C0C)),
     SOUL(TextColor.fromRgb(0x27F5D6)),
+    AFTERLIFE(TextColor.fromRgb(0xD91818)),
+    GILDEN(TextColor.fromRgb(0xD98A18)),
     INVERTED(TextColor.fromRgb(0x5BE3E8));
 
     public final TextColor color;

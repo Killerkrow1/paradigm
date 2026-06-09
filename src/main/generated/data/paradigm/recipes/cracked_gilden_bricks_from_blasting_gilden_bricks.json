@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 80,
+  "experience": 0.4,
+  "group": "cracked_gilden_blasting",
+  "ingredient": {
+    "item": "paradigm:gilden_bricks"
+  },
+  "result": "paradigm:cracked_gilden_bricks"
+}

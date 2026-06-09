@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:effigy_extractor"
+    },
+    {
+      "item": "paradigm:esoteric_effigy"
+    }
+  ],
+  "result": {
+    "item": "paradigm:esoteric_effigy_fluid_bucket"
+  }
+}

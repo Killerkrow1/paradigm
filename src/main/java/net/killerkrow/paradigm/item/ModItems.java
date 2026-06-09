@@ -269,14 +269,14 @@ public class ModItems {
     public  static final Item DARK_BINDMENT = registerItem("dark_bindment",
             new DarkBindment(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
     public  static final Item SKULL_SCYTHE = registerItem("skull_scythe",
-            new SwordItem(ParadigmToolMaterials.AFTERLIFE, 1, 2, new FabricItemSettings()));
+            new SkullScythe(ParadigmToolMaterials.AFTERLIFE, 1, 2, new FabricItemSettings(), ModRarities.AFTERLIFE));
 
     public  static final Item DEAD_HEART = registerItem("dead_heart",
             new SwordItem(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
     public  static final Item CHARGED_HEART = registerItem("charged_heart",
-            new SwordItem(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
+            new ChargedHeart(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
     public  static final Item GILDEN_BLADE = registerItem("gilden_blade",
-            new SwordItem(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));
+            new GildenBlade(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings(), ModRarities.GILDEN));
 
     // trinkets and such from this section
     public static final Item JADE_EFFIGY = registerItem("jade_effigy",

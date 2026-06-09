@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "paradigm:dead_heart"
+    },
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "I": {
+      "item": "minecraft:diamond"
+    },
+    "S": {
+      "item": "minecraft:sculk_shrieker"
+    }
+  },
+  "pattern": [
+    " S ",
+    "EDE",
+    " I "
+  ],
+  "result": {
+    "item": "paradigm:charged_heart"
+  },
+  "show_notification": true
+}

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.ModBlocks;
+import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.util.ModTags;
 import net.minecraft.block.Blocks;
@@ -196,6 +197,69 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModItems.JADE_BRICK)
                 .criterion(hasItem(ModItems.REVERENCE_STEM), conditionsFromItem(ModItems.REVERENCE_STEM))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_ingot_to_block"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SOUL_CHARGED_LANTERN)
+                .input(Blocks.LANTERN)
+                .input(ModItems.SOUL)
+                .criterion(hasItem(ModItems.SOUL), conditionsFromItem(ModItems.SOUL))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "soul_charged_lantern"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.JADE_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.JADE_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.AFTERLIFE_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.AFTERLIFE_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "afterlife_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.ESOTERIC_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.ESOTERIC_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "esoteric_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.SOUL_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.SOUL_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "soul_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.DEMIGOD_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.DEMIGOD_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "demigod_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.SEMIGOD_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.SEMIGOD_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "semigod_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.REVERENCE_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.REVERENCE_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.LUNAR_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.LUNAR_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "lunar_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.SOLAR_EFFIGY_BUCKET)
+                .input(ModItems.EFFIGY_EXTRACTOR)
+                .input(ModItems.SOLAR_EFFIGY)
+                .criterion(hasItem(ModItems.EFFIGY_EXTRACTOR), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "solar_bucket"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModFluids.GOD_EFFIGY_BUCKET)
+                .input(ModFluids.JADE_EFFIGY_BUCKET)
+                .input(ModFluids.AFTERLIFE_EFFIGY_BUCKET)
+                .input(ModFluids.ESOTERIC_EFFIGY_BUCKET)
+                .input(ModFluids.SOUL_EFFIGY_BUCKET)
+                .input(ModFluids.DEMIGOD_EFFIGY_BUCKET)
+                .input(ModFluids.SEMIGOD_EFFIGY_BUCKET)
+                .input(ModFluids.REVERENCE_EFFIGY_BUCKET)
+                .input(ModFluids.LUNAR_EFFIGY_BUCKET)
+                .input(ModFluids.SOLAR_EFFIGY_BUCKET)
+                .criterion(hasItem(ModFluids.AFTERLIFE_EFFIGY_BUCKET), conditionsFromItem(ModItems.EFFIGY_EXTRACTOR))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "god_bucket"));
 
         // Crusher Recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_CRUSHER)
@@ -239,7 +303,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" BB")
                 .pattern("BSB")
                 .pattern("BB ")
-                .input('B',ModTags.Items.JADE_BRICK)
+                .input('B',ModItems.JADE_BRICK)
                 .input('S', ModItems.GOLD_CRUSHER)
                 .criterion(hasItem(ModItems.GOLD_CRUSHER), conditionsFromItem(ModItems.GOLD_CRUSHER))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "jade_crusher"));
@@ -288,6 +352,86 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('G',ModItems.GILDEN_INGOT)
                 .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_BRICK_STAIRS, 4)
+                .pattern("G  ")
+                .pattern("GG ")
+                .pattern("GGG")
+                .input('G',ModBlocks.GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.GILDEN_BRICKS), conditionsFromItem(ModBlocks.GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick_stairs"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_BRICK_SLAB, 6)
+                .pattern("   ")
+                .pattern("GGG")
+                .pattern("   ")
+                .input('G',ModBlocks.GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.GILDEN_BRICKS), conditionsFromItem(ModBlocks.GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick_slab"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_BRICK_WALL, 6)
+                .pattern("   ")
+                .pattern("GGG")
+                .pattern("GGG")
+                .input('G',ModBlocks.GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.GILDEN_BRICKS), conditionsFromItem(ModBlocks.GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_brick_wall"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRACKED_GILDEN_BRICK_STAIRS, 4)
+                .pattern("G  ")
+                .pattern("GG ")
+                .pattern("GGG")
+                .input('G',ModBlocks.CRACKED_GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.CRACKED_GILDEN_BRICKS), conditionsFromItem(ModBlocks.CRACKED_GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "cracked_gilden_brick_stairs"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRACKED_GILDEN_BRICK_SLAB, 6)
+                .pattern("   ")
+                .pattern("GGG")
+                .pattern("   ")
+                .input('G',ModBlocks.CRACKED_GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.CRACKED_GILDEN_BRICKS), conditionsFromItem(ModBlocks.CRACKED_GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "cracked_gilden_brick_slab"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CRACKED_GILDEN_BRICK_WALL, 6)
+                .pattern("   ")
+                .pattern("GGG")
+                .pattern("GGG")
+                .input('G',ModBlocks.CRACKED_GILDEN_BRICKS)
+                .criterion(hasItem(ModBlocks.CRACKED_GILDEN_BRICKS), conditionsFromItem(ModBlocks.CRACKED_GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "cracked_gilden_brick_wall"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_PILLAR, 6)
+                .pattern(" G ")
+                .pattern(" G ")
+                .pattern("   ")
+                .input('G',ModBlocks.GILDEN_BRICK_SLAB)
+                .criterion(hasItem(ModBlocks.GILDEN_BRICKS), conditionsFromItem(ModBlocks.GILDEN_BRICKS))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_pillar"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GILDEN_ICON, 6)
+                .pattern(" G ")
+                .pattern("GSG")
+                .pattern(" G ")
+                .input('G',ModItems.GILDEN_INGOT)
+                .input('S',Blocks.GLASS)
+                .criterion(hasItem(ModItems.GILDEN_INGOT), conditionsFromItem(ModItems.GILDEN_INGOT))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "gilden_icon"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHARGED_HEART)
+                .pattern(" S ")
+                .pattern("EDE")
+                .pattern(" I ")
+                .input('S',Blocks.SCULK_SHRIEKER)
+                .input('D',ModItems.DEAD_HEART)
+                .input('I',Items.DIAMOND)
+                .input('E',Items.ECHO_SHARD)
+                .criterion(hasItem(ModItems.DEAD_HEART), conditionsFromItem(ModItems.DEAD_HEART))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "charged_heart"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SKULL_SCYTHE)
+                .pattern("IES")
+                .pattern(" B ")
+                .pattern("B  ")
+                .input('S',Blocks.SKELETON_SKULL)
+                .input('I',Items.IRON_INGOT)
+                .input('E',Items.ECHO_SHARD)
+                .input('B',Items.BONE)
+                .criterion(hasItem(Blocks.SKELETON_SKULL), conditionsFromItem(Blocks.SKELETON_SKULL))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "skull_scythe"));
 
         // Favor recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ATLAS_BINDMENT)
@@ -371,7 +515,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("TEF")
                 .pattern("DQG")
                 .input('A',ModItems.AFTERLIFE_EFFIGY)
-                .input('R',Items.BARRIER)
+                .input('R',ModFluids.GOD_EFFIGY_BUCKET)
                 .input('S',ModItems.SOUL_EFFIGY)
                 .input('T',ModItems.EFFIGY_EXTRACT)
                 .input('E',ModItems.EFFIGY_CORE)
@@ -392,6 +536,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ItemConvertible cookedGildenItem = ModItems.GILDEN_INGOT;
         ItemConvertible rawGrodiumItem = ModItems.GRODIUM_CRYSTALS;
         ItemConvertible cookedGrodiumItem = ModItems.GRODIUM_INGOT;
+        ItemConvertible gilden_brick = ModBlocks.GILDEN_BRICKS;
+        ItemConvertible crackedGildenBrick = ModBlocks.CRACKED_GILDEN_BRICKS;
         ItemConvertible popcornRaw = Items.WHEAT;
         ItemConvertible popcorn = ModItems.POPCORN;
         ItemConvertible gold = Items.GOLD_INGOT;
@@ -410,6 +556,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 60, "popcorn");
         offerSmelting(exporter, List.of(gold), RecipeCategory.FOOD, rawGildenItem, 0.4f,
                 160, "raw_gilden_furnace");
+        offerSmelting(exporter, List.of(gilden_brick), RecipeCategory.FOOD, crackedGildenBrick, 0.4f,
+                160, "cracked_gilden_furnace");
 
         // --- Blasting ---
         // offerBlasting takes the same parameters, but uses a shorter cooking time (e.g., 100 ticks)
@@ -423,5 +571,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 200, "grodium_ingot_blasting");
         offerBlasting(exporter, List.of(gold), RecipeCategory.MISC, rawGildenItem, 0.4f,
                 80, "raw_gilden_blasting");
+        offerBlasting(exporter, List.of(gilden_brick), RecipeCategory.MISC, crackedGildenBrick, 0.4f,
+                80, "cracked_gilden_blasting");
     }
 }

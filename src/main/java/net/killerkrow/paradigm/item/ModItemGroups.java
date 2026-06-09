@@ -60,6 +60,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SEP);
                         entries.add(ModItems.SOUL);
                         entries.add(ModItems.SOUL_EXTRACTER);
+                        entries.add(ModItems.EFFIGY_EXTRACTOR);
 
                     }).build());
 
