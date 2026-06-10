@@ -20,26 +20,26 @@ public class CrusherWeapon extends MiningToolItem {
         super(attackDamage, attackSpeed, material, BlockTags.PICKAXE_MINEABLE, settings);
     }
 
+    // FUCK YOU, YOU GET AN UNDAMAGED COPY WHEN CRAFTING
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
-        // Creates a new, undamaged copy of the tool to remain in the grid
         return new ItemStack(this);
     }
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player) {
-            // Check if the player is falling (distance in blocks)
+            // ARE YOU FALLING? GOOD
             double fallDistance = player.fallDistance;
 
             if (fallDistance > 1.5F) {
-                // Calculate bonus damage based on fall height
-                float smashDamage = (float) (fallDistance * 1.5F); // Adjust multiplier as desired
+                // Maths for bonus damage for how you fall
+                float smashDamage = (float) (fallDistance * 1.5F); // 1.5 IS THE BASE, you can increase it tho
 
-                // Deal the smash damage
+                // Hammer go brrrrrrrrrrr
                 target.damage(attacker.getDamageSources().playerAttack(player), smashDamage);
 
-                // Negate fall damage like a Mace
+                // I could be really funny... but setting this to 0 negates fall damage
                 player.fallDistance = 0.0F;
 
                 player.sendMessage(Text.literal("Crushed the target!"));
@@ -57,8 +57,4 @@ public class CrusherWeapon extends MiningToolItem {
         }
         super.appendTooltip(stack, world, tooltip, context);
     }
-
-
-
-
 }

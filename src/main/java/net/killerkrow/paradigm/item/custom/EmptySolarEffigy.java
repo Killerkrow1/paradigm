@@ -24,7 +24,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class EmptySolarEffigy extends Item {
-    // Define the blocks required to absorb. Use exact Registry IDs.
     private static final String[] REQUIRED_BLOCKS = {
             "minecraft:ochre_froglight"
     };
@@ -96,7 +95,6 @@ public class EmptySolarEffigy extends Item {
             absorbedCount = nbt.getList("AbsorbedBlocks", 8).size();
         }
 
-        // Display current tracker in tooltip
         tooltip.add(Text.literal("Ochre Froglights Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 

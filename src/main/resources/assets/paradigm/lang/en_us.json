@@ -359,5 +359,7 @@
   "tooltip.paradigm.gilden_blade.tooltip": "A shattered blade created for speed and efficiency.",
   "tooltip.paradigm.charged_heart.tooltip": "A weapon once crafted by the Late God of Items, and now reconstructed to reinstate fear.",
   "tooltip.paradigm.skull_scythe.tooltip": "A weapon crafted to show the insecurities and weakness of the Living World.",
-  "tooltip.paradigm.everlasting_grace.tooltip": "Blessed by Astral herself, this item will bring about life to even the harshest of deserts."
+  "tooltip.paradigm.everlasting_grace.tooltip": "Blessed by Astral herself, this item will bring about life to even the harshest of deserts.",
+  "tooltip.paradigm.stillchain.tooltip": "Using the power of Ismene it will cause any and all others to freeze.",
+  "tooltip.paradigm.winged_grace.tooltip": "Fueled the power of a distant land, it will protect any who hold it from the fall."
 }

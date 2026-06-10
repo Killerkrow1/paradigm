@@ -62,6 +62,7 @@ public class EverlastingGrace extends Item {
         return true; // Enables the enchanted shimmer
     }
 
+    // Commence steal mc code go
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
@@ -207,3 +208,4 @@ public class EverlastingGrace extends Item {
         }
     }
 }
+// Mission successful boys, we stole the code

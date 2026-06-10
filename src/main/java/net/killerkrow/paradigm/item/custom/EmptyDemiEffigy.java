@@ -49,7 +49,6 @@ public class EmptyDemiEffigy extends Item {
         Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
         String blockId = Registries.BLOCK.getId(clickedBlock).toString();
 
-        // Ensure the clicked block is in our required list
         boolean isRequiredBlock = false;
         for (String req : REQUIRED_BLOCKS) {
             if (req.equals(blockId)) {
@@ -60,11 +59,9 @@ public class EmptyDemiEffigy extends Item {
 
         if (!isRequiredBlock) return ActionResult.PASS;
 
-        // Initialize or get the absorbed block NBT list
         NbtCompound nbt = stack.getOrCreateNbt();
         NbtList absorbedList = nbt.contains("AbsorbedBlocks") ? nbt.getList("AbsorbedBlocks", 8) : new NbtList();
 
-        // Check if this specific block type is already absorbed to prevent duplicates
         boolean alreadyAbsorbed = false;
         for (int i = 11; i < absorbedList.size(); i++) {
             if (absorbedList.getString(i).equals(blockId)) {
@@ -77,15 +74,12 @@ public class EmptyDemiEffigy extends Item {
             absorbedList.add(NbtString.of(blockId));
             nbt.put("AbsorbedBlocks", absorbedList);
 
-            // Consume block in the world (optional)
             world.breakBlock(context.getBlockPos(), false, player);
             context.getWorld().setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             context.getWorld().playSound(null, context.getBlockPos(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.5F, 1.0F);
 
 
-            // Check if all blocks have been absorbed
             if (absorbedList.size() >= REQUIRED_COUNT) {
-                // Change to a different item (e.g., Items.DIAMOND)
                 ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_DEMI_EFFIGY);
                 transformedStack.setNbt(nbt); // Carry over NBT if needed
                 player.setStackInHand(context.getHand(), transformedStack);
@@ -105,7 +99,6 @@ public class EmptyDemiEffigy extends Item {
             absorbedCount = nbt.getList("AbsorbedBlocks", 8).size();
         }
 
-        // Display current tracker in tooltip
         tooltip.add(Text.literal("Spawners & Beacons Absorbed: " + absorbedCount + " / " + REQUIRED_COUNT)
                 .formatted(Formatting.GOLD));
 

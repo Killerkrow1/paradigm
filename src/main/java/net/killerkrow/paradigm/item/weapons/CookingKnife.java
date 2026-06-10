@@ -28,9 +28,9 @@ public class CookingKnife extends SwordItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
+    // DO YOU WANT A COPY THAT REMAINS INTACT? YES? GOOD YOU GET ONE
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
-        // Creates a new, undamaged copy of the tool to remain in the grid
         return new ItemStack(this);
     }
 

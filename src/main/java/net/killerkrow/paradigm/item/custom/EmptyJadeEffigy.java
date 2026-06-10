@@ -23,7 +23,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class EmptyJadeEffigy extends Item {
-    // Define the blocks required to absorb. Use exact Registry IDs.
     private static final String[] REQUIRED_BLOCKS = {
             "druids_n_dinosaurs:jade_block",
             "paradigm:jade_block",

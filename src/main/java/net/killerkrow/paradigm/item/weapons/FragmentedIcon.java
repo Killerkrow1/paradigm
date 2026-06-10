@@ -32,11 +32,6 @@ public class FragmentedIcon extends SwordItem implements Vanishable {
         return this.attackDamage;
     }
 
-    @Override
-    public ItemStack getRecipeRemainder(ItemStack stack) {
-        // Creates a new, undamaged copy of the tool to remain in the grid
-        return new ItemStack(this);
-    }
 
     // tooltip
     @Override

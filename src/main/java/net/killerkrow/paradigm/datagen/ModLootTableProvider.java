@@ -39,13 +39,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     }
 
 
-    // Helper method to generate the drop rule
     public LootTable.Builder dropsNineItems(Block block, Item item) {
         return LootTable.builder()
                 .pool(LootPool.builder()
-                        // 1 roll means it evaluates the pool once
                         .rolls(ConstantLootNumberProvider.create(1.0F))
-                        // Drop 1 of the entry, but set the count to 9 using the loot function
                         .with(ItemEntry.builder(item)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(9.0F)))));
     }

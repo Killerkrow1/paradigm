@@ -262,13 +262,16 @@ public class ModItemGroups {
                                 entries.add(ModItems.DRAGON_HORN);
                                 entries.add(ModItems.EVERLASTING_GRACE);
                                 entries.add(ModItems.MARK_OF_CHAOS);
+                                entries.add(ModItems.STILLCHAIN);
+                                entries.add(ModItems.WINGED_GRACE);
                                 entries.add(ModItems.SILENT_CHARM);
 
-                                entries.add(ModItems.SOUL_DEAL);
+                                entries.add(ModItems.PUMPKING);
                                 entries.add(ModItems.STASIS_MARK);
                                 entries.add(ModItems.PHOENIX_GRAIL);
-                                entries.add(ModItems.THUNDERSPRITE);
+                                entries.add(ModItems.SOUL_DEAL);
                                 entries.add(ModItems.HEALING_TOUCH);
+                                entries.add(ModItems.THUNDERSPRITE);
 
                                 entries.add(ModItems.ATLAS_WRATH);
                                 entries.add(ModItems.ATLAS_BETRAYAL);

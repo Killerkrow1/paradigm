@@ -1,12 +1,12 @@
 package net.killerkrow.paradigm.item.favor;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.Monster;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -23,9 +23,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ThunderSprite extends Item {
+public class WingedGrace extends Item {
     private final ModRarities rarity;
-    public ThunderSprite(Settings settings, ModRarities rarity) {
+    public WingedGrace(Settings settings, ModRarities rarity) {
         super(settings);
         this.rarity = rarity;
     }
@@ -41,7 +41,7 @@ public class ThunderSprite extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.thundersprite.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.winged_grace.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
         }
@@ -55,29 +55,30 @@ public class ThunderSprite extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if (!world.isClient()) {
-            double radius = 15.0; // Radius
+        ItemStack stack = user.getStackInHand(hand);
+
+        if (user.isSneaking() && !world.isClient()) {
+
+            double radius = 1.0;
             Box box = user.getBoundingBox().expand(radius);
 
-            List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, box, entity -> entity != user);
+            List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, box,
+                    entity -> entity == user);
 
             for (LivingEntity entity : entities) {
-                // ARE YOU A MOB OR ARE YOU A PLAYER? ANSWER ME
-                if (entity instanceof Monster || entity instanceof PlayerEntity) {
-                    // Thunder song by like imagine dragons, up the 10 if you want it to do it more
-                    for (int i = 0; i < 10; i++) {
-                        LightningEntity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
-                        lightning.setPosition(entity.getPos());
-                        world.spawnEntity(lightning);
-                    }
-                }
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 600, 0));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 600, 0));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 600, 0));
             }
-            world.playSound(null, user.getX(), user.getY(), user.getZ(),
-                    SoundEvents.ENTITY_ALLAY_AMBIENT_WITH_ITEM, SoundCategory.PLAYERS, 1.0F, 1.0F);
 
-            user.getItemCooldownManager().set(this, 6000);
+            world.playSound(null, user.getX(), user.getY(), user.getZ(),
+                    SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.1F, 1.0F);
+
+            user.getItemCooldownManager().set(this, 1200);
+
+            return TypedActionResult.success(stack);
         }
 
-        return TypedActionResult.success(user.getStackInHand(hand));
+        return TypedActionResult.pass(stack);
     }
 }

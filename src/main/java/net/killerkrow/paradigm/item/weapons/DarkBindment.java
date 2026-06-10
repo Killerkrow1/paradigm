@@ -44,7 +44,6 @@ public class DarkBindment extends SwordItem implements Vanishable {
 
     @Override
     public ItemStack getRecipeRemainder(ItemStack stack) {
-        // Creates a new, undamaged copy of the tool to remain in the grid
         return new ItemStack(this);
     }
 
