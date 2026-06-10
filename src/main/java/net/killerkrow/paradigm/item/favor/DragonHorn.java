@@ -1,5 +1,6 @@
 package net.killerkrow.paradigm.item.favor;
 
+import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.projectile.DragonFireballEntity;
@@ -7,6 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -18,8 +20,17 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class DragonHorn extends Item {
-    public DragonHorn(Settings settings) {
+    private final ModRarities rarity;
+    public DragonHorn(Settings settings, ModRarities rarity) {
         super(settings);
+        this.rarity = rarity;
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        Text baseName = super.getName(stack);
+
+        return baseName.copy().setStyle(Style.EMPTY.withColor(rarity.color));
     }
 
     // tooltip

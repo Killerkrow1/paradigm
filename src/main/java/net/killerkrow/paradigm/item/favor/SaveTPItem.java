@@ -1,5 +1,6 @@
 package net.killerkrow.paradigm.item.favor;
 
+import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
@@ -9,6 +10,7 @@ import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -21,9 +23,18 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class SaveTPItem extends Item {
+    private final ModRarities rarity;
 
-    public SaveTPItem(Settings settings) {
+    public SaveTPItem(Settings settings, ModRarities rarity) {
         super(settings);
+        this.rarity = rarity;
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        Text baseName = super.getName(stack);
+
+        return baseName.copy().setStyle(Style.EMPTY.withColor(rarity.color));
     }
 
     @Override

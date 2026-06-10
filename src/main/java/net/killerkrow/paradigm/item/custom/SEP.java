@@ -1,5 +1,6 @@
 package net.killerkrow.paradigm.item.custom;
 
+import net.killerkrow.paradigm.sound.ModSounds;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -9,7 +10,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
@@ -42,7 +42,7 @@ public class SEP extends Item {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0));
             itemStack.decrement(1);
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
-                    SoundEvents.BLOCK_BEACON_POWER_SELECT, SoundCategory.PLAYERS, 0.1f, 1.0f);
+                    ModSounds.SEP_ABSORPTION, SoundCategory.MASTER, 0.2f, 1.0f);
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, itemStack);
     }

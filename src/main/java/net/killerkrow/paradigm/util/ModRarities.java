@@ -8,6 +8,7 @@ public enum ModRarities {
     SOUL(TextColor.fromRgb(0x27F5D6)),
     AFTERLIFE(TextColor.fromRgb(0xD91818)),
     GILDEN(TextColor.fromRgb(0xD98A18)),
+    DIVINE(TextColor.fromRgb(0xFAC820)),
     INVERTED(TextColor.fromRgb(0x5BE3E8));
 
     public final TextColor color;

@@ -28,26 +28,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_HELMET, 1)
-                .input(Items.CHAIN, 3)
-                .input(Items.IRON_HELMET)
-                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
-                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_helmet"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_CHESTPLATE, 1)
-                .input(Items.CHAIN, 3)
-                .input(Items.IRON_CHESTPLATE)
-                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
-                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_chestplate"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_LEGGINGS, 1)
-                .input(Items.CHAIN, 3)
-                .input(Items.IRON_LEGGINGS)
-                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
-                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_leggings"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_BOOTS, 1)
-                .input(Items.CHAIN, 3)
-                .input(Items.IRON_BOOTS)
-                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
-                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_boots"));
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_HELMET, 1)
+//                .input(Items.CHAIN, 3)
+//                .input(Items.IRON_HELMET)
+//                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+//                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_helmet"));
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_CHESTPLATE, 1)
+//                .input(Items.CHAIN, 3)
+//                .input(Items.IRON_CHESTPLATE)
+//                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+//                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_chestplate"));
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_LEGGINGS, 1)
+//                .input(Items.CHAIN, 3)
+//                .input(Items.IRON_LEGGINGS)
+//                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+//                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_leggings"));
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.IRONCHAIN_BOOTS, 1)
+//                .input(Items.CHAIN, 3)
+//                .input(Items.IRON_BOOTS)
+//                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+//                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "ironchain_boots"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DIAMONDCHAIN_HELMET, 1)
                 .input(Items.CHAIN, 3)
@@ -523,7 +523,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D',ModItems.DEMIGOD_EFFIGY)
                 .input('Q',ModItems.MARK_OF_THE_ARCHITECT)
                 .input('G',ModItems.SEMIGOD_EFFIGY)
-                .criterion(hasItem(ModItems.MARK_OF_CHAOS), conditionsFromItem(ModItems.MARK_OF_CHAOS))
+                .criterion(hasItem(ModItems.MARK_OF_THE_ARCHITECT), conditionsFromItem(ModItems.MARK_OF_THE_ARCHITECT))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "god_effigy"));
 
 

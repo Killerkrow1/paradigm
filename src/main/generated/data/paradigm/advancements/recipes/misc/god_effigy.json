@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mark_of_chaos": {
+    "has_mark_of_the_architect": {
       "conditions": {
         "items": [
           {
             "items": [
-              "paradigm:mark_of_chaos"
+              "paradigm:mark_of_the_architect"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_mark_of_chaos",
+      "has_mark_of_the_architect",
       "has_the_recipe"
     ]
   ],

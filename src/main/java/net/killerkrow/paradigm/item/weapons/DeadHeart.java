@@ -3,7 +3,6 @@ package net.killerkrow.paradigm.item.weapons;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -15,7 +14,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -24,11 +22,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ChargedHeart extends SwordItem implements Vanishable {
+public class DeadHeart extends SwordItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public ChargedHeart(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public DeadHeart(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -37,35 +35,24 @@ public class ChargedHeart extends SwordItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
-
-
     public float getAttackDamage() {
         return this.attackDamage;
     }
 
+    //This is for the item to remain in the crafting table
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if (!world.isClient() && entity instanceof PlayerEntity player) {
-
-            // Are you holding it, I hope you are
-            boolean isHolding = player.getStackInHand(Hand.MAIN_HAND).getItem() == this
-                    || player.getStackInHand(Hand.OFF_HAND).getItem() == this;
-
-            if (isHolding) {
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 40, 0, true, true));
-            }
-        }
-        super.inventoryTick(stack, world, entity, slot, selected);
+    public ItemStack getRecipeRemainder(ItemStack stack) {
+        return new ItemStack(this);
     }
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (!attacker.getWorld().isClient()) {
             if (attacker instanceof PlayerEntity player) {
+                attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 40, 0));
             }
 
             if (target instanceof PlayerEntity victim) {
-                victim.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 40, 0));
             }
         }
         return super.postHit(stack, target, attacker);

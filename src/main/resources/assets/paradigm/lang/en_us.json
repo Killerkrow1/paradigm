@@ -40,6 +40,7 @@
   "itemgroup.paradigm_tab": "Paradigm Tab",
   "tooltip.paradigm.smileynotes.tooltip": "Notes from the God of the Afterlife and Dead, unknown if they work still.",
   "effect.paradigm.watched_effect": "Watched",
+  "effect.paradigm.soul_strain": "Soul Strain",
 
   "tooltip.paradigm.semigodeffigy.tooltip": "A strange item. It doesn't work like the other Effigies.",
   "tooltip.paradigm.demigodeffigy.tooltip": "A weakened version of the relic that is next to come.",
@@ -151,6 +152,8 @@
   "tooltip.paradigm.markarchitect.tooltip": "An item recognized by the Architect of Creation itself.",
   "sounds.paradigm.dead_sound": "...",
   "sounds.paradigm.squeak_sound": "SQUEAK!!!!!",
+  "sounds.paradigm.sep_removal": "Soul-Engraved Power being Removed",
+  "sounds.paradigm.sep_absorption": "Soul-Engraved Power being Absorbed",
   "itemgroup.paradigm_building_tab": "Paradigm Blocks",
   "block.paradigm.dead_chiseled_stone_bricks": "Dead Chiseled Stone Bricks",
   "block.paradigm.dead_grass": "Dead Grass",
@@ -337,6 +340,11 @@
   "item.paradigm.soul": "Soul",
   "item.paradigm.soul_extracter": "Soul Extracter",
   "item.paradigm.jade_heart": "Jade Heart",
+  "item.paradigm.effigy_extractor": "Effigy Extractor",
+  "item.paradigm.healing_touch": "Healing Touch",
+  "item.paradigm.silent_charm": "Silent charm",
+  "item.paradigm.thundersprite": "Thundersprite",
+  "item.paradigm.mark_of_chaos": "Mark Of Chaos",
   "tooltip.paradigm.soul_extracter.tooltip": "A powerful tool used in Loop 4 to forcefully extract a targets soul.",
   "tooltip.paradigm.inverted_dagger.tooltip": "The smallest Inverted Weapon, though do not underestimate its capabilities.",
   "tooltip.paradigm.inverted_blade.tooltip": "The simplest of the Inverted Weapons. Though it doesn't mean it is simple to understand.",
@@ -350,5 +358,6 @@
   "tooltip.paradigm.effigy_extractor.tooltip": "A strange item that seems to have no use... but it resonates with the Effigies.",
   "tooltip.paradigm.gilden_blade.tooltip": "A shattered blade created for speed and efficiency.",
   "tooltip.paradigm.charged_heart.tooltip": "A weapon once crafted by the Late God of Items, and now reconstructed to reinstate fear.",
-  "tooltip.paradigm.skull_scythe.tooltip": "A weapon crafted to show the insecurities and weakness of the Living World."
+  "tooltip.paradigm.skull_scythe.tooltip": "A weapon crafted to show the insecurities and weakness of the Living World.",
+  "tooltip.paradigm.everlasting_grace.tooltip": "Blessed by Astral herself, this item will bring about life to even the harshest of deserts."
 }

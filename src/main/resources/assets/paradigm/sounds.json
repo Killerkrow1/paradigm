@@ -4,13 +4,23 @@
     "sounds": [
       "paradigm:dead_sound"
     ]
-  }
-},
-{
+  },
   "squeak_sound": {
     "subtitle": "sounds.paradigm.squeak_sound",
     "sounds": [
       "paradigm:squeak_sound"
+    ]
+  },
+  "sep_absorption": {
+    "subtitle": "sounds.paradigm.sep_absorption",
+    "sounds": [
+      "paradigm:sep_absorption"
+    ]
+  },
+  "sep_removal": {
+    "subtitle": "sounds.paradigm.sep_removal",
+    "sounds": [
+      "paradigm:sep_removal"
     ]
   }
 }

@@ -8,6 +8,8 @@
   "client": [
     "ItemRendererAccessor",
     "ItemRendererMixin",
+    "KeyboardInputMixin",
+    "MinecraftClientMixin",
     "ModelLoaderMixin"
   ],
   "injectors": {

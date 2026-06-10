@@ -123,39 +123,41 @@ public class ModItems {
 
     //Favor Craftables
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item NOVINGARD_BINDMENT = registerItem("novingard_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item ASTRAL_BINDMENT = registerItem("astral_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item GERO_BINDMENT = registerItem("gero_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item ISMENE_BINDMENT = registerItem("ismene_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item ULTIMUS_BINDMENT = registerItem("ultimus_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item UNKNOWN_BINDMENT = registerItem("unknown_bindment",
-            new BindmentBook(new FabricItemSettings().maxCount(1)));
+            new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item SOUL_DEAL = registerItem("soul_deal",
             new SoulDeal(new FabricItemSettings().maxCount(1)));
     public static final Item SOUL_DEAL_SIGNED = registerItem("soul_deal_signed",
             new SignedSoulDeal(new Item.Settings().maxCount(1), ModRarities.SOUL_DEAL));
     public static final Item SMILEY_NOTES = registerItem("smiley_notes",
-            new SmileyNotesItem(new FabricItemSettings().maxCount(1)));
+            new SmileyNotesItem(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item STASIS_MARK = registerItem("stasis_mark",
-            new SaveTPItem(new FabricItemSettings().maxCount(1)));
+            new SaveTPItem(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item DRAGON_HORN = registerItem("dragon_horn",
-            new DragonHorn(new FabricItemSettings().maxCount(1)));
+            new DragonHorn(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item PHOENIX_GRAIL = registerItem("phoenix_grail",
-            new PhoenixGrail(new FabricItemSettings().maxCount(1)));
+            new PhoenixGrail(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item SILENT_CHARM = registerItem("silent_charm",
-            new SilentCharm(new FabricItemSettings().maxCount(1)));
+            new SilentCharm(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item THUNDERSPRITE = registerItem("thundersprite",
-            new ThunderSprite(new FabricItemSettings().maxCount(1)));
+            new ThunderSprite(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item MARK_OF_CHAOS = registerItem("mark_of_chaos",
-            new ChaosMark(new FabricItemSettings().maxCount(1)));
+            new ChaosMark(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item HEALING_TOUCH = registerItem("healing_touch",
-            new HealingTouch(new FabricItemSettings().maxCount(1)));
+            new HealingTouch(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
+    public static final Item EVERLASTING_GRACE = registerItem("everlasting_grace",
+            new EverlastingGrace(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
 
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));
@@ -272,7 +274,7 @@ public class ModItems {
             new SkullScythe(ParadigmToolMaterials.AFTERLIFE, 1, 2, new FabricItemSettings(), ModRarities.AFTERLIFE));
 
     public  static final Item DEAD_HEART = registerItem("dead_heart",
-            new SwordItem(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
+            new DeadHeart(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
     public  static final Item CHARGED_HEART = registerItem("charged_heart",
             new ChargedHeart(ToolMaterials.DIAMOND, 1, 2, new FabricItemSettings()));
     public  static final Item GILDEN_BLADE = registerItem("gilden_blade",
@@ -342,7 +344,7 @@ public class ModItems {
 
     //Netherite Chain
     public static final Item NETHERITECHAIN_HELMET = registerItem("netherite_chain_helmet",
-            new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+            new ModArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item NETHERITECHAIN_CHESTPLATE = registerItem("netherite_chain_chestplate",
             new ArmorItem(ModArmorMaterials.NETHERITECHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item NETHERITECHAIN_LEGGINGS = registerItem("netherite_chain_leggings",
@@ -352,7 +354,7 @@ public class ModItems {
 
     //Admin Chain
     public static final Item ADMINCHAIN_HELMET = registerItem("admin_chain_helmet",
-            new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+            new ModArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item ADMINCHAIN_CHESTPLATE = registerItem("admin_chain_chestplate",
             new ArmorItem(ModArmorMaterials.ADMINCHAIN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
     public static final Item ADMINCHAIN_LEGGINGS = registerItem("admin_chain_leggings",
@@ -397,6 +399,10 @@ public class ModItems {
         entries.add(SMILE_ITEM);
         entries.add(TEST);
         entries.add(ASTRAVEN_LOGO);
+        entries.add(ModItems.IRONCHAIN_HELMET);
+        entries.add(ModItems.IRONCHAIN_CHESTPLATE);
+        entries.add(ModItems.IRONCHAIN_LEGGINGS);
+        entries.add(ModItems.IRONCHAIN_BOOTS);
     }
     public static void registerModItems() {
         ParadigmMod.LOGGER.info("Registering Mod Items for " + ParadigmMod.MOD_ID);

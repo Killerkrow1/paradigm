@@ -259,13 +259,15 @@ public class ModItemGroups {
                                 entries.add(ModItems.ISMENE_BINDMENT);
                                 entries.add(ModItems.ULTIMUS_BINDMENT);
                                 entries.add(ModItems.UNKNOWN_BINDMENT);
+                                entries.add(ModItems.DRAGON_HORN);
+                                entries.add(ModItems.EVERLASTING_GRACE);
+                                entries.add(ModItems.MARK_OF_CHAOS);
+                                entries.add(ModItems.SILENT_CHARM);
+
                                 entries.add(ModItems.SOUL_DEAL);
                                 entries.add(ModItems.STASIS_MARK);
-                                entries.add(ModItems.DRAGON_HORN);
                                 entries.add(ModItems.PHOENIX_GRAIL);
-                                entries.add(ModItems.SILENT_CHARM);
                                 entries.add(ModItems.THUNDERSPRITE);
-                                entries.add(ModItems.MARK_OF_CHAOS);
                                 entries.add(ModItems.HEALING_TOUCH);
 
                                 entries.add(ModItems.ATLAS_WRATH);
@@ -310,11 +312,6 @@ public class ModItemGroups {
                                 entries.add(ModItems.DIAMONDCHAIN_CHESTPLATE);
                                 entries.add(ModItems.DIAMONDCHAIN_LEGGINGS);
                                 entries.add(ModItems.DIAMONDCHAIN_BOOTS);
-
-                                entries.add(ModItems.IRONCHAIN_HELMET);
-                                entries.add(ModItems.IRONCHAIN_CHESTPLATE);
-                                entries.add(ModItems.IRONCHAIN_LEGGINGS);
-                                entries.add(ModItems.IRONCHAIN_BOOTS);
                             }).build());
 
     public static void registerItemGroups() {
