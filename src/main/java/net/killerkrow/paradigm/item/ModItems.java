@@ -158,8 +158,10 @@ public class ModItems {
             new HealingTouch(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item EVERLASTING_GRACE = registerItem("everlasting_grace",
             new EverlastingGrace(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
-    public static final Item STILLCHAIN = registerItem("still_chain",
+    public static final Item STILLCHAIN = registerItem("stillchain",
             new StillChain(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
+    public static final Item MINOR_STILLCHAIN = registerItem("minor_stillchain",
+            new MinorStillChain(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item WINGED_GRACE = registerItem("winged_grace",
             new WingedGrace(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item PUMPKING = registerItem("pumpking",

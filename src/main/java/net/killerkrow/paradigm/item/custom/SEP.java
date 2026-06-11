@@ -40,7 +40,7 @@ public class SEP extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
         if (!world.isClient()) {
-            user.addStatusEffect(new StatusEffectInstance(ParadigmMod.SOUL_STRAIN, 200, 0));
+            //user.addStatusEffect(new StatusEffectInstance(ParadigmMod.SOUL_STRAIN, 200, 1));
             itemStack.decrement(1);
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     ModSounds.SEP_ABSORPTION, SoundCategory.MASTER, 0.2f, 1.0f);

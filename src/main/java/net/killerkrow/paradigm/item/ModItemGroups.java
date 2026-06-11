@@ -263,6 +263,7 @@ public class ModItemGroups {
                                 entries.add(ModItems.EVERLASTING_GRACE);
                                 entries.add(ModItems.MARK_OF_CHAOS);
                                 entries.add(ModItems.STILLCHAIN);
+                                entries.add(ModItems.MINOR_STILLCHAIN);
                                 entries.add(ModItems.WINGED_GRACE);
                                 entries.add(ModItems.SILENT_CHARM);
 

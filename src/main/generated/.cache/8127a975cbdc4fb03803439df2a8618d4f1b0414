@@ -1,7 +1,7 @@
-// 1.20.1	2026-06-09T15:11:58.5788555	Paradigm Mod/Tags for minecraft:item
+// 1.20.1	2026-06-10T22:15:07.2480201	Paradigm Mod/Tags for minecraft:item
 593f22f99f8f02ae9909affd64fc48f4fc2c1f55 data\minecraft\tags\items\flowers.json
-be5ff5ab754b7bef332718ab0b7bfbf3ce3aab75 data\minecraft\tags\items\swords.json
 bcfd4b3690ad8b1c5cedd79720d6c43c54d62b62 data\paradigm\tags\items\bindment_item.json
+be5ff5ab754b7bef332718ab0b7bfbf3ce3aab75 data\minecraft\tags\items\swords.json
 0e6d0fea091dd78ddd2ef8daaa0a7da37da5ad10 data\paradigm\tags\items\favor_item.json
 be5ff5ab754b7bef332718ab0b7bfbf3ce3aab75 data\paradigm\tags\items\crusher_item.json
 308e1afb659fbbb8c5fd7990adf534abef1d9108 data\minecraft\tags\items\trimmable_armor.json

@@ -361,5 +361,13 @@
   "tooltip.paradigm.skull_scythe.tooltip": "A weapon crafted to show the insecurities and weakness of the Living World.",
   "tooltip.paradigm.everlasting_grace.tooltip": "Blessed by Astral herself, this item will bring about life to even the harshest of deserts.",
   "tooltip.paradigm.stillchain.tooltip": "Using the power of Ismene it will cause any and all others to freeze.",
-  "tooltip.paradigm.winged_grace.tooltip": "Fueled the power of a distant land, it will protect any who hold it from the fall."
+  "tooltip.paradigm.winged_grace.tooltip": "Fueled the power of a distant land, it will protect any who hold it from the fall.",
+  "tooltip.paradigm.minor_stillchain.tooltip": "A minor version of Ismene's true power.",
+  "item.paradigm.everlasting_grace": "Everlasting Grace",
+  "item.paradigm.minor_stillchain": "Stillchain (Minor)",
+  "item.paradigm.stillchain": "Stillchain",
+  "item.paradigm.zapa_favor": "Zapa Favor",
+  "item.paradigm.winged_grace": "Winged Grace",
+  "item.paradigm.pumpking": "Pumpking",
+  "tooltip.paradigm.pumpking.tooltip": "A splinter of Mr. Pumpkin's amount of hatred."
 }
