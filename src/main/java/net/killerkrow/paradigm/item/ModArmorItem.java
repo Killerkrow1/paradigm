@@ -19,6 +19,9 @@ public class ModArmorItem extends ArmorItem {
                             false, false, true))
                     .put(ModArmorMaterials.ADMINCHAIN, new StatusEffectInstance(StatusEffects.HASTE, 400, 1,
                             false, false, true)).build();
+//This is for if I wanna add a new third to the mod
+//                    .put(ModArmorMaterials.ADMINCHAIN, new StatusEffectInstance(StatusEffects.HASTE, 400, 1,
+//                            false, false, true)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

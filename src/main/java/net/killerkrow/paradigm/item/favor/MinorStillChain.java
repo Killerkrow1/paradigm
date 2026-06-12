@@ -2,6 +2,7 @@ package net.killerkrow.paradigm.item.favor;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -66,7 +67,7 @@ public class MinorStillChain extends Item {
                     entity -> entity != user);
 
             for (LivingEntity entity : entities) {
-                entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.SOUL_STRAIN, 60, 2));
+                entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SOUL_STRAIN, 60, 2));
             }
 
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
