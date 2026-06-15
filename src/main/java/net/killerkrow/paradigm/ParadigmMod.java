@@ -12,7 +12,7 @@ import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.util.ModLootTableModifiers;
 import net.killerkrow.paradigm.util.ModPaintings;
-import net.killerkrow.paradigm.sound.ModSounds;
+import net.killerkrow.paradigm.util.ModSounds;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.effect.StatusEffect;
 import org.slf4j.Logger;

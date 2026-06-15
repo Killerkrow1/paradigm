@@ -1,4 +1,4 @@
-package net.killerkrow.paradigm.sound;
+package net.killerkrow.paradigm.util;
 
 import net.killerkrow.paradigm.ParadigmMod;
 import net.minecraft.registry.Registries;

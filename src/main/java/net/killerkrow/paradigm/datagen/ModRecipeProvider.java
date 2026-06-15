@@ -433,6 +433,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.SKELETON_SKULL), conditionsFromItem(Blocks.SKELETON_SKULL))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "skull_scythe"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ECLIPSE_SHARD)
+                .pattern("GAG")
+                .pattern("MCS")
+                .pattern("GAG")
+                .input('S',ModItems.SUN_SHARD)
+                .input('M',ModItems.MOON_SHARD)
+                .input('G',ModItems.GRODIUM_CRYSTALS)
+                .input('A',Items.AMETHYST_SHARD)
+                .input('C',Items.CLOCK)
+                .criterion(hasItem(ModItems.MOON_SHARD), conditionsFromItem(ModItems.MOON_SHARD))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "eclipse_shard"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ECLIPSE_EFFIGY)
+                .pattern(" F ")
+                .pattern("LES")
+                .pattern(" N ")
+                .input('E',ModItems.ECLIPSE_SHARD)
+                .input('S',ModItems.SOLAR_EFFIGY)
+                .input('L',ModItems.LUNAR_EFFIGY)
+                .input('N',Items.NETHERITE_INGOT)
+                .input('F',Blocks.VERDANT_FROGLIGHT)
+                .criterion(hasItem(ModItems.ECLIPSE_SHARD), conditionsFromItem(ModItems.ECLIPSE_SHARD))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "eclipse_effigy"));
+
         // Favor recipes
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ATLAS_BINDMENT)
                 .pattern("BOB")

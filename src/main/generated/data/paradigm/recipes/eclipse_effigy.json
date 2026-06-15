@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "paradigm:eclipse_shard"
+    },
+    "F": {
+      "item": "minecraft:verdant_froglight"
+    },
+    "L": {
+      "item": "paradigm:lunar_effigy"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "paradigm:solar_effigy"
+    }
+  },
+  "pattern": [
+    " F ",
+    "LES",
+    " N "
+  ],
+  "result": {
+    "item": "paradigm:eclipse_effigy"
+  },
+  "show_notification": true
+}

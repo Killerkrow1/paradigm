@@ -6,7 +6,7 @@ import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.custom.ReverenceSack;
 import net.killerkrow.paradigm.block.custom.ReverenceVines;
 import net.killerkrow.paradigm.block.custom.ReverenceVinesPlant;
-import net.killerkrow.paradigm.sound.ModSounds;
+import net.killerkrow.paradigm.util.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
 import net.minecraft.block.piston.PistonBehavior;

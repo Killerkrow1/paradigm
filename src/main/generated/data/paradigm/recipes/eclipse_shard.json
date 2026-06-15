@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "C": {
+      "item": "minecraft:clock"
+    },
+    "G": {
+      "item": "paradigm:grodium_crystals"
+    },
+    "M": {
+      "item": "paradigm:moon_shard"
+    },
+    "S": {
+      "item": "paradigm:sun_shard"
+    }
+  },
+  "pattern": [
+    "GAG",
+    "MCS",
+    "GAG"
+  ],
+  "result": {
+    "item": "paradigm:eclipse_shard"
+  },
+  "show_notification": true
+}

@@ -121,6 +121,25 @@ public class ModItems {
     public static final Item FAVOR_OF_DIVINITY = registerItem("favor_of_divinity",
             new DivinityFavor(new FabricItemSettings().maxCount(1)));
 
+    public static final Item DEMIGOD_EFFIGY_REMAINS = registerItem("demigod_effigy_remains",
+            new DemigodRemains(new FabricItemSettings().maxCount(1)));
+    public static final Item SPARK_OF_SEMI = registerItem("spark_of_semi",
+            new SparkOfSemi(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_DEATH = registerItem("totem_of_death",
+            new DeathTotem(new FabricItemSettings().maxCount(1)));
+    public static final Item REVERENCE_IDOL = registerItem("reverence_idol",
+            new ReverenceIdol(new FabricItemSettings().maxCount(1)));
+    public static final Item MOON_SHARD = registerItem("moon_shard",
+            new MoonShard(new FabricItemSettings().maxCount(1)));
+    public static final Item SUN_SHARD = registerItem("sun_shard",
+            new SunShard(new FabricItemSettings().maxCount(1)));
+    public static final Item ECLIPSE_SHARD = registerItem("eclipse_shard",
+            new EclipseShard(new FabricItemSettings().maxCount(1)));
+    public static final Item ESOTERIC_CORE = registerItem("esoteric_core",
+            new EsotericCore(new FabricItemSettings().maxCount(1)));
+    public static final Item ELDRITCH_RITE = registerItem("eldritch_rite",
+            new EldritchRite(new FabricItemSettings().maxCount(1)));
+
     //Favor Craftables
     public static final Item ATLAS_BINDMENT = registerItem("atlas_bindment",
             new BindmentBook(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));

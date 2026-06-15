@@ -61,6 +61,15 @@ public class ModItemGroups {
                         entries.add(ModItems.SOUL);
                         entries.add(ModItems.SOUL_EXTRACTER);
                         entries.add(ModItems.EFFIGY_EXTRACTOR);
+                        entries.add(ModItems.DEMIGOD_EFFIGY_REMAINS);
+                        entries.add(ModItems.SPARK_OF_SEMI);
+                        entries.add(ModItems.TOTEM_OF_DEATH);
+                        entries.add(ModItems.REVERENCE_IDOL);
+                        entries.add(ModItems.MOON_SHARD);
+                        entries.add(ModItems.SUN_SHARD);
+                        entries.add(ModItems.ECLIPSE_SHARD);
+                        entries.add(ModItems.ESOTERIC_CORE);
+                        entries.add(ModItems.ELDRITCH_RITE);
 
                     }).build());
 

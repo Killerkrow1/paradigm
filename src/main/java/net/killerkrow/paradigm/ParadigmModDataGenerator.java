@@ -14,5 +14,6 @@ public class ParadigmModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModFluidTagProvider::new);
 	}
 }

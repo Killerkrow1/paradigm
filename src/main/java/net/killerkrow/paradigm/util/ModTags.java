@@ -17,6 +17,15 @@ public class ModTags {
         }
     }
 
+    public static class Fluid {
+        public static final TagKey<net.minecraft.fluid.Fluid> VOYD_ESSENCE =
+                createTag("voyd_essence");
+
+        private static TagKey<net.minecraft.fluid.Fluid> createTag(String name) {
+            return TagKey.of(RegistryKeys.FLUID, new Identifier(ParadigmMod.MOD_ID, name));
+        }
+    }
+
     public static class Items {
         public static final TagKey<Item> CRUSHER_ITEM =
                 createTag("crusher_item");

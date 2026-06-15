@@ -91,6 +91,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModFluids.SOLAR_EFFIGY_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModFluids.GOD_EFFIGY_BUCKET, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.DEMIGOD_EFFIGY_REMAINS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPARK_OF_SEMI, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TOTEM_OF_DEATH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_IDOL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MOON_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUN_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ECLIPSE_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ESOTERIC_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELDRITCH_RITE, Models.GENERATED);
+
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADMINCHAIN_LEGGINGS));
