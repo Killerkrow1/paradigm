@@ -5,6 +5,7 @@ import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -65,7 +66,7 @@ public class EsotericEffigy extends TrinketItem {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 1
             ));
             {
-                entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 200, 1
+                entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.WATCHED, 200, 1
                 ));
             }
         }

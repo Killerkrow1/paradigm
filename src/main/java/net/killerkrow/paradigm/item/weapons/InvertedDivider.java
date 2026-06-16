@@ -60,7 +60,7 @@ public class InvertedDivider extends SwordItem implements Vanishable {
             if (attacker instanceof PlayerEntity player) {
                 player.sendMessage(Text.literal("You hit: " + target.getName().getString() + " while using an Inverted Weapon!")
                         .formatted(Formatting.AQUA), false);
-                player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 200, 0));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 10, 0));
             }
 
             if (target instanceof PlayerEntity victim) {

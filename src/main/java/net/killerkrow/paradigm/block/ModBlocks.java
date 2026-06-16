@@ -3,9 +3,7 @@ package net.killerkrow.paradigm.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.killerkrow.paradigm.ParadigmMod;
-import net.killerkrow.paradigm.block.custom.ReverenceSack;
-import net.killerkrow.paradigm.block.custom.ReverenceVines;
-import net.killerkrow.paradigm.block.custom.ReverenceVinesPlant;
+import net.killerkrow.paradigm.block.custom.*;
 import net.killerkrow.paradigm.util.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -409,6 +407,59 @@ public class ModBlocks {
             )
     );
 
+    public static final Block GILDEN_BLOCK = registerBlock("gilden_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+    public static final Block BUDDING_GILDEN_BLOCK = registerBlock("budding_gilden_block",
+            new BuddingGildenBlock(FabricBlockSettings.copyOf(Blocks.BUDDING_AMETHYST)));
+
+    public static final Block SMALL_GILDEN_BUD = registerBlock("small_gilden_bud",
+            new GildenClusterBlock(
+                    3,
+                    4,
+                    AbstractBlock.Settings.copy(AMETHYST_CLUSTER)
+                            .sounds(BlockSoundGroup.SMALL_AMETHYST_BUD)
+                            .solid()
+                            .luminance(state -> 1)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block MEDIUM_GILDEN_BUD = registerBlock("medium_gilden_bud",
+            new GildenClusterBlock(
+                    4,
+                    3,
+                    AbstractBlock.Settings.copy(AMETHYST_CLUSTER)
+                            .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD)
+                            .solid()
+                            .luminance(state -> 2)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block LARGE_GILDEN_BUD = registerBlock("large_gilden_bud",
+            new GildenClusterBlock(
+                    5,
+                    3,
+                    AbstractBlock.Settings.copy(AMETHYST_CLUSTER)
+                            .sounds(BlockSoundGroup.MEDIUM_AMETHYST_BUD)
+                            .solid()
+                            .luminance(state -> 4)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+    public static final Block GILDEN_CLUSTER = registerBlock("gilden_cluster",
+            new GildenClusterBlock(
+                    7,
+                    3,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.PURPLE)
+                            .solid()
+                            .nonOpaque()
+                            .ticksRandomly()
+                            .sounds(BlockSoundGroup.AMETHYST_CLUSTER)
+                            .strength(1.5F)
+                            .luminance(state -> 5)
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
 
     public static final Block REVERENCE_BERRY_SACK = registerBlock("reverence_berry_sack",

@@ -22,5 +22,11 @@
     "sounds": [
       "paradigm:sep_removal"
     ]
+  },
+  "transmutation": {
+    "subtitle": "sounds.paradigm.transmutation",
+    "sounds": [
+      "paradigm:transmutation"
+    ]
   }
 }

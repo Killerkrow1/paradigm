@@ -111,6 +111,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEAD_CHISELED_STONE_BRICKS);
                         entries.add(ModBlocks.DEAD_GLASS);
                         entries.add(ModBlocks.DEAD_GLASS_PANE);
+                        entries.add(ModBlocks.GILDEN_BLOCK);
+                        entries.add(ModBlocks.BUDDING_GILDEN_BLOCK);
+                        entries.add(ModBlocks.SMALL_GILDEN_BUD);
+                        entries.add(ModBlocks.MEDIUM_GILDEN_BUD);
+                        entries.add(ModBlocks.LARGE_GILDEN_BUD);
+                        entries.add(ModBlocks.GILDEN_CLUSTER);
                         entries.add(ModBlocks.GILDEN_ICON);
                         entries.add(ModBlocks.GILDEN_BRICKS);
                         entries.add(ModBlocks.GILDEN_BRICK_STAIRS);

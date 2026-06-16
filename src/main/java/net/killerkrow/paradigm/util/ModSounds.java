@@ -13,6 +13,7 @@ public class ModSounds {
 
     public static final SoundEvent SEP_ABSORPTION = registerSoundEvent("sep_absorption");
     public static final SoundEvent SEP_REMOVAL = registerSoundEvent("sep_removal");
+    public static final SoundEvent TRANSMUTATION = registerSoundEvent("transmutation");
 
     public static final BlockSoundGroup DEAD_BLOCK_SOUNDS = new BlockSoundGroup(1f, 1f,
             ModSounds.DEAD_SOUND, ModSounds.DEAD_SOUND, ModSounds.DEAD_SOUND,

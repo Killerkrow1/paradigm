@@ -31,6 +31,7 @@ public class ModModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerLantern(ModBlocks.SOUL_CHARGED_LANTERN);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BRIMSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JADE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GILDEN_JADE_BLOCK);
     }
 
     @Override

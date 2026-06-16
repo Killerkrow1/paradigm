@@ -4,6 +4,7 @@ import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -61,7 +62,7 @@ public class AfterlifeEffigy extends TrinketItem {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 1
             ));
             {
-                entity.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 200, 1
+                entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.WATCHED, 200, 1
                 ));
             }
         }

@@ -66,13 +66,13 @@ public class HealingTouch extends Item {
                     entity -> entity == user);
 
             for (LivingEntity entity : entities) {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 600, 2));
+                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 600, 2));
             }
 
             world.playSound(null, user.getX(), user.getY(), user.getZ(),
                     SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.1F, 1.0F);
 
-            user.getItemCooldownManager().set(this, 1200);
+            user.getItemCooldownManager().set(this, 120000);
 
             return TypedActionResult.success(stack);
         }
