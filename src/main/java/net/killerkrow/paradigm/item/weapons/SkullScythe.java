@@ -2,10 +2,8 @@ package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.ParadigmMod;
+import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.killerkrow.paradigm.util.ModRarities;
-import net.killerkrow.paradigm.util.ParadigmToolMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -21,7 +19,6 @@ import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
-import net.minecraft.util.ModStatus;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,7 +26,6 @@ import java.util.List;
 
 public class SkullScythe extends SwordItem implements Vanishable {
     private final float attackDamage;
-    private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     private final ModRarities rarity;
 
     public SkullScythe(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings, ModRarities rarity) {
@@ -38,7 +34,7 @@ public class SkullScythe extends SwordItem implements Vanishable {
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
         builder.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(ATTACK_DAMAGE_MODIFIER_ID, "Weapon modifier", (double) this.attackDamage, EntityAttributeModifier.Operation.ADDITION));
         builder.put(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(ATTACK_SPEED_MODIFIER_ID, "Weapon modifier", (double) attackSpeed, EntityAttributeModifier.Operation.ADDITION));
-        this.attributeModifiers = builder.build();
+        Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers = builder.build();
         this.rarity = rarity;
     }
 
@@ -83,7 +79,7 @@ public class SkullScythe extends SwordItem implements Vanishable {
 
             if (target instanceof PlayerEntity victim) {
                 victim.addStatusEffect(new StatusEffectInstance(StatusEffects.BLINDNESS, 100, 0));
-                victim.addStatusEffect(new StatusEffectInstance(ParadigmMod.WATCHED_EFFECT, 100, 0));
+                victim.addStatusEffect(new StatusEffectInstance(ModStatusEffects.WATCHED, 100, 0));
             }
         }
         return super.postHit(stack, target, attacker);
@@ -95,7 +91,7 @@ public class SkullScythe extends SwordItem implements Vanishable {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.paradigm.skull_scythe.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

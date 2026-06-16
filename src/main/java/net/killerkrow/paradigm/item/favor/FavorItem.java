@@ -27,7 +27,7 @@ public class FavorItem extends Item {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.paradigm.favor.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

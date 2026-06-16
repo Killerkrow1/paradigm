@@ -53,7 +53,7 @@ public class CrusherWeapon extends MiningToolItem {
         if (Screen.hasShiftDown()) {
         tooltip.add(Text.literal("Crush Attack: Deals bonus damage while falling!").formatted(Formatting.GOLD));
         } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

@@ -16,6 +16,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
@@ -29,14 +30,45 @@ public class EsotericEffigy extends TrinketItem {
         super(settings);
     }
 
+//    @Override
+//    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+//        if (Screen.hasShiftDown()) {
+//            tooltip.add(Text.literal("Hold this if your dare.").formatted(Formatting.DARK_PURPLE).formatted(Formatting.OBFUSCATED));
+//        } else {
+//            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+//        }
+//        super.appendTooltip(stack, world, tooltip, context);
+//    }
+
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        if (Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("Hold this if your dare.").formatted(Formatting.DARK_PURPLE).formatted(Formatting.OBFUSCATED));
-        } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        String[] textArray = {
+                "Holding this dangerous relic is a medal of it's own. Who knows what you had to do for it."//,
+                //"This text has a broken code: SEC-104958",
+                //"Final static line."
+        };
+
+        for (String line : textArray) {
+            MutableText finalText = Text.literal("");
+
+            // This does the random obfuscation
+            for (char c : line.toCharArray()) {
+                if (Math.random() < 0.20) { // Numberssssssss, 0.20 is 20%
+                    finalText.append(Text.literal(String.valueOf(c)).formatted(Formatting.OBFUSCATED));
+                } else {
+                    finalText.append(Text.literal(String.valueOf(c).formatted(Formatting.DARK_PURPLE)));
+                }
+            }
+
+            if (Screen.hasShiftDown()) {
+                // This adds the actual line
+                tooltip.add(finalText.formatted(Formatting.DARK_RED));
+            } else {
+                tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
+            }
+            super.appendTooltip(stack, world, tooltip, context);
         }
-        super.appendTooltip(stack, world, tooltip, context);
+
     }
 
     @Override
@@ -66,7 +98,7 @@ public class EsotericEffigy extends TrinketItem {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 1
             ));
             {
-                entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.WATCHED, 200, 1
+                entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.WATCHED, 200, 0
                 ));
             }
         }

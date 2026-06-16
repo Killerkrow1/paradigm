@@ -42,7 +42,7 @@ public class PhoenixGrail extends TrinketItem {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.paradigm.phoenixgrail.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

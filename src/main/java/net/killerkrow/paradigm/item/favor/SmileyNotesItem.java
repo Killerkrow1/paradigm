@@ -1,6 +1,7 @@
 package net.killerkrow.paradigm.item.favor;
 
 import net.killerkrow.paradigm.util.ModRarities;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -10,6 +11,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -36,9 +38,15 @@ public class SmileyNotesItem extends Item {
         return true; // Enables the enchanted shimmer
     }
 
+
+    // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.paradigm.smileynotes.tooltip"));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.paradigm.smileynotes.tooltip").formatted(Formatting.DARK_PURPLE));
+        } else {
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 

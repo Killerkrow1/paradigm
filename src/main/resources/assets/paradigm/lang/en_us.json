@@ -381,5 +381,9 @@
   "block.paradigm.gilden_cluster": "Gilden Cluster",
   "block.paradigm.large_gilden_bud": "Large Gilden Bud",
   "block.paradigm.medium_gilden_bud": "Medium Gilden Bud",
-  "block.paradigm.small_gilden_bud": "Small Gilden Bud"
+  "block.paradigm.small_gilden_bud": "Small Gilden Bud",
+  "tooltip.paradigm.soul_deal.tooltip": "Sneak + Right Click to Sign.",
+  "tooltip.paradigm.reverenceidol.tooltip": "A fragment of what is to come from this artifacts existence.",
+  "tooltip.paradigm.semisparks.tooltip": "Some say that the first Semigod created this item, while others say that Atlas forsook the world with it.",
+  "tooltip.paradigm.deathtotem.tooltip": "A totem dedicated to the worship of the Eighth God. Smiley, the God of Death and The Afterlife."
 }

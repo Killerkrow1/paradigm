@@ -5,6 +5,7 @@ import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -14,6 +15,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -26,9 +28,14 @@ public class EmptyEffigy extends TrinketItem {
         super(settings);
     }
 
+    // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.paradigm.emptyeffigy.tooltip"));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.paradigm.emptyeffigy.tooltip").formatted(Formatting.DARK_PURPLE));
+        } else {
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 

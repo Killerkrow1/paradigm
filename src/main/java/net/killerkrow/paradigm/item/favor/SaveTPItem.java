@@ -92,7 +92,7 @@ public class SaveTPItem extends Item {
             tooltip.add(Text.translatable("tooltip.paradigm.tp_item.tooltip").formatted(Formatting.DARK_PURPLE));
             tooltip.add(Text.translatable("tooltip.paradigm.tp_item_line_2.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
-            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
     }

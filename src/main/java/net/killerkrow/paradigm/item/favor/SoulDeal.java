@@ -2,6 +2,7 @@ package net.killerkrow.paradigm.item.favor;
 
 import net.killerkrow.paradigm.item.ModItems;
 import net.killerkrow.paradigm.util.ModComponents;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -22,7 +23,7 @@ public class SoulDeal extends WritableBookItem {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack unsignedStack = user.getStackInHand(hand);
 
-        if(user.isSneaking()) {
+        if (user.isSneaking()) {
             if (ModComponents.getContractSigned(unsignedStack) != 0) {
                 return TypedActionResult.fail(unsignedStack);
             }
@@ -38,11 +39,14 @@ public class SoulDeal extends WritableBookItem {
         return TypedActionResult.success(unsignedStack, world.isClient());
     }
 
+    // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-
-        tooltip.add(Text.literal("Sneak + Right Click to Sign.").formatted(Formatting.DARK_AQUA));
-
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.paradigm.soul_deal.tooltip").formatted(Formatting.DARK_PURPLE));
+        } else {
+            tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
