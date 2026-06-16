@@ -31,8 +31,7 @@ public class EsotericEffigy extends TrinketItem {
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         String[] textArray = {
                 "Holding this dangerous relic is a medal of it's own. Who knows what you had to do for it."//,
-                //"This text has a broken code: SEC-104958",
-                //"Final static line."
+                //"Next line here"
         };
 
         for (String line : textArray) {
