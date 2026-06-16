@@ -1,0 +1,11 @@
+  {
+  "parent": "item/amethyst_bud",
+  "textures": {
+    "layer0": "paradigm:block/large_gilden_bud"
+  },
+  "display": {
+    "fixed": {
+      "translation": [ 0, 4, 0 ]
+    }
+  }
+}
