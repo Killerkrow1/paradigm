@@ -53,7 +53,7 @@ public class EsotericEffigy extends TrinketItem {
 
             // This does the random obfuscation
             for (char c : line.toCharArray()) {
-                if (Math.random() < 0.20) { // Numberssssssss, 0.20 is 20%
+                if (Math.random() < 0.60) { // Numberssssssss, 0.X0 is X0%
                     finalText.append(Text.literal(String.valueOf(c)).formatted(Formatting.OBFUSCATED));
                 } else {
                     finalText.append(Text.literal(String.valueOf(c).formatted(Formatting.DARK_PURPLE)));
