@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "paradigm:block/medium_gilden_bud",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "paradigm:block/medium_gilden_bud",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "paradigm:block/medium_gilden_bud",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "paradigm:block/medium_gilden_bud",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "paradigm:block/medium_gilden_bud"
+    },
+    "facing=west": {
+      "model": "paradigm:block/medium_gilden_bud",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -375,5 +375,11 @@
   "tooltip.paradigm.sun_shard.tooltip": "Said to be a shard of the sun itself, these parts have fallen down to the planet since.",
   "tooltip.paradigm.eclipse_shard.tooltip": "A piece of what happens when the Moon and Sun cross.",
   "tooltip.paradigm.eldritchrite.tooltip": "Holding this means you are a bearer of Eldritch Magic, the Magic of the Gods.",
-  "tooltip.paradigm.esoteric_core.tooltip": "Some say that Tinal-Goh dropped this, some say another from a distant world gave it."
+  "tooltip.paradigm.esoteric_core.tooltip": "Some say that Tinal-Goh dropped this, some say another from a distant world gave it.",
+  "block.paradigm.gilden_block": "Gilden Block",
+  "block.paradigm.budding_gilden_block": "Budding Gilden",
+  "block.paradigm.gilden_cluster": "Gilden Cluster",
+  "block.paradigm.large_gilden_bud": "Large Gilden Bud",
+  "block.paradigm.medium_gilden_bud": "Medium Gilden Bud",
+  "block.paradigm.small_gilden_bud": "Small Gilden Bud"
 }
