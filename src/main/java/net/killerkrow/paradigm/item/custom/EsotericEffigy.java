@@ -3,8 +3,6 @@ package net.killerkrow.paradigm.item.custom;
 import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -14,13 +12,11 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.UUID;
@@ -30,15 +26,6 @@ public class EsotericEffigy extends TrinketItem {
         super(settings);
     }
 
-//    @Override
-//    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-//        if (Screen.hasShiftDown()) {
-//            tooltip.add(Text.literal("Hold this if your dare.").formatted(Formatting.DARK_PURPLE).formatted(Formatting.OBFUSCATED));
-//        } else {
-//            tooltip.add(Text.literal("Hold Shift for more info...").formatted(Formatting.YELLOW));
-//        }
-//        super.appendTooltip(stack, world, tooltip, context);
-//    }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
@@ -53,7 +40,7 @@ public class EsotericEffigy extends TrinketItem {
 
             // This does the random obfuscation
             for (char c : line.toCharArray()) {
-                if (Math.random() < 0.20) { // Numberssssssss, 0.20 is 20%
+                if (Math.random() < 0.60) { // Numberssssssss, 0.X0 is X0%
                     finalText.append(Text.literal(String.valueOf(c)).formatted(Formatting.OBFUSCATED));
                 } else {
                     finalText.append(Text.literal(String.valueOf(c).formatted(Formatting.DARK_PURPLE)));
