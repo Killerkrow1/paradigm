@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_semi_effigy"
+    },
+    "H": {
+      "item": "paradigm:spark_of_semi"
+    },
+    "I": {
+      "item": "paradigm:grodium_ingot"
+    },
+    "J": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:semigod_effigy"
+  },
+  "show_notification": true
+}

@@ -70,6 +70,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ECLIPSE_SHARD);
                         entries.add(ModItems.ESOTERIC_CORE);
                         entries.add(ModItems.ELDRITCH_RITE);
+                        entries.add(ModItems.CRUCIFIED_BONE);
+                        entries.add(ModBlocks.CRUCIFIED_BONE_BLOCK);
 
                     }).build());
 

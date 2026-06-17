@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soul_extracter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:soul_extracter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "paradigm:soul_effigy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_soul_extracter",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "paradigm:soul_effigy"
+    ]
+  },
+  "sends_telemetry_event": false
+}

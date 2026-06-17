@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_reverence_idol": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:reverence_idol"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "paradigm:reverence_effigy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_reverence_idol",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "paradigm:reverence_effigy"
+    ]
+  },
+  "sends_telemetry_event": false
+}

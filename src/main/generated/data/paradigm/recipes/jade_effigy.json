@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_jade_effigy"
+    },
+    "H": {
+      "item": "paradigm:jade_heart"
+    },
+    "I": {
+      "tag": "paradigm:jade_brick"
+    },
+    "J": {
+      "item": "paradigm:gilden_jade_block"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:jade_effigy"
+  },
+  "show_notification": true
+}

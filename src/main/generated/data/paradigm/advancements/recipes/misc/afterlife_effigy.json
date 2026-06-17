@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "paradigm:afterlife_effigy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_totem_of_death": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:totem_of_death"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_totem_of_death",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "paradigm:afterlife_effigy"
+    ]
+  },
+  "sends_telemetry_event": false
+}

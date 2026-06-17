@@ -471,6 +471,9 @@ public class ModBlocks {
     public static final Block GILDEN_JADE_BLOCK = registerBlock("gilden_jade_block",
             new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
 
+    public static final Block CRUCIFIED_BONE_BLOCK = registerBlock("crucified_bone_block",
+            new Block(FabricBlockSettings.copyOf(BONE_BLOCK)));
+
 
     public static final Block REVERENCE_VINES = register("reverence_vines",
             new ReverenceVines(

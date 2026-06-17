@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_soul_effigy"
+    },
+    "H": {
+      "item": "paradigm:soul_extracter"
+    },
+    "I": {
+      "item": "paradigm:imperium_dust"
+    },
+    "J": {
+      "item": "minecraft:sculk_shrieker"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:soul_effigy"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_reverence_effigy"
+    },
+    "H": {
+      "item": "paradigm:reverence_idol"
+    },
+    "I": {
+      "item": "paradigm:reverence_stem"
+    },
+    "J": {
+      "item": "paradigm:reverence_berry_sack"
+    },
+    "K": {
+      "item": "paradigm:reverence_berry"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JKJ"
+  ],
+  "result": {
+    "item": "paradigm:reverence_effigy"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_demigod_effigy_remains": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:demigod_effigy_remains"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "paradigm:demigod_effigy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_demigod_effigy_remains",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "paradigm:demigod_effigy"
+    ]
+  },
+  "sends_telemetry_event": false
+}

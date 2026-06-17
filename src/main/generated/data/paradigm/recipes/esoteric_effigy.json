@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_esoteric_effigy"
+    },
+    "E": {
+      "item": "paradigm:eldritch_rite"
+    },
+    "H": {
+      "item": "paradigm:esoteric_core"
+    },
+    "I": {
+      "item": "paradigm:effigerium_shards"
+    },
+    "J": {
+      "item": "paradigm:budding_gilden_block"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CEH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:esoteric_effigy"
+  },
+  "show_notification": true
+}

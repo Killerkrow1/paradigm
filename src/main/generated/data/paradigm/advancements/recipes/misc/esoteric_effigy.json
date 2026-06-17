@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_esoteric_core": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "paradigm:esoteric_core"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "paradigm:esoteric_effigy"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_esoteric_core",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "paradigm:esoteric_effigy"
+    ]
+  },
+  "sends_telemetry_event": false
+}

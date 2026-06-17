@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_lunar_effigy"
+    },
+    "H": {
+      "item": "paradigm:moon_shard"
+    },
+    "I": {
+      "item": "minecraft:calcite"
+    },
+    "J": {
+      "item": "minecraft:pearlescent_froglight"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:lunar_effigy"
+  },
+  "show_notification": true
+}

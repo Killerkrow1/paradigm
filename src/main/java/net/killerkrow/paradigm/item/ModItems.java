@@ -63,6 +63,8 @@ public class ModItems {
             new JadeHeart(new FabricItemSettings().fireproof().maxCount(1)));
     public static final Item EFFIGY_EXTRACTOR = registerItem("effigy_extractor",
             new EffigyExtractor(new FabricItemSettings().fireproof().maxCount(1)));
+    public static final Item CRUCIFIED_BONE = registerItem("crucified_bone",
+            new CrucifiedBone(new FabricItemSettings().maxCount(1)));
 
     //extended normal items
     public static final Item EFFIGY_EXTRACT = registerItem("effigy_extract",

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "paradigm:charged_empty_solar_effigy"
+    },
+    "H": {
+      "item": "paradigm:sun_shard"
+    },
+    "I": {
+      "item": "minecraft:magma_block"
+    },
+    "J": {
+      "item": "minecraft:verdant_froglight"
+    }
+  },
+  "pattern": [
+    "JIJ",
+    "CJH",
+    "JIJ"
+  ],
+  "result": {
+    "item": "paradigm:solar_effigy"
+  },
+  "show_notification": true
+}
