@@ -2,9 +2,15 @@ package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.killerkrow.paradigm.util.ModRarities;
+import net.killerkrow.paradigm.util.particles.ScreenParticleEffects;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
@@ -16,12 +22,17 @@ import net.minecraft.item.*;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import team.lodestar.lodestone.handlers.screenparticle.ParticleEmitterHandler;
+import team.lodestar.lodestone.systems.particle.screen.ScreenParticleHolder;
 
 import java.util.List;
+import java.util.UUID;
 
-public class InvertedSpear extends SwordItem implements Vanishable {
+public class InvertedSpear extends SwordItem implements Vanishable, ParticleEmitterHandler.ItemParticleSupplier {
+    private static final UUID ATTACK_RANGE_MODIFIER_UUID = UUID.fromString("12345678-1234-5678-1234-567812345678");
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     private final ModRarities rarity;
@@ -53,6 +64,28 @@ public class InvertedSpear extends SwordItem implements Vanishable {
         return new ItemStack(this);
     }
 
+    @Override
+    public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(ItemStack stack, EquipmentSlot slot) {
+        Multimap<EntityAttribute, EntityAttributeModifier> modifiers = super.getAttributeModifiers(stack, slot);
+
+        if (slot == EquipmentSlot.MAINHAND) {
+            ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
+            builder.putAll(modifiers);
+
+            // Default is 3, so put putting 2 I add 2 more blocks
+            builder.put(ReachEntityAttributes.ATTACK_RANGE, new EntityAttributeModifier(
+                    ATTACK_RANGE_MODIFIER_UUID,
+                    "Weapon attack range bonus",
+                    2.0D,
+                    EntityAttributeModifier.Operation.ADDITION
+            ));
+
+            return builder.build();
+        }
+
+        return modifiers;
+    }
+
     // Messages sent when you hit an entity
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
@@ -80,5 +113,11 @@ public class InvertedSpear extends SwordItem implements Vanishable {
             tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }
         super.appendTooltip(stack, world, tooltip, context);
+    }
+
+    @Environment(EnvType.CLIENT)
+    @Override
+    public void spawnEarlyParticles(ScreenParticleHolder target, World level, float partialTick, ItemStack stack, float x, float y) {
+        ScreenParticleEffects.spawnInvertedParticles(target, level, 0.8f, partialTick);
     }
 }
