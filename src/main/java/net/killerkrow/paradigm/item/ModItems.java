@@ -9,6 +9,7 @@ import net.killerkrow.paradigm.item.custom.*;
 import net.killerkrow.paradigm.item.favor.*;
 import net.killerkrow.paradigm.item.foods.BerryItem;
 import net.killerkrow.paradigm.item.foods.GoldenBerryItem;
+import net.killerkrow.paradigm.item.foods.ModFoodComponents;
 import net.killerkrow.paradigm.item.weapons.*;
 import net.killerkrow.paradigm.util.ModArmorMaterials;
 import net.killerkrow.paradigm.util.ParadigmToolMaterials;
