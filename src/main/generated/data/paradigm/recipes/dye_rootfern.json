@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:rootfern"
+    }
+  ],
+  "result": {
+    "item": "minecraft:brown_dye"
+  }
+}

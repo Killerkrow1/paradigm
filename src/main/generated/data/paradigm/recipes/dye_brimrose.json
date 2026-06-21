@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:brimrose"
+    }
+  ],
+  "result": {
+    "item": "minecraft:lime_dye"
+  }
+}

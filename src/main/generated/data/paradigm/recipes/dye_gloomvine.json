@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:gloomvine"
+    }
+  ],
+  "result": {
+    "item": "minecraft:purple_dye"
+  }
+}

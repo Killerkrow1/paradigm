@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:silverthorn"
+    }
+  ],
+  "result": {
+    "item": "minecraft:black_dye"
+  }
+}
