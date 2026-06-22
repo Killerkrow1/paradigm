@@ -9,3 +9,5 @@
 </div>
 
 I'm the bigggest bird I'm the biggest bird
+
+I'll make a description once the mod is ready for survival play

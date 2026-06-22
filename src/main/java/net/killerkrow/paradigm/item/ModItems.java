@@ -270,31 +270,31 @@ public class ModItems {
             new InvertedHammer(ParadigmToolMaterials.IMPERIUM, 18, -3.1f, new FabricItemSettings(), ModRarities.INVERTED));
 
     public  static final Item ATLAS_WRATH = registerItem("atlas_wrath",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item ATLAS_BETRAYAL = registerItem("atlas_betrayal",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item ASTRAL_PRIDE = registerItem("astral_pride",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item ASTRAL_FURY = registerItem("astral_fury",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item GERO_SCAR = registerItem("gero_scar",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item GERO_LUST = registerItem("gero_lust",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item NOVINGARD_BLESSING = registerItem("novingard_blessing",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item NOVINGARD_WISH = registerItem("novingard_wish",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item ISMENE_LINE = registerItem("ismene_line",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item ULTIMUS_RING = registerItem("ultimus_ring",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item UNKNOWN_DARKNESS = registerItem("unknown_darkness",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item TWIN_SWORD_ATLAS = registerItem("twin_sword_atlas",
-            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof()));
+            new BaseGodWeapon(ParadigmToolMaterials.GOD, 1, 2, new FabricItemSettings().fireproof(), ModRarities.DIVINE));
     public  static final Item TWIN_SHIELD_ATLAS = registerItem("twin_shield_atlas",
-            new ShieldItem(new FabricItemSettings().fireproof()));
+            new CustomShieldItem(ParadigmToolMaterials.GOD,new FabricItemSettings().fireproof(), ModRarities.DIVINE));
 
     public  static final Item FRAGMENTED_ICON = registerItem("fragmented_icon",
             new FragmentedIcon(ParadigmToolMaterials.UNIQUE, 1, 2, new FabricItemSettings()));

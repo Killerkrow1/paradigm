@@ -10,8 +10,10 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
 public class ParadigmModClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
+
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASTRAVEN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_ASTRAVEN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WOLFSBANE, RenderLayer.getCutout());
