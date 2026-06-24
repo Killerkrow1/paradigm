@@ -2,27 +2,37 @@ package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.util.ModRarities;
+import net.killerkrow.paradigm.util.ParadigmToolMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.util.math.random.RandomSplitter;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class BaseGodWeapon extends SwordItem implements Vanishable {
+public class GeroLust extends SwordItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     private final ModRarities rarity;
 
-    public BaseGodWeapon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings, ModRarities rarity) {
+    public GeroLust(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings, ModRarities rarity) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -49,11 +59,28 @@ public class BaseGodWeapon extends SwordItem implements Vanishable {
         return new ItemStack(this);
     }
 
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        List<StatusEffect> harmfulEffects = new ArrayList<>();
+
+        for (StatusEffect effect : Registries.STATUS_EFFECT) {
+            if (effect.getCategory() == StatusEffectCategory.HARMFUL) {
+                harmfulEffects.add(effect);
+            }
+        }
+        if (!harmfulEffects.isEmpty()) {
+            Random random = target.getRandom();
+            StatusEffect randomEffect = harmfulEffects.get(random.nextInt(harmfulEffects.size()));
+            target.addStatusEffect(new StatusEffectInstance(randomEffect, 200, 0));
+        }
+        return super.postHit(stack, target, attacker);
+    }
+
     // tooltip
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.base_god_weapon.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.gerolust.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }

@@ -2,7 +2,9 @@ package net.killerkrow.paradigm.item.weapons;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.util.ModRarities;
+import net.killerkrow.paradigm.util.ParadigmToolMaterials;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -17,12 +19,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BaseGodWeapon extends SwordItem implements Vanishable {
+public class AtlasWrath extends SwordItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
     private final ModRarities rarity;
 
-    public BaseGodWeapon(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings, ModRarities rarity) {
+    public AtlasWrath(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Item.Settings settings, ModRarities rarity) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.attackDamage = (float) attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -53,7 +55,7 @@ public class BaseGodWeapon extends SwordItem implements Vanishable {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.paradigm.base_god_weapon.tooltip").formatted(Formatting.DARK_PURPLE));
+            tooltip.add(Text.translatable("tooltip.paradigm.atlaswrath.tooltip").formatted(Formatting.DARK_PURPLE));
         } else {
             tooltip.add(Text.literal("[SHIFT]").formatted(Formatting.DARK_GRAY));
         }

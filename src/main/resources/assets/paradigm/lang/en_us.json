@@ -387,5 +387,19 @@
   "tooltip.paradigm.reverenceidol.tooltip": "A fragment of what is to come from this artifacts existence.",
   "tooltip.paradigm.semisparks.tooltip": "Some say that the first Semigod created this item, while others say that Atlas forsook the world with it.",
   "tooltip.paradigm.deathtotem.tooltip": "A totem dedicated to the worship of the Eighth God. Smiley, the God of Death and The Afterlife.",
-  "tooltip.paradigm.crucified_bone.tooltip": "Some say that this item is made from the bones of the long departed. Nobody knows where they come from."
+  "tooltip.paradigm.crucified_bone.tooltip": "Some say that this item is made from the bones of the long departed. Nobody knows where they come from.",
+  "tooltip.paradigm.atlaswrath.tooltip": "A seemingly innocent weapon... maybe it holds some potential.",
+  "tooltip.paradigm.gerolust.tooltip": "A dangerous weapon, any who cross it's path should cower in fear.",
+  "tooltip.paradigm.geroscar.tooltip": "Looks to be an innocent looking axe.",
+  "item.paradigm.demigod_effigy_remains": "Demigod Effigy Remains",
+  "item.paradigm.spark_of_semi": "Sparks of Semi",
+  "block.paradigm.crucified_bone_block": "Crucified Bone Block",
+  "item.paradigm.totem_of_death": "Totem of Death",
+  "item.paradigm.crucified_bone": "Crucified Bone",
+  "item.paradigm.eclipse_shard": "Eclipse Shard",
+  "item.paradigm.sun_shard": "Sun Shard",
+  "item.paradigm.moon_shard": "Moon Shard",
+  "item.paradigm.reverence_idol": "Reverence Idol",
+  "item.paradigm.eldritch_rite": "Eldritch Rite",
+  "item.paradigm.esoteric_core": "Esoteric Core"
 }

@@ -122,5 +122,4 @@ public class DarkBindment extends SwordItem implements Vanishable {
         }
         super.appendTooltip(stack, world, tooltip, context);
     }
-
 }

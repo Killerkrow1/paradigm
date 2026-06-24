@@ -22,13 +22,13 @@ public abstract class GameRendererMixin {
 
         if (client.player != null) {
             // Do you have my poitionous effects?
-            boolean hasEffect = client.player.hasStatusEffect(ModStatusEffects.WATCHED);
+            boolean hasWatchedEffect = client.player.hasStatusEffect(ModStatusEffects.WATCHED);
             boolean hasShader = client.gameRenderer.getPostProcessor() != null;
 
-            if (hasEffect && !hasShader) {
+            if (hasWatchedEffect && !hasShader) {
                 // THIS WILL APPLY THE SHADER
                 loadPostProcessor(GRAYSCALE_SHADER_ID);
-            } else if (!hasEffect && hasShader) {
+            } else if (!hasWatchedEffect && hasShader) {
                 // If they no no have it, they no no have shader, we don't give away our shaders for free
                 client.gameRenderer.disablePostProcessor();
             }

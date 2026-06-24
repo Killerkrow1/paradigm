@@ -788,8 +788,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ItemConvertible popcorn = ModItems.POPCORN;
         ItemConvertible gold = Items.GOLD_INGOT;
 
-        // --- Smelting ---
-        // offerSmelting takes: exporter, input, category, output, experience, cookingTime, group
+        // Smelting
         offerSmelting(exporter, List.of(rawEffigeriumItem), RecipeCategory.MISC, cookedEffigeriumItem, 200.0f,
                 72000, "effigerium_ingot_furnace");
         offerSmelting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
@@ -805,8 +804,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(gilden_brick), RecipeCategory.FOOD, crackedGildenBrick, 0.4f,
                 160, "cracked_gilden_furnace");
 
-        // --- Blasting ---
-        // offerBlasting takes the same parameters, but uses a shorter cooking time (e.g., 100 ticks)
+        // Blasting
         offerBlasting(exporter, List.of(rawEffigeriumItem), RecipeCategory.MISC, cookedEffigeriumItem, 200.0f,
                 72000, "effigerium_ingot_blasting");
         offerBlasting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
