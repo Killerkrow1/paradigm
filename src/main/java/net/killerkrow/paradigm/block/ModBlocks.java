@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.killerkrow.paradigm.ParadigmMod;
 import net.killerkrow.paradigm.block.custom.*;
+import net.killerkrow.paradigm.effect.ModStatusEffects;
 import net.killerkrow.paradigm.util.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.Instrument;
@@ -383,6 +384,12 @@ public class ModBlocks {
                     FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY).nonOpaque().noCollision()));
     public static final Block POTTED_SHADOWTHORN = Registry.register(Registries.BLOCK, new Identifier(ParadigmMod.MOD_ID, "potted_shadowthorn"),
             new FlowerPotBlock(SHADOWTHORN, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
+
+    public static final Block GILDEN_FORGET_ME_NOTS = registerBlock("gilden_forget_me_nots",
+            new FlowerBlock(ModStatusEffects.WATCHED, 30,
+                    FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY).nonOpaque().noCollision()));
+    public static final Block POTTED_GILDEN_FORGET_ME_NOTS = Registry.register(Registries.BLOCK, new Identifier(ParadigmMod.MOD_ID, "potted_gilden_forget_me_nots"),
+            new FlowerPotBlock(GILDEN_FORGET_ME_NOTS, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
 
     public static final Block EFFIGERIUM_FURNACE = registerBlock("effigerium_furnace",
             new FurnaceBlock(

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "paradigm:block/gilden_cluster"
+    "layer0": "paradigm:block/gilden_crystal"
   },
   "display": {
     "head": {

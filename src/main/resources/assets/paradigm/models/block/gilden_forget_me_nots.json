@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "paradigm:block/gilden_small_bud"
+    "cross": "paradigm:block/gilded_forget_me_nots"
   }
 }

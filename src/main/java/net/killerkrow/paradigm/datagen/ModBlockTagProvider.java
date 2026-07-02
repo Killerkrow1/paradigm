@@ -23,7 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SPECTRAL_ORCHID, ModBlocks.PHANTOM_LACE, ModBlocks.VOIDMOSS, ModBlocks.SCARLET_CURL, ModBlocks.STARSHADE, ModBlocks.BRIMROSE,
                         ModBlocks.GLASSLEAF, ModBlocks.FLAMESPIRE, ModBlocks.LUNAR_PEONY, ModBlocks.BLOOMCROWN, ModBlocks.INFERNO_BELL, ModBlocks.SEARLING,
                         ModBlocks.EBON_ROSE, ModBlocks.FADEWISP, ModBlocks.GLOOMVINE, ModBlocks.EMBERBRUSH, ModBlocks.SPIRESAGE, ModBlocks.BRIGHTBLOOM,
-                        ModBlocks.MIRAGE_LOTUS, ModBlocks.SHADOWTHORN, ModBlocks.ASHEN_BUD
+                        ModBlocks.MIRAGE_LOTUS, ModBlocks.SHADOWTHORN, ModBlocks.ASHEN_BUD, ModBlocks.GILDEN_FORGET_ME_NOTS
                 );
 
 

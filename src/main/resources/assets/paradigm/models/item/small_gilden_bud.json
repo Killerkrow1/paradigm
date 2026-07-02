@@ -1,7 +1,7 @@
 {
   "parent": "item/amethyst_bud",
   "textures": {
-    "layer0": "paradigm:block/small_gilden_bud"
+    "layer0": "paradigm:block/gilden_small_bud"
   },
   "display": {
     "firstperson_righthand": {

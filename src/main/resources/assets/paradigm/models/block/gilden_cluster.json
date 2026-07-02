@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "paradigm:block/gilden_cluster"
+    "cross": "paradigm:block/gilden_crystal"
   }
 }

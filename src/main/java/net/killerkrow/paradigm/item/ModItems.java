@@ -188,6 +188,8 @@ public class ModItems {
             new WingedGrace(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
     public static final Item PUMPKING = registerItem("pumpking",
             new Pumpking(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
+    public static final Item GILDEN_HEART = registerItem("gilden_heart",
+            new GildenHeart(new FabricItemSettings().maxCount(1), ModRarities.DIVINE));
 
     public static final Item EMPTY_EFFIGY = registerItem("empty_effigy",
             new EmptyEffigy(new FabricItemSettings().maxCount(1)));

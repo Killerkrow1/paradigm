@@ -333,6 +333,7 @@
   "block.paradigm.solar_effigy_fluid_block": "Solar Fluid Block",
   "block.paradigm.god_effigy_fluid_block": "God Fluid Block",
   "block.paradigm.gilden_pillar": "Gilden Pillar",
+  "block.paradigm.gilden_forget_me_nots": "Gilden Forget Me Nots",
   "block.paradigm.gilden_jade_block": "Gilden Jade Block",
   "tooltip.paradigm.jade_heart.tooltip": "Scholars debate whether this is the Heart of Deco, or just a worthless relic.",
   "item.paradigm.sep": "Soul-Engraved Power",
@@ -401,5 +402,6 @@
   "item.paradigm.moon_shard": "Moon Shard",
   "item.paradigm.reverence_idol": "Reverence Idol",
   "item.paradigm.eldritch_rite": "Eldritch Rite",
-  "item.paradigm.esoteric_core": "Esoteric Core"
+  "item.paradigm.esoteric_core": "Esoteric Core",
+  "tooltip.paradigm.gildenheart.tooltip": "Fueld by the power of the Gilden God, it can push away all in it's wake."
 }

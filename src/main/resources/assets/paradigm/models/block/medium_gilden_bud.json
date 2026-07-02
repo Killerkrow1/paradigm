@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "paradigm:block/medium_gilden_bud"
+    "cross": "paradigm:block/gilden_medium_bud"
   }
 }

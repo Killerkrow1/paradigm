@@ -10,6 +10,7 @@ import net.killerkrow.paradigm.effect.WatchedEffect;
 import net.killerkrow.paradigm.fluids.ModFluids;
 import net.killerkrow.paradigm.item.ModItemGroups;
 import net.killerkrow.paradigm.item.ModItems;
+import net.killerkrow.paradigm.util.ModComponents;
 import net.killerkrow.paradigm.util.ModLootTableModifiers;
 import net.killerkrow.paradigm.util.ModPaintings;
 import net.killerkrow.paradigm.util.ModSounds;
@@ -34,6 +35,7 @@ public class ParadigmMod implements ModInitializer {
 		ModPaintings.registerPaintings();
 		ModLootTableModifiers.modifyLootTables();
 		ModStatusEffects.initialize();
+		ModComponents.initialize();
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GLASS_PANE, RenderLayer.getTranslucent());

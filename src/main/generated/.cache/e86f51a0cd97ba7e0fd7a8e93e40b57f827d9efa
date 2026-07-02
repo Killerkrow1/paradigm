@@ -1,4 +1,4 @@
-// 1.20.1	2026-06-21T20:16:13.7199276	Paradigm Mod/Recipes
+// 1.20.1	2026-07-02T13:59:34.2271198	Paradigm Mod/Recipes
 e54759190473d420e7f468173c892451afb73640 data\paradigm\recipes\ultimus_bindment.json
 13131608f02c506cffd6977e5cd8dd6f47e78184 data\paradigm\advancements\recipes\misc\imperium_ingot_from_blasting_imperium_royalium.json
 bd9b80d70f0d16f649f5ac414934d86aa8d6423a data\paradigm\advancements\recipes\misc\gilden_crown.json
@@ -195,8 +195,8 @@ f64c86b3d04d637331a8ab817307780149e0375f data\paradigm\recipes\demigod_effigy.js
 f05401eba4826386d1925d89bdd427025004f76c data\paradigm\recipes\solar_effigy.json
 086f6ac201881321ea1d580e227e84243417ce61 data\paradigm\recipes\esoteric_effigy.json
 dff48de1bf3a7c59d1602fb0e81b17659e0026ab data\paradigm\recipes\reverence_effigy.json
-b85f70a6a433e91eab12b4f06dcc1a720d34d8bf data\paradigm\recipes\grodium_ingot_from_smelting_grodium_crystals.json
 9aa38610264e6791e4fde8a1f070a3a3ddbaa71e data\paradigm\advancements\recipes\food\gilden_ore_from_smelting_gold_ingot.json
+b85f70a6a433e91eab12b4f06dcc1a720d34d8bf data\paradigm\recipes\grodium_ingot_from_smelting_grodium_crystals.json
 d1248c3a2f2eeba6c630cb84a9ed911544e047fe data\paradigm\advancements\recipes\misc\grodium_ingot_from_smelting_grodium_crystals.json
 aaa66254fd38a5af3b6667e9352e6ddd01102f3d data\paradigm\advancements\recipes\misc\eclipse_shard.json
 f83963c75995805e57e24933fcc10b1618ad5183 data\paradigm\advancements\recipes\misc\lunar_bucket.json

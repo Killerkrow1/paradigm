@@ -63,7 +63,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                         ModBlocks.GLASSLEAF.asItem(), ModBlocks.FLAMESPIRE.asItem(), ModBlocks.LUNAR_PEONY.asItem(), ModBlocks.BLOOMCROWN.asItem(),
                         ModBlocks.INFERNO_BELL.asItem(), ModBlocks.SEARLING.asItem(), ModBlocks.EBON_ROSE.asItem(), ModBlocks.FADEWISP.asItem(),
                         ModBlocks.GLOOMVINE.asItem(), ModBlocks.EMBERBRUSH.asItem(), ModBlocks.SPIRESAGE.asItem(), ModBlocks.BRIGHTBLOOM.asItem(),
-                        ModBlocks.MIRAGE_LOTUS.asItem(), ModBlocks.SHADOWTHORN.asItem(), ModBlocks.ASHEN_BUD.asItem()
+                        ModBlocks.MIRAGE_LOTUS.asItem(), ModBlocks.SHADOWTHORN.asItem(), ModBlocks.ASHEN_BUD.asItem(), ModBlocks.GILDEN_FORGET_ME_NOTS.asItem()
                 );
     }
 }
