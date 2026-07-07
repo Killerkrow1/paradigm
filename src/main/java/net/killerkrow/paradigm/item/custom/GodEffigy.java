@@ -3,7 +3,6 @@ package net.killerkrow.paradigm.item.custom;
 import com.google.common.collect.Multimap;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
-import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
@@ -84,10 +83,7 @@ public class GodEffigy extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        // Only apply effects on the server side to prevent duplication and desync
         if (!entity.getWorld().isClient()) {
-            // Apply Haste I for 5 seconds (100 ticks).
-            // The 3rd parameter (true) hides particles, similar to beacons.
             entity.addStatusEffect(new StatusEffectInstance(
                     StatusEffects.HASTE, 100, 1, true, false
             ));

@@ -81,7 +81,7 @@ public class EmptySemiEffigy extends Item {
 
             if (absorbedList.size() >= REQUIRED_COUNT) {
                 ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_SEMI_EFFIGY);
-                transformedStack.setNbt(nbt); // Carry over NBT if needed
+                transformedStack.setNbt(nbt);
                 player.setStackInHand(context.getHand(), transformedStack);
             }
 

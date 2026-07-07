@@ -57,7 +57,6 @@ public class SoulEffigy extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        // Only apply effects on the server side to prevent duplication and desync
         if (!entity.getWorld().isClient()) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 1
                     ));

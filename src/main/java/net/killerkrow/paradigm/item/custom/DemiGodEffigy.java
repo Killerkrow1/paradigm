@@ -63,7 +63,6 @@ public class DemiGodEffigy extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        // Only apply effects on the server side to prevent duplication and desync
         if (!entity.getWorld().isClient()) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 200, 1
             ));

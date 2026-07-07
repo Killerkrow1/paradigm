@@ -18,10 +18,10 @@ public abstract class ItemRendererMixin {
     @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
     public BakedModel useItem(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         if (stack.isOf(net.killerkrow.paradigm.item.ModItems.SEP) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(ParadigmMod.MOD_ID, "sep_handheld", "inventory"));
+            return ((ItemRendererAccessor) this).paradigm$getModels().getModelManager().getModel(new ModelIdentifier(ParadigmMod.MOD_ID, "sep_handheld", "inventory"));
         }
         if (stack.isOf(ModItems.SOUL) && renderMode != ModelTransformationMode.GUI) {
-            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(ParadigmMod.MOD_ID, "soul_handheld", "inventory"));
+            return ((ItemRendererAccessor) this).paradigm$getModels().getModelManager().getModel(new ModelIdentifier(ParadigmMod.MOD_ID, "soul_handheld", "inventory"));
         }
         return value;
     }

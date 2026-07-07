@@ -1,6 +1,5 @@
 package net.killerkrow.paradigm.item.favor;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.util.ModRarities;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;

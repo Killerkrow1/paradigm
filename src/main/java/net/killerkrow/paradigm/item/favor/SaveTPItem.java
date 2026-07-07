@@ -73,12 +73,11 @@ public class SaveTPItem extends Item {
                 int z = nbt.getInt("teleport.z");
 
                 if (!world.isClient) {
-                    // Teleport the player
-                    user.teleport(x, y + 1, z); // +1 prevents clipping into the block
+                    user.teleport(x, y + 1, z);
                     world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ENDERMAN_TELEPORT,
                             SoundCategory.PLAYERS, 1.0F, 1.0F);
 
-                    user.getItemCooldownManager().set(this, 1200); // 60-second cooldown, every 20 is 1 second. 10 x 120 = 1200
+                    user.getItemCooldownManager().set(this, 1200);
                 }
                 return TypedActionResult.success(stack);
             }

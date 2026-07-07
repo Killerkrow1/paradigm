@@ -72,7 +72,6 @@ public class EmptyAfterlifeEffigy extends Item {
             absorbedList.add(NbtString.of(blockId));
             nbt.put("AbsorbedBlocks", absorbedList);
 
-            // Consumes the block
             world.breakBlock(context.getBlockPos(), false, player);
             context.getWorld().setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
             context.getWorld().playSound(null, context.getBlockPos(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 0.5F, 1.0F);
@@ -80,7 +79,7 @@ public class EmptyAfterlifeEffigy extends Item {
 
             if (absorbedList.size() >= REQUIRED_COUNT) {
                 ItemStack transformedStack = new ItemStack(ModItems.CHARGED_EMPTY_AFTERLIFE_EFFIGY);
-                transformedStack.setNbt(nbt); // Carry over NBT if needed
+                transformedStack.setNbt(nbt);
                 player.setStackInHand(context.getHand(), transformedStack);
             }
 

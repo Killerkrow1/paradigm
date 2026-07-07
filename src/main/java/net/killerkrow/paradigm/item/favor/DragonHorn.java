@@ -49,10 +49,8 @@ public class DragonHorn extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
 
         if (!world.isClient()) {
-            // Get the player's look vector
             Vec3d lookVec = user.getRotationVec(1.0F);
 
-            // Spawn the dragon fireball in front of the player
             double x = user.getX() + lookVec.x * 2.0;
             double y = user.getEyeY() - 0.2;
             double z = user.getZ() + lookVec.z * 2.0;
@@ -60,15 +58,12 @@ public class DragonHorn extends Item {
             DragonFireballEntity fireball = new DragonFireballEntity(world, user, lookVec.x, lookVec.y, lookVec.z);
             fireball.setPos(x, y, z);
 
-            // Add velocity (you can adjust the multiplier for faster/slower fireballs)
             fireball.setVelocity(lookVec.x, lookVec.y, lookVec.z, 1.5F, 1.0F);
 
             world.spawnEntity(fireball);
 
-            // Play the shoot sound
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ENDER_DRAGON_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F);
 
-            // Optional: Cooldown
             user.getItemCooldownManager().set(this, 20);
         }
 

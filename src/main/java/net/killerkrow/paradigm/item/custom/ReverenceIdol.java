@@ -1,6 +1,5 @@
 package net.killerkrow.paradigm.item.custom;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;

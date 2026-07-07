@@ -50,7 +50,6 @@ public class SmileyNotesItem extends Item {
         super.appendTooltip(stack, world, tooltip, context);
     }
 
-    //Lowkey another thing I googled
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         if (!world.isClient()) {
