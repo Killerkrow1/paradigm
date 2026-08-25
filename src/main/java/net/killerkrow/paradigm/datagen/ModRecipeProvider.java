@@ -776,8 +776,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ItemConvertible rawImperiemItem = ModItems.IMPERIUM_ROYALIUM;
         ItemConvertible cookedImperiumItem = ModItems.IMPERIUM_INGOT;
-        ItemConvertible rawEffigeriumItem = ModItems.EFFIGERIUM_SHARDS;
-        ItemConvertible cookedEffigeriumItem = ModItems.EFFIGERIUM_INGOT;
         ItemConvertible rawGildenItem = ModItems.GILDEN_ORE;
         ItemConvertible cookedGildenItem = ModItems.GILDEN_INGOT;
         ItemConvertible rawGrodiumItem = ModItems.GRODIUM_CRYSTALS;
@@ -789,8 +787,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ItemConvertible gold = Items.GOLD_INGOT;
 
         // Smelting
-        offerSmelting(exporter, List.of(rawEffigeriumItem), RecipeCategory.MISC, cookedEffigeriumItem, 200.0f,
-                72000, "effigerium_ingot_furnace");
         offerSmelting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
                 400, "imperium_ingot_furnace");
         offerSmelting(exporter, List.of(rawGildenItem), RecipeCategory.MISC, cookedGildenItem, 0.8f,
@@ -805,8 +801,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 160, "cracked_gilden_furnace");
 
         // Blasting
-        offerBlasting(exporter, List.of(rawEffigeriumItem), RecipeCategory.MISC, cookedEffigeriumItem, 200.0f,
-                72000, "effigerium_ingot_blasting");
         offerBlasting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
                 200, "imperium_ingot_blasting");
         offerBlasting(exporter, List.of(rawGildenItem), RecipeCategory.MISC, cookedGildenItem, 0.8f,

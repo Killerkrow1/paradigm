@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.killerkrow.paradigm.block.ModBlocks;
 import net.killerkrow.paradigm.fluids.ModFluids;
+import net.killerkrow.paradigm.screen.EffigeriumFurnaceScreen;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
@@ -219,5 +221,7 @@ public class ParadigmModClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_GOD_EFFIGY, ModFluids.FLOWING_GOD_EFFIGY);
+
+        HandledScreens.register(ParadigmMod.KILN_SCREEN_HANDLER, EffigeriumFurnaceScreen::new);
     }
 }

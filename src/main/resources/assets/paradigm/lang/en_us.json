@@ -33,6 +33,17 @@
   "item.paradigm.demigod_effigy": "Demigod's Effigy",
   "item.paradigm.god_effigy": "God's Effigy",
 
+  "item.paradigm.reverence_cocktail": "Reverence Cocktail",
+  "item.paradigm.reverence_cookie": "Reverence Cookie",
+  "item.paradigm.reverence_tart": "Reverence Tart",
+  "item.paradigm.reverence_tart_slice": "Reverence Tart Slice",
+  "item.paradigm.reverence_tea": "Reverence Tea",
+  "item.paradigm.reverence_wine": "Reverence Wine",
+  "item.paradigm.reverence_sauce": "Reverence Sauce",
+  "item.paradigm.reverence_roll": "Reverence Roll",
+  "item.paradigm.reverence_ice_cream": "Reverence Ice Cream",
+  "item.paradigm.fried_reverence_berry": "Fried Reverence Berry",
+
   "block.paradigm.voyd_dark": "Voyd Darkness",
   "block.paradigm.voyd_light": "Voyd Light",
   "block.paradigm.reverence_berry_sack": "Sack of Reverence Berries",
@@ -66,6 +77,8 @@
   "tooltip.paradigm.charged_empty_esoteric_effigy.tooltip": "The Charged and near complete form of the Esoteric Effigy.",
   "tooltip.paradigm.charged_empty_reverence_effigy.tooltip": "The Charged and near complete form of the Reverence Effigy.",
 
+  "container.paradigm.kiln": "Effigerium Furnace",
+
   "item.paradigm.wooden_crusher": "Wooden Crusher",
   "item.paradigm.stone_crusher": "Stone Crusher",
   "item.paradigm.iron_crusher": "Iron Crusher",
@@ -80,6 +93,7 @@
   "item.paradigm.grodium_crystals": "Grodium Crystals",
   "item.paradigm.grodium_ingot": "Grodium Ingot",
   "item.paradigm.grodium_dust": "Grodium Dust",
+  "item.paradigm.gilden_heart": "Gilden Heart",
   "tooltip.paradigm.base_inverted_weapon.tooltip": "Forged to conquer the soul, this is a weapon that exceeds Mortal Limits.",
   "tooltip.paradigm.smiley_inverted.tooltip": "The first mortal made god weapon. An Inverted Weapon that was made out of divine metal. Along with being powered by 2 souls, it has the ability to make the wielder immortal. For a price of course...",
   "item.paradigm.smileys_impulse": "Smiley's Impulse",

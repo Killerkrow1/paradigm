@@ -20,12 +20,6 @@ public class CrusherWeapon extends MiningToolItem {
         super(attackDamage, attackSpeed, material, BlockTags.PICKAXE_MINEABLE, settings);
     }
 
-    // FUCK YOU, YOU GET AN UNDAMAGED COPY WHEN CRAFTING
-    @Override
-    public ItemStack getRecipeRemainder(ItemStack stack) {
-        return new ItemStack(this);
-    }
-
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player) {

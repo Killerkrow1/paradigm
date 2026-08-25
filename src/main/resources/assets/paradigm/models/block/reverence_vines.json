@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "paradigm:block/reverence_vines_plant"
+    "cross": "paradigm:block/reverence_vines"
   }
 }
