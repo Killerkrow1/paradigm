@@ -133,5 +133,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.HELLISH_IDENTITY));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ETHEREAL_COVER));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.UNKNOWN_SLIDE));
+
+        itemModelGenerator.register(ModItems.REVERENCE_COCKTAIL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_COOKIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_TART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_TART_SLICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_TEA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_WINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_SAUCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_ROLL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_ICE_CREAM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FRIED_REVERENCE_BERRY, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.EFFIGY_EXTRACTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUCIFIED_BONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GILDEN_HEART, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WINGED_GRACE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PUMPKING, Models.GENERATED);
     }
 }

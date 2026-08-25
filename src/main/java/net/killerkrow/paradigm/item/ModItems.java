@@ -396,6 +396,28 @@ public class ModItems {
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",
             new BerryItem(ModBlocks.REVERENCE_VINES, new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
 
+
+    public static final Item REVERENCE_COCKTAIL = registerItem("reverence_cocktail",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_COCKTAIL)));
+    public static final Item REVERENCE_COOKIE = registerItem("reverence_cookie",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_COOKIE)));
+    public static final Item REVERENCE_TART = registerItem("reverence_tart",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TART)));
+    public static final Item REVERENCE_TART_SLICE = registerItem("reverence_tart_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TART_SLICE)));
+    public static final Item REVERENCE_TEA = registerItem("reverence_tea",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TEA)));
+    public static final Item REVERENCE_WINE = registerItem("reverence_wine",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_WINE)));
+    public static final Item REVERENCE_SAUCE = registerItem("reverence_sauce",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_SAUCE)));
+    public static final Item REVERENCE_ROLL = registerItem("reverence_roll",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_ROLL)));
+    public static final Item REVERENCE_ICE_CREAM = registerItem("reverence_ice_cream",
+            new BowlItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_ICE_CREAM)));
+    public static final Item FRIED_REVERENCE_BERRY = registerItem("fried_reverence_berry",
+            new FriedBerryItem(new FabricItemSettings().food(ModFoodComponents.FRIED_REVERENCE_BERRY)));
+
     public static final Item GOLDEN_REVERENCE_BERRY = registerItem("golden_reverence_berry",
             new GoldenBerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
     public static final Item REVERENCE_STEM = registerItem("reverence_stem",

@@ -392,7 +392,7 @@ public class ModBlocks {
             new FlowerPotBlock(GILDEN_FORGET_ME_NOTS, FabricBlockSettings.copyOf(Blocks.POTTED_LILY_OF_THE_VALLEY).nonOpaque()));
 
     public static final Block EFFIGERIUM_FURNACE = registerBlock("effigerium_furnace",
-            new FurnaceBlock(
+            new EffigeriumFurnace(
                     AbstractBlock.Settings.copy(REINFORCED_DEEPSLATE)
                             .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                             .mapColor(MapColor.STONE_GRAY)
@@ -479,10 +479,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(IRON_BLOCK)));
 
     public static final Block CRUCIFIED_BONE_BLOCK = registerBlock("crucified_bone_block",
-            new Block(FabricBlockSettings.copyOf(BONE_BLOCK)));
+            new PillarBlock(FabricBlockSettings.copyOf(BONE_BLOCK)));
 
-
-    public static final Block REVERENCE_VINES = register("reverence_vines",
+    public static final Block REVERENCE_VINES = registerBlock("reverence_vines",
             new ReverenceVines(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DARK_GREEN)
@@ -494,7 +493,7 @@ public class ModBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             )
     );
-    public static final Block REVERENCE_VINES_PLANT = register("reverence_vines_plant",
+    public static final Block REVERENCE_VINES_PLANT = registerBlock("reverence_vines_plant",
             new ReverenceVinesPlant(
                     AbstractBlock.Settings.create()
                             .mapColor(MapColor.DARK_GREEN)

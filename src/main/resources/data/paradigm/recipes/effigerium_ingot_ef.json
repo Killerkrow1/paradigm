@@ -1,0 +1,10 @@
+{
+  "type": "paradigm:kiln",
+  "category": "misc",
+  "cookingtime": 72000,
+  "experience": 200.0,
+  "ingredient": {
+    "item": "paradigm:effigerium_shards"
+  },
+  "result": "paradigm:effigerium_ingot"
+}

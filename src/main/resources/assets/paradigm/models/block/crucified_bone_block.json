@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "paradigm:block/crucified_bone_block_top",
+    "up": "paradigm:block/crucified_bone_block_top",
+    "north": "paradigm:block/crucified_bone_block_side",
+    "east": "paradigm:block/crucified_bone_block_side",
+    "south": "paradigm:block/crucified_bone_block_side",
+    "west": "paradigm:block/crucified_bone_block_side",
+    "particle": "paradigm:block/crucified_bone_block_side"
+  },
+  "render_type": "solid"
+}
