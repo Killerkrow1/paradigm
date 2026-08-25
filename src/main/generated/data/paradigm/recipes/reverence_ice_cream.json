@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "I": {
+      "item": "minecraft:ice"
+    },
+    "R": {
+      "item": "paradigm:reverence_berry"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IRI",
+    " B "
+  ],
+  "result": {
+    "item": "paradigm:reverence_ice_cream"
+  },
+  "show_notification": true
+}

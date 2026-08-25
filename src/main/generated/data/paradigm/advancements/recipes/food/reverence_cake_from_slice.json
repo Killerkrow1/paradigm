@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_effigerium_shards": {
+    "has_reverence_berry": {
       "conditions": {
         "items": [
           {
             "items": [
-              "paradigm:effigerium_shards"
+              "paradigm:reverence_berry"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:effigerium_ingot_from_blasting_effigerium_shards"
+        "recipe": "paradigm:reverence_cake_from_slice"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_effigerium_shards",
+      "has_reverence_berry",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:effigerium_ingot_from_blasting_effigerium_shards"
+      "paradigm:reverence_cake_from_slice"
     ]
   },
   "sends_telemetry_event": false

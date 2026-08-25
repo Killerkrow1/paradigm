@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:reverence_pie"
+    },
+    {
+      "item": "paradigm:atlas_cooking_knife"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "paradigm:reverence_pie_slice"
+  }
+}

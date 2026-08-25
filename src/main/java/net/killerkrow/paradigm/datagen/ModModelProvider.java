@@ -145,6 +145,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REVERENCE_ICE_CREAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_REVERENCE_BERRY, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.REVERENCE_JUICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_CUPCAKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_CAKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_CAKE_SLICE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_PIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REVERENCE_PIE_SLICE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.EFFIGY_EXTRACTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRUCIFIED_BONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GILDEN_HEART, Models.GENERATED);

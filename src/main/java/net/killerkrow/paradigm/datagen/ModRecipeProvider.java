@@ -754,8 +754,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ESOTERIC_CORE), conditionsFromItem(ModItems.ESOTERIC_CORE))
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "esoteric_effigy"));
 
-
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOD_EFFIGY)
                 .pattern("ARS")
                 .pattern("TEF")
@@ -773,6 +771,133 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "god_effigy"));
 
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_SAUCE, 2)
+                .input(ModItems.REVERENCE_BERRY)
+                .input(ModItems.REVERENCE_BERRY)
+                .input(Items.BOWL)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_sauce"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_COOKIE, 8)
+                .input(ModItems.REVERENCE_BERRY)
+                .input(Items.WHEAT)
+                .input(Items.WHEAT)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_cookie"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_CAKE)
+                .input(ModItems.REVERENCE_CAKE_SLICE, 4)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_cake_from_slice"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.REVERENCE_CAKE_SLICE, 4)
+                .input(ModItems.REVERENCE_CAKE)
+                .input(ModItems.ATLAS_COOKING_KNIFE)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_slice_from_cake"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_PIE)
+                .input(ModItems.REVERENCE_BERRY)
+                .input(Items.EGG)
+                .input(Items.SUGAR)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_pie"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_PIE_SLICE, 4)
+                .input(ModItems.REVERENCE_PIE)
+                .input(ModItems.ATLAS_COOKING_KNIFE)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_pie_slice"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_TART)
+                .input(ModItems.REVERENCE_BERRY)
+                .input(Items.SUGAR)
+                .input(Items.BREAD, 2)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_tart"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_TART_SLICE, 4)
+                .input(ModItems.REVERENCE_TART)
+                .input(ModItems.ATLAS_COOKING_KNIFE)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_tart_slice"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_ROLL)
+                .pattern("RRR")
+                .pattern("ECE")
+                .pattern("RRR")
+                .input('E',ModItems.REVERENCE_SAUCE)
+                .input('C',Items.CARROT)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_roll"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_CAKE)
+                .pattern("RRR")
+                .pattern("MEM")
+                .pattern("SFS")
+                .input('M',Items.MILK_BUCKET)
+                .input('E',Items.EGG)
+                .input('S',Items.SUGAR)
+                .input('F',Items.WHEAT)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_cake"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_CUPCAKE, 4)
+                .pattern("   ")
+                .pattern("RER")
+                .pattern("SFS")
+                .input('E',Items.EGG)
+                .input('S',Items.SUGAR)
+                .input('F',Items.WHEAT)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_cupcake"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_ICE_CREAM)
+                .pattern(" I ")
+                .pattern("IRI")
+                .pattern(" B ")
+                .input('I',Items.ICE)
+                .input('B',Items.BOWL)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_ice_cream"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_COCKTAIL)
+                .pattern("   ")
+                .pattern(" R ")
+                .pattern(" B ")
+                .input('B',Items.GLASS_BOTTLE)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_cocktail"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_WINE)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" B ")
+                .input('B',Items.GLASS_BOTTLE)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_wine"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_JUICE, 3)
+                .pattern("RRS")
+                .pattern("RRB")
+                .pattern("   ")
+                .input('B',Items.GLASS_BOTTLE)
+                .input('S',Items.SUGAR)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_juice"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.REVERENCE_TEA, 3)
+                .pattern("RES")
+                .pattern("REB")
+                .pattern("   ")
+                .input('B',Items.GLASS_BOTTLE)
+                .input('S',Items.SUGAR)
+                .input('R',ModItems.REVERENCE_BERRY)
+                .input('E',ModItems.REVERENCE_SAUCE)
+                .criterion(hasItem(ModItems.REVERENCE_BERRY), conditionsFromItem(ModItems.REVERENCE_BERRY))
+                .offerTo(exporter, new Identifier(ParadigmMod.MOD_ID, "reverence_tea"));
+
+
 
         ItemConvertible rawImperiemItem = ModItems.IMPERIUM_ROYALIUM;
         ItemConvertible cookedImperiumItem = ModItems.IMPERIUM_INGOT;
@@ -786,6 +911,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ItemConvertible popcorn = ModItems.POPCORN;
         ItemConvertible gold = Items.GOLD_INGOT;
 
+        ItemConvertible revberry = ModItems.REVERENCE_BERRY;
+        ItemConvertible grilledberry = ModItems.FRIED_REVERENCE_BERRY;
+
         // Smelting
         offerSmelting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,
                 400, "imperium_ingot_furnace");
@@ -795,10 +923,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 400, "grodium_ingot_furnace");
         offerSmelting(exporter, List.of(popcornRaw), RecipeCategory.FOOD, popcorn, 0.1f,
                 60, "popcorn");
-        offerSmelting(exporter, List.of(gold), RecipeCategory.FOOD, rawGildenItem, 0.4f,
+        offerSmelting(exporter, List.of(gold), RecipeCategory.MISC, rawGildenItem, 0.4f,
                 160, "raw_gilden_furnace");
-        offerSmelting(exporter, List.of(gilden_brick), RecipeCategory.FOOD, crackedGildenBrick, 0.4f,
+        offerSmelting(exporter, List.of(gilden_brick), RecipeCategory.MISC, crackedGildenBrick, 0.4f,
                 160, "cracked_gilden_furnace");
+
+        offerSmelting(exporter, List.of(revberry), RecipeCategory.FOOD, grilledberry, 0.1f,
+                60, "smelting_reverence_berry");
 
         // Blasting
         offerBlasting(exporter, List.of(rawImperiemItem), RecipeCategory.MISC, cookedImperiumItem, 20.0f,

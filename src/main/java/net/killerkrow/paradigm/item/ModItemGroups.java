@@ -22,16 +22,23 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_REVERENCE_BERRY);
                         entries.add(ModItems.BOWL_OF_REVERENCE_BERRIES);
                         entries.add(ModBlocks.REVERENCE_BERRY_SACK);
-                        entries.add(ModItems.REVERENCE_COCKTAIL);
                         entries.add(ModItems.REVERENCE_COOKIE);
-                        entries.add(ModItems.REVERENCE_TART);
-                        entries.add(ModItems.REVERENCE_TART_SLICE);
+                        entries.add(ModItems.REVERENCE_COCKTAIL);
                         entries.add(ModItems.REVERENCE_TEA);
                         entries.add(ModItems.REVERENCE_WINE);
+                        entries.add(ModItems.REVERENCE_JUICE);
                         entries.add(ModItems.REVERENCE_SAUCE);
                         entries.add(ModItems.REVERENCE_ROLL);
                         entries.add(ModItems.REVERENCE_ICE_CREAM);
                         entries.add(ModItems.FRIED_REVERENCE_BERRY);
+                        entries.add(ModItems.REVERENCE_CUPCAKE);
+                        entries.add(ModItems.REVERENCE_CAKE);
+                        entries.add(ModItems.REVERENCE_CAKE_SLICE);
+                        entries.add(ModItems.REVERENCE_PIE);
+                        entries.add(ModItems.REVERENCE_PIE_SLICE);
+                        entries.add(ModItems.REVERENCE_TART);
+                        entries.add(ModItems.REVERENCE_TART_SLICE);
+
                         entries.add(ModItems.POPCORN);
                         entries.add(ModItems.COOKED_SCULK_RICE);
                         entries.add(ModItems.SCULK_ROLL);

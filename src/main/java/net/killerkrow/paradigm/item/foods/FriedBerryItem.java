@@ -1,6 +1,5 @@
 package net.killerkrow.paradigm.item.foods;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killerkrow.paradigm.item.ModItems;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,12 +10,6 @@ import net.minecraft.world.World;
 public class FriedBerryItem extends Item {
     public FriedBerryItem(Item.Settings settings) {
         super(settings);
-    }
-
-
-    @Override
-    public boolean hasGlint(ItemStack stack) {
-        return true; // Enables the enchanted shimmer
     }
 
     @Override

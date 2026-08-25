@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "item": "minecraft:wheat"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "R": {
+      "item": "paradigm:reverence_berry"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "MEM",
+    "SFS"
+  ],
+  "result": {
+    "item": "paradigm:reverence_cake"
+  },
+  "show_notification": true
+}

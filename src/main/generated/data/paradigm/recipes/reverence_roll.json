@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "E": {
+      "item": "paradigm:reverence_sauce"
+    },
+    "R": {
+      "item": "paradigm:reverence_berry"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "ECE",
+    "RRR"
+  ],
+  "result": {
+    "item": "paradigm:reverence_roll"
+  },
+  "show_notification": true
+}

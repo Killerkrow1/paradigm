@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "E": {
+      "item": "paradigm:reverence_sauce"
+    },
+    "R": {
+      "item": "paradigm:reverence_berry"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "RES",
+    "REB",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "item": "paradigm:reverence_tea"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:glass_bottle"
+    },
+    "R": {
+      "item": "paradigm:reverence_berry"
+    }
+  },
+  "pattern": [
+    " R ",
+    " R ",
+    " B "
+  ],
+  "result": {
+    "item": "paradigm:reverence_wine"
+  },
+  "show_notification": true
+}

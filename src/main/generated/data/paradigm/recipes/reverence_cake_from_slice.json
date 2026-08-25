@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "paradigm:reverence_cake_slice"
+    },
+    {
+      "item": "paradigm:reverence_cake_slice"
+    },
+    {
+      "item": "paradigm:reverence_cake_slice"
+    },
+    {
+      "item": "paradigm:reverence_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "paradigm:reverence_cake"
+  }
+}

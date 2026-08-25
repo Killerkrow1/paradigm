@@ -395,20 +395,39 @@ public class ModItems {
     //foods and related
     public static final Item REVERENCE_BERRY = registerItem("reverence_berry",
             new BerryItem(ModBlocks.REVERENCE_VINES, new FabricItemSettings().food(ModFoodComponents.REVERENCE_BERRY)));
-
+    public static final Item GOLDEN_REVERENCE_BERRY = registerItem("golden_reverence_berry",
+            new GoldenBerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
+    public static final Item REVERENCE_STEM = registerItem("reverence_stem",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_STEM)));
+    public static final Item BOWL_OF_REVERENCE_BERRIES = registerItem("bowl_of_reverence_berries",
+            new StewItem(new FabricItemSettings().food(ModFoodComponents.BOWL_OF_REVERENCE_BERRIES).maxCount(16)));
 
     public static final Item REVERENCE_COCKTAIL = registerItem("reverence_cocktail",
             new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_COCKTAIL)));
+    public static final Item REVERENCE_TEA = registerItem("reverence_tea",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TEA)));
+    public static final Item REVERENCE_WINE = registerItem("reverence_wine",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_WINE)));
+    public static final Item REVERENCE_JUICE = registerItem("reverence_juice",
+            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_JUICE)));
+
+    public static final Item REVERENCE_CUPCAKE = registerItem("reverence_cupcake",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_CUPCAKE)));
+    public static final Item REVERENCE_CAKE = registerItem("reverence_cake",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_CAKE)));
+    public static final Item REVERENCE_CAKE_SLICE = registerItem("reverence_cake_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_CAKE_SLICE)));
+    public static final Item REVERENCE_PIE = registerItem("reverence_pie",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_PIE)));
+    public static final Item REVERENCE_PIE_SLICE = registerItem("reverence_pie_slice",
+            new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_PIE_SLICE)));
+
     public static final Item REVERENCE_COOKIE = registerItem("reverence_cookie",
             new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_COOKIE)));
     public static final Item REVERENCE_TART = registerItem("reverence_tart",
             new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TART)));
     public static final Item REVERENCE_TART_SLICE = registerItem("reverence_tart_slice",
             new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TART_SLICE)));
-    public static final Item REVERENCE_TEA = registerItem("reverence_tea",
-            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_TEA)));
-    public static final Item REVERENCE_WINE = registerItem("reverence_wine",
-            new CocktailItem(new FabricItemSettings().food(ModFoodComponents.REVERENCE_WINE)));
     public static final Item REVERENCE_SAUCE = registerItem("reverence_sauce",
             new Item(new FabricItemSettings().food(ModFoodComponents.REVERENCE_SAUCE)));
     public static final Item REVERENCE_ROLL = registerItem("reverence_roll",
@@ -418,10 +437,7 @@ public class ModItems {
     public static final Item FRIED_REVERENCE_BERRY = registerItem("fried_reverence_berry",
             new FriedBerryItem(new FabricItemSettings().food(ModFoodComponents.FRIED_REVERENCE_BERRY)));
 
-    public static final Item GOLDEN_REVERENCE_BERRY = registerItem("golden_reverence_berry",
-            new GoldenBerryItem(new FabricItemSettings().food(ModFoodComponents.GOLDEN_REVERENCE_BERRY).maxCount(16)));
-    public static final Item REVERENCE_STEM = registerItem("reverence_stem",
-            new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
+
     public static final Item POPCORN = registerItem("popcorn",
             new Item(new FabricItemSettings().food(ModFoodComponents.POPCORN)));
     public static final Item COOKED_SCULK_RICE = registerItem("cooked_sculk_rice",
@@ -432,8 +448,6 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_ROLL_SLICE)));
     public static final Item SCULK_FRITTER = registerItem("sculk_fritter",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_FRITTER)));
-    public static final Item BOWL_OF_REVERENCE_BERRIES = registerItem("bowl_of_reverence_berries",
-            new StewItem(new FabricItemSettings().food(ModFoodComponents.BOWL_OF_REVERENCE_BERRIES).maxCount(16)));
     public static final Item SCULK_CABBAGE = registerItem("sculk_cabbage",
             new Item(new FabricItemSettings().food(ModFoodComponents.SCULK_CABBAGE)));
     public static final Item SCULK_CHEESE = registerItem("sculk_cheese",

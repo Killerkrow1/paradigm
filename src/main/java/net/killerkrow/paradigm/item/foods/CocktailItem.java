@@ -5,6 +5,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class CocktailItem extends Item {
@@ -26,5 +27,10 @@ public class CocktailItem extends Item {
         }
 
         return super.finishUsing(stack, world, user);
+    }
+
+    @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.DRINK;
     }
 }
